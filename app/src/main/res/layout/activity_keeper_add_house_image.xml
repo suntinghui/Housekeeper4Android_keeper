@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/topbarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#1caff6"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我有房" />
+
+        <TextView
+            android:id="@+id/doneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingRight="15dip"
+            android:text="完成"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:paddingBottom="15dip"
+        android:paddingTop="15dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#DFFBFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="20dip"
+                android:paddingTop="15dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="首页照片"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="(选一张漂亮的照片)"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <com.housekeeper.activity.view.PacificView
+                android:id="@+id/homePacificView"
+
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="#DFFBFF"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="20dip"
+                android:paddingTop="15dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="房屋照片"
+                    android:textColor="#666666"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dip"
+                    android:text="(可选多张)"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <com.housekeeper.activity.view.PacificView
+                android:id="@+id/otherPacificView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

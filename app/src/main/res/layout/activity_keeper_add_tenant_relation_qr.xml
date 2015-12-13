@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/infoLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_gray"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="10dip">
+
+            <com.housekeeper.activity.view.CustomNetworkImageView
+                android:id="@+id/headImageView"
+                android:layout_width="50dip"
+                android:layout_height="50dip"
+                android:layout_marginBottom="10dip"
+                android:scaleType="fitXY"
+                android:background="@drawable/head_tenant_default" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/addressTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/keeper_img_01"
+                    android:drawablePadding="10dip"
+                    android:singleLine="true"
+                    android:text="小区名字 楼号/单元/门牌号"
+                    android:textColor="#666666"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/cityTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="22dip"
+                    android:layout_marginTop="5dip"
+                    android:singleLine="true"
+                    android:text="北京市 昌平区 回龙观"
+                    android:textColor="#999999"
+                    android:textSize="12sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@color/gray" />
+
+                    <!-- 委托租期 -->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableLeft="@drawable/keeper_img_02"
+                            android:drawablePadding="10dip"
+                            android:singleLine="true"
+                            android:text="租期"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/begingDateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dip"
+                            android:text="2015-01-01"
+                            android:textColor="@color/blueme"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dip"
+                            android:layout_marginRight="5dip"
+                            android:text="至"
+                            android:textColor="#999999"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/endDateTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2015-12-31"
+                            android:textColor="@color/blueme"
+                            android:textSize="12sp" />
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginLeft="20dip"
+                        android:layout_marginTop="5dip"
+                        android:background="@color/gray" />
+
+                    <!-- 年租金 -->
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dip"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:drawableLeft="@drawable/keeper_img_03"
+                            android:drawablePadding="10dip"
+                            android:singleLine="true"
+                            android:text="月租金"
+                            android:textColor="#666666"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/monthMoneyTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00 元"
+                            android:textColor="@color/blueme"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bag_right_arrow"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- 二维码 -->
+    <ImageView
+        android:id="@+id/qrImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="30dip" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请扫描二维码或输入关联号"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/numberTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:layout_marginTop="20dip"
+        android:text="00000000"
+        android:textColor="@color/blueme"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+
+            <!-- 意见反馈  关于我们 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/feedbackView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/gray" />
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/aboutusView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/gray" />
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/ourHistoryView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+
+            </LinearLayout>
+
+            <!-- 常见问题  联系我们 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/questionView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/gray" />
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/contactusView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <!-- 退出 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/logoutView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

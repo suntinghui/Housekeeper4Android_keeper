@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dip">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/head_keeper_default"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="中介公司"
+                android:textColor="#555555"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:text="地址"
+                android:textColor="#888888"
+                android:textSize="13sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+
+</LinearLayout>

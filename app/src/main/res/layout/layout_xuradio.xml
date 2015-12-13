@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/rootLayout"
+    android:background="@drawable/bg_lightblue_selector"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:paddingTop="15dip">
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:layout_weight="1"
+        android:text="租户承担"
+        android:textColor="#666666"
+        android:textSize="14sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        style="@style/CustomCheckboxTheme2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:background="@null"
+        android:checked="false" />
+
+</LinearLayout>

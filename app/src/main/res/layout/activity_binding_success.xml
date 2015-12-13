@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        layout="@layout/layout_topbar" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/suibian" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dip"
+            android:gravity="center_horizontal"
+            android:text="绑定成功"
+            android:textColor="@color/blueme"
+            android:textSize="20sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <!-- 姓名 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名:"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我有房"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 身份证号 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="身份证号:"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/idCardTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 银行卡 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="开户行:"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bankNameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- 银行卡号 -->
+
+        <LinearLayout
+            android:id="@+id/surplusMoneyLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="5dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="0dip" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="银行卡号:"
+                android:textColor="@color/gray"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/bankNumTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/doneBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:background="@drawable/blue_button_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="完    成"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+</LinearLayout>

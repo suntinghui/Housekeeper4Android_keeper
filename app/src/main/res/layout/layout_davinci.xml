@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="15dip"
+    android:background="@drawable/bg_white_gray"
+    android:paddingLeft="15dip"
+    android:paddingRight="15dip"
+    android:paddingTop="15dip">
+
+
+    <ImageView
+        android:id="@+id/logoImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/landlord_setting_01" />
+
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="个人设置"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未绑定"
+        android:textColor="#999999"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/rightArrowImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dip"
+        android:background="@drawable/bag_right_arrow" />
+
+
+</LinearLayout>

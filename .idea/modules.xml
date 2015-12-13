@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Housekeeper4Android_keeper.iml" filepath="$PROJECT_DIR$/Housekeeper4Android_keeper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/asymmetric_gridview/asymmetric_gridview.iml" filepath="$PROJECT_DIR$/asymmetric_gridview/asymmetric_gridview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cropview/cropview.iml" filepath="$PROJECT_DIR$/cropview/cropview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dropDownMenu/dropDownMenu.iml" filepath="$PROJECT_DIR$/dropDownMenu/dropDownMenu.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menuanimationlibrary/menuanimationlibrary.iml" filepath="$PROJECT_DIR$/menuanimationlibrary/menuanimationlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/nice_spinner/nice_spinner.iml" filepath="$PROJECT_DIR$/nice_spinner/nice_spinner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/paginationseekbarlib/paginationseekbarlib.iml" filepath="$PROJECT_DIR$/paginationseekbarlib/paginationseekbarlib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" filepath="$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/recyclerview_animators/recyclerview_animators.iml" filepath="$PROJECT_DIR$/recyclerview_animators/recyclerview_animators.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" filepath="$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" />
+    </modules>
+  </component>
+</project>

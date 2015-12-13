@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topTipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dip"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="20dip"
+            android:text="绑定微信可以方便我们客服与您联系，您也可以及时获得我们的投资讯息。"
+            android:textColor="@color/gray_666666"
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <!-- 微信 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="15dip">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="微信号"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/wechatEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入微信号"
+                android:maxLength="30"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/bottomTipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="20dip"
+            android:text="您的信息在审核中，如果需要修改请致电客服。"
+            android:textColor="@color/gray_666666"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="20dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="欢迎您关注我有房微信公众号:gugulicai，及时获取租赁资讯。"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/copyTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:paddingTop="15dip"
+                android:text="点击复制"
+                android:textColor="@color/blueme"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="确认"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

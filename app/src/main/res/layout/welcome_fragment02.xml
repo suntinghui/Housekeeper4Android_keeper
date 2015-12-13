@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/welcome_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/welcome_bg_02"
+    android:clipChildren="false"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/view"
+        android:layout_marginBottom="20dip"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/welcome_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dip"
+            android:layout_marginTop="20dip"
+            android:src="@drawable/welcome_head_02" />
+
+        <ImageView
+            android:id="@+id/welcome_middle"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/welcome_middle_02" />
+
+        <ImageView
+            android:id="@+id/welcome_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="40dip"
+            android:src="@drawable/welcome_bottom_02" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

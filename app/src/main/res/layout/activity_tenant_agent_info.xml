@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/com.wufriends.housekeeper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <!-- 信息 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:padding="15dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:src="@drawable/head_keeper_default"
+            app:border_color="@color/blueme"
+            app:border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="15dip">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="姓名："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/idCardTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="身份证号："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/companyTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:text="工作单位："
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <!-- 拨打电话 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/tenant_img_01"
+            android:drawablePadding="15dip"
+            android:gravity="center_vertical"
+            android:text="手机号码"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/telphoneTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:text=""
+            android:textColor="#999999"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/dialBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_orange_corner"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="拨打"
+            android:textColor="@color/orange"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 验证资料 -->
+    <LinearLayout
+        android:id="@+id/verifyProfileLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:padding="15dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/tenant_img_02"
+            android:drawablePadding="15dip"
+            android:gravity="center_vertical"
+            android:text="验证资料"
+            android:textColor="#666666"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_right_arrow" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

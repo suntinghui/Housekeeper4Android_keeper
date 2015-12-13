@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!-- 退租时间 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="退租时间"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/returnTimeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:editable="false"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="2015-09-30"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/keeper_img_05" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@color/gray" />
+
+            <!-- 应退金额 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="应退金额"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/returnMoneyTextView"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/edit_tip" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip"
+                android:text="提示：房管家需要检查配套设施是否有损坏，水电等费用是否已经结清，与租户沟通后确定退款金额。"
+                android:textColor="@color/orange"
+                android:textSize="13sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="10dip"
+                android:background="@color/gray" />
+
+            <!-- 交易密码 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="交易密码"
+                    android:textColor="#999999"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/pwdTextView"
+                        android:layout_width="100dip"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:gravity="right"
+                        android:maxLength="6"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:password="true"
+                        android:text=""
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/edit_tip" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip"
+                android:text="提示：请输入交易密码验证身份。"
+                android:textColor="@color/orange"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/commitBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="30dip"
+                android:background="@drawable/blue_button_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="确  定"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

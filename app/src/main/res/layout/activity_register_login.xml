@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f9f9f9"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:gravity="center_horizontal"
+            android:text="请输入手机号"
+            android:textColor="#333333"
+            android:textSize="16sp" />
+
+        <!-- 手机号码 -->
+
+        <LinearLayout
+            android:id="@+id/phoneLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/login_phone_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="10dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="10dip">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/login_phone_head" />
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dip"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请输入您的手机号码"
+                android:inputType="phone"
+                android:maxLength="11"
+                android:textColor="#666666"
+                android:textColorHint="#cccccc"
+                android:textSize="17sp" />
+
+            <Button
+                android:id="@+id/clearBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clear"
+                android:gravity="center_vertical"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="#e9f6f6"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <!-- 下一步 -->
+
+        <Button
+            android:id="@+id/nextBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="下一步"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我有房"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100元新人礼包"
+                android:textColor="@color/orange"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 最下面说明性文字 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:text="房管家全心全意为房东、租户服务"
+            android:textColor="@color/blueme"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

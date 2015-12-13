@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#1caff6"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我有房" />
+
+        <TextView
+            android:id="@+id/skipTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="跳过"
+            android:textSize="17sp" />
+    </RelativeLayout>
+
+    <!--
+         <me.everything.android.widget.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1.0"
+        android:background="@null" >
+    -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/topTipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dip"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="20dip"
+            android:text="特殊情况下，当我们无法与您取得联系时，紧急联系人将帮助我们找到您。"
+            android:textColor="@color/gray_666666"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/middleTipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="3dip"
+            android:paddingBottom="20dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="请确认“我有房”有访问手机联系人的权限。"
+            android:textColor="@color/gray"
+            android:textSize="14sp"
+            android:visibility="visible" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <!-- 姓名 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="00dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="姓名"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="请从通讯录选择"
+                android:maxLength="10"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/addContactImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:src="@drawable/contact_add" />
+
+            <Spinner
+                android:id="@+id/contactSpinner"
+                android:layout_width="0dip"
+                android:layout_height="0dip" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <!-- 电话 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="15dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="0dip"
+            android:paddingTop="15dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="电话"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/telphoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@null"
+                android:gravity="left"
+                android:hint="请从通讯录选择"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp" />
+
+            <!-- 占位 -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:src="@drawable/contact_add"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <!-- 关系 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="关系"
+                android:textColor="@color/gray_333333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/relationshipTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="1"
+                android:background="@drawable/bg_white_gray"
+                android:hint="请选择您与联系人的关系"
+                android:maxLength="18"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+                android:textColorHint="#cccccc"
+                android:textSize="16sp" />
+
+            <Spinner
+                android:id="@+id/relationshipSpinner"
+                android:layout_width="0dip"
+                android:layout_height="0dip" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dip"
+                android:src="@drawable/earnings_right_arrow" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <TextView
+            android:id="@+id/bottomTipTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:paddingTop="20dip"
+            android:text="您的信息在审核中，如果需要修改请致电客服。"
+            android:textColor="@color/gray_666666"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="40dip"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+    </LinearLayout>
+    <!-- </me.everything.android.widget.OverScrollView> -->
+
+</LinearLayout>

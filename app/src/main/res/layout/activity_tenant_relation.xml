@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/com.wufriends.housekeeper"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <cn.bingoogolapple.qrcode.zbar.ZBarView
+        android:id="@+id/zbarView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:qrcv_cornerColor="#B2DB4D"
+        app:qrcv_cornerLength="25dp"
+        app:qrcv_cornerSize="3dp"
+        app:qrcv_maskColor="#66ffffff"
+        app:qrcv_rectWidth="220dp"
+        app:qrcv_scanLineColor="#179641"
+        app:qrcv_scanLineSize="2dp"
+        app:qrcv_topOffset="90dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="50dip"
+        android:orientation="vertical"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip">
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dip"
+            android:text="如果无法扫描关联码您也可以手动输入进行关联"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <LinearLayout
+            android:id="@+id/inputLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="关联码"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/codeEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:background="@null"
+                android:hint="请输入关联码"
+                android:inputType="number"
+                android:maxLength="8"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+                android:textColor="#333333"
+                android:textColorHint="#aaaaaa"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
+        <Button
+            android:id="@+id/doneBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputLayout"
+            android:layout_marginTop="30dip"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="确  定"
+            android:textColor="#ffffff"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</RelativeLayout>

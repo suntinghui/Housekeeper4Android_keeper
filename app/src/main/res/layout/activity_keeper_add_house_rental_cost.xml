@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1">
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!-- 委托租期 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="委托租期"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/beginTimeTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:editable="false"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:text="2015-09-30"
+                        android:textColor="#666666"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:layout_marginRight="5dip"
+                    android:background="@drawable/keeper_img_05" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/yearCountEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="--"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:textColor="#666666"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="年"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <!-- 每年让租 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="每年让租期"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/letLeaseDayEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="--"
+                        android:inputType="numberDecimal"
+                        android:maxLength="2"
+                        android:paddingLeft="10dip"
+                        android:paddingRight="10dip"
+                        android:textColor="#666666"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="天"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <!-- 年租金 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="年租金"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="8dip">
+
+                    <EditText
+                        android:id="@+id/yearMoneyEditText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:hint="--"
+                        android:inputType="numberDecimal"
+                        android:maxLength="8"
+                        android:paddingLeft="30dip"
+                        android:paddingRight="30dip"
+                        android:textColor="#666666"
+                        android:textColorHint="#cccccc"
+                        android:textSize="14sp" />
+
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="1px"
+                        android:layout_marginTop="8dip"
+                        android:background="@color/gray" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dip"
+                    android:text="元"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+            </LinearLayout>
+
+            <!-- 所有的租期 -->
+            <RelativeLayout
+                android:id="@+id/allDateLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF1C2"
+                android:paddingBottom="10dip"
+                android:paddingRight="15dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginTop="10dip"
+                    android:gravity="left"
+                    android:text="每年交租日期"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <LinearLayout
+                    android:id="@+id/dateLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="vertical"></LinearLayout>
+
+            </RelativeLayout>
+
+            <!-- 房东违约 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dip"
+                android:background="#ffffff"
+                android:padding="15dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="房东违约"
+                    android:textColor="#666666"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/violateMonthTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每年扣1月租金"
+                    android:textColor="@color/redme"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/blue_line_1"
+                android:drawablePadding="8dip"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingTop="15dip"
+                android:text="租金包含"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView
+                    android:id="@+id/gridView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="#cccccc"
+                    android:dividerHeight="1px"
+                    android:fadingEdge="none"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:listSelector="#00000000" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:background="#cccccc" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/commitBtn"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:layout_marginTop="15dip"
+        android:background="@drawable/blue_button_selector"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip"
+        android:text="提交"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+</LinearLayout>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/catalog"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1.0"
+        android:background="#221caff6"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="0dip"
+        android:paddingTop="5dip"
+        android:text="A"
+        android:textColor="#333333" />
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_selector"
+        android:descendantFocusability="blocksDescendants"
+        android:orientation="vertical"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingTop="10dip">
+
+        <RelativeLayout
+            android:id="@+id/headLayout"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/bg_text_name">
+
+            <TextView
+                android:id="@+id/headTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="瑶"
+                android:textColor="#cccccc"
+                android:textSize="40sp" />
+        </RelativeLayout>
+
+        <!-- 姓名  手机号 -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dip"
+            android:layout_toRightOf="@id/headLayout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="周瑶"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/phoneNumTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="15110533624"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="50dip"
+            android:text="短信邀请"
+            android:textColor="#bbbbbb"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/rightArrowImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dip"
+            android:src="@drawable/bag_right_arrow" />
+
+    </RelativeLayout>
+</LinearLayout>

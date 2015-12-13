@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#1caff6"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我有房" />
+
+        <TextView
+            android:id="@+id/stepTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="1/2" />
+    </RelativeLayout>
+
+    <me.everything.android.widget.OverScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:alpha="1.0"
+        android:background="@null" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/topTipTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="3dip"
+                android:paddingBottom="20dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="20dip"
+                android:text="需要先验证登录密码，通过后才能修改交易密码"
+                android:textColor="@color/gray_666666"
+                android:textSize="14sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <!-- 登录密码 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="15dip"
+                android:paddingLeft="20dip"
+                android:paddingRight="20dip"
+                android:paddingTop="15dip" >
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="登录密码"
+                    android:textColor="@color/gray_333333"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/pwdEditText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="请输入登录密码"
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColorHint="#cccccc"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <Button
+                android:id="@+id/confirmBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="40dip"
+                android:background="@drawable/blue_button_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="验证"
+                android:textColor="#ffffff"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </me.everything.android.widget.OverScrollView>
+
+</LinearLayout>

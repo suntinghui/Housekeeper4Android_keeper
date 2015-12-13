@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/popupLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="10dip"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/cameraTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="拍照"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:alpha="1.0"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/PhotoTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_selector"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="从相册中选取"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:alpha="1.0"
+            android:background="@null" />
+
+        <TextView
+            android:id="@+id/cancelTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gray_button_selector"
+            android:gravity="center"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="取消"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="10dip"
+            android:alpha="1.0"
+            android:background="@null" />
+    </LinearLayout>
+
+</RelativeLayout>

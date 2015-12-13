@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="30dip"
+            android:layout_height="30dip"
+            android:background="@drawable/head_tenant_default"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/usernameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:singleLine="true"
+            android:text="租客"
+            android:layout_marginRight="10dip"
+            android:textColor="#666666"
+            android:textSize="14sp" />
+
+        <FrameLayout
+            android:layout_gravity="right"
+            android:id="@+id/operatorLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="30dip"
+            android:layout_weight="1"
+            android:background="@android:color/white"></FrameLayout>
+
+        <TextView
+            android:id="@+id/dialTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:background="@drawable/bg_blue_corner_3"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="拨打电话"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/setRemarkTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:background="@drawable/bg_orange_light_2"
+            android:paddingBottom="5dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="5dip"
+            android:text="设置备注"
+            android:textColor="#ffffff"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@color/gray_2" />
+
+    <TextView
+        android:id="@+id/remarkTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip"
+        android:text="备注"
+        android:textColor="#666666"
+        android:textSize="13sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/handleTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="未看房"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/starsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租房意向：3"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+</LinearLayout>

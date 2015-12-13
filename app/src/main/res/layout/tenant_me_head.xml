@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dip"
+        android:layout_marginTop="15dip"
+        android:text="您好，房管家"
+        android:textColor="#ffffff"
+        android:textSize="13sp"
+        android:visibility="invisible" />
+
+    <!-- 账号  余额 -->
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#22000000"
+        android:orientation="vertical"
+        android:paddingBottom="15dip"
+        android:paddingLeft="100dip"
+        android:paddingTop="10dip">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="账号："
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/telphoneTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="137****5315"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="余额："
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/balanceTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0.00 元"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/headLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="25dip"
+        android:layout_marginLeft="15dip"
+        android:background="#ffffff"
+        android:padding="2px">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/headImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/head_keeper_default"
+            android:scaleType="centerCrop" />
+
+    </LinearLayout>
+
+    <!-- 提现 -->
+
+    <Button
+        android:id="@+id/withdrawBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dip"
+        android:layout_marginRight="15dip"
+        android:background="@drawable/bg_white_corner_3"
+        android:paddingBottom="6dip"
+        android:paddingLeft="12dip"
+        android:paddingRight="12dip"
+        android:paddingTop="6dip"
+        android:text="提 现"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+
+</RelativeLayout>

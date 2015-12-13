@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_gray"
+    android:orientation="vertical"
+    android:padding="10dip">
+
+    <LinearLayout
+        android:id="@+id/infoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/headImageView"
+            android:layout_width="80dip"
+            android:layout_height="80dip"
+            android:background="@drawable/head_tenant_default"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/communityTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="小区名称"
+                android:textColor="#555555"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/areaTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:drawableLeft="@drawable/tenant_img_12"
+                android:drawablePadding="5dip"
+                android:text="昌平"
+                android:textColor="#999999"
+                android:textSize="13sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/monthMoneyTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="@color/orange"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="元/月"
+                    android:textColor="@color/orangeme"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:background="@color/gray" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/contactTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/blueme"
+            android:drawableLeft="@drawable/tenant_img_10"
+            android:drawablePadding="10dp"
+            android:paddingBottom="8dip"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:paddingTop="8dip"
+            android:text="联系房管家"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/deleteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dip"
+            android:background="@color/orange"
+            android:drawableLeft="@drawable/tenant_img_11"
+            android:drawablePadding="10dp"
+            android:paddingBottom="8dip"
+            android:paddingLeft="30dip"
+            android:paddingRight="30dip"
+            android:paddingTop="8dip"
+            android:text="删   除"
+            android:textColor="#ffffff"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

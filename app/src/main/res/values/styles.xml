@@ -1,0 +1,722 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- 取消动画 -->
+    <style name="Theme" parent="android:Theme">
+        <item name="android:windowAnimationStyle">@style/Animation</item>
+    </style>
+
+    <style name="Animation">
+        <item name="android:activityOpenEnterAnimation">@null</item>
+        <item name="android:activityOpenExitAnimation">@null</item>
+        <item name="android:activityCloseEnterAnimation">@null</item>
+        <item name="android:activityCloseExitAnimation">@null</item>
+        <item name="android:taskOpenEnterAnimation">@null</item>
+        <item name="android:taskOpenExitAnimation">@null</item>
+        <item name="android:taskCloseEnterAnimation">@null</item>
+        <item name="android:taskCloseExitAnimation">@null</item>
+        <item name="android:taskToFrontEnterAnimation">@null</item>
+        <item name="android:taskToFrontExitAnimation">@null</item>
+        <item name="android:taskToBackEnterAnimation">@null</item>
+        <item name="android:taskToBackExitAnimation">@null</item>
+    </style>
+
+    <style name="ProgressHUD" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="ContentOverlay" parent="@android:style/Theme.Dialog">
+        <item name="android:focusable">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="MyDialogStyleBottom" parent="android:Theme.Dialog">
+        <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+
+        <!-- 边框 -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上,非常重要，必须为false，否则会有边框 -->
+        <item name="android:windowIsFloating">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowIsTranslucent">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:paddingLeft">0dp</item>
+    </style>
+
+    <!-- 按钮样式 -->
+    <style name="tab_button_bg">
+
+        <!-- <item name="android:gravity">center</item> -->
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="black_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="white_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="orange_13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="orange_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="purple_14_aa91c4">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#aa91c4</item>
+    </style>
+
+    <style name="purple_17_aa91c4">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#aa91c4</item>
+    </style>
+
+    <style name="purple_14_4E4696">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#4E4696</item>
+    </style>
+
+    <style name="purple_13_4E4696">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#4E4696</item>
+    </style>
+
+    <style name="purple_12_4E4696">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#4E4696</item>
+    </style>
+
+    <style name="purple_15_4E4696">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#4E4696</item>
+    </style>
+
+    <style name="gray01_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_12">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_13">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_13_999999">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_14_999999">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_16_999999">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_15_999999">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_12_999999">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_17_999999">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_15_333333">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="purple_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#615da7</item>
+    </style>
+
+    <style name="purple_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#8884bd</item>
+    </style>
+
+    <style name="purple_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#615da7</item>
+    </style>
+
+    <style name="gray_15_o">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#999999</item>
+    </style>
+
+    <style name="gray_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#666666</item>
+    </style>
+
+    <style name="gray_18_333333">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="gree_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#00CC66</item>
+    </style>
+
+    <style name="yellow_16_fcb150">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#fcb150</item>
+    </style>
+
+    <style name="yellow_17_fcb150">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#fcb150</item>
+    </style>
+
+    <style name="yellow_14_fcb150">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#fcb150</item>
+    </style>
+
+    <style name="black_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="black_15_333333">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="black_16_333333">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="blue_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#2a95d3</item>
+    </style>
+
+    <style name="blue_14">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#2a95d3</item>
+    </style>
+
+    <style name="blue_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#2a95d3</item>
+    </style>
+
+    <style name="white_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_3_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="gree_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#00CC66</item>
+    </style>
+
+    <style name="black_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="gray_16_3">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="gray_17_3">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#333333</item>
+    </style>
+
+    <style name="gree_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#00CC66</item>
+    </style>
+
+    <style name="black_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="green_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#00CCCC</item>
+    </style>
+
+    <style name="red_12_D94965">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#D94965</item>
+    </style>
+
+    <style name="red_14_D94965">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D94965</item>
+    </style>
+
+    <style name="red_13_D94965">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#D94965</item>
+    </style>
+
+    <style name="red_14_f50000">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#f50000</item>
+    </style>
+
+    <style name="red_15_F63E13">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#F63E13</item>
+    </style>
+
+    <style name="red_16_D94965">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#D94965</item>
+    </style>
+
+    <style name="orange_16">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="orange_15">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="orange_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="orange_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#FF6600</item>
+    </style>
+
+    <style name="orange_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FF6600</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="orange_15_E89223">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#E89223</item>
+    </style>
+
+    <style name="white_17">
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="white_20">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="black_18">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="CenterMsgNewsTabUnSelectedText">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/tab_text_unselected</item>
+    </style>
+
+    <!--
+    <style name="PopupAnimation" mce_bogus="1" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/popup_in</item>
+        <item name="android:windowExitAnimation">@anim/popup_out</item>
+    </style>
+    -->
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector</item>
+    </style>
+
+    <style name="CustomCheckboxTheme2" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_selector_2</item>
+    </style>
+
+    <style name="Dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <declare-styleable name="StickyListHeadersListView">
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding" />
+        <attr name="android:scrollbars" />
+        <attr name="android:overScrollMode" />
+        <attr name="android:padding" />
+        <attr name="android:paddingLeft" />
+        <attr name="android:paddingTop" />
+        <attr name="android:paddingRight" />
+        <attr name="android:paddingBottom" />
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength" />
+        <attr name="android:requiresFadingEdge" />
+        <attr name="android:cacheColorHint" />
+        <attr name="android:choiceMode" />
+        <attr name="android:drawSelectorOnTop" />
+        <attr name="android:fastScrollEnabled" />
+        <attr name="android:fastScrollAlwaysVisible" />
+        <attr name="android:listSelector" />
+        <attr name="android:scrollingCache" />
+        <attr name="android:scrollbarStyle" />
+        <attr name="android:divider" />
+        <attr name="android:dividerHeight" />
+        <attr name="android:transcriptMode" />
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean" />
+        <attr name="isDrawingListUnderStickyHeader" format="boolean" />
+    </declare-styleable>
+
+    <style name="PopupAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+    <declare-styleable name="Rotate3dAnimation">
+        <attr name="rollType" format="enum">
+            <enum name="x" value="0" />
+            <enum name="y" value="1" />
+            <enum name="z" value="2" />
+        </attr>
+        <attr name="fromDeg" format="float" />
+        <attr name="toDeg" format="float" />
+        <attr name="pivotX" format="fraction" />
+        <attr name="pivotY" format="fraction" />
+    </declare-styleable>
+
+    <style name="alert_dialog" parent="android:Theme.Dialog">
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.4</item>
+    </style>
+
+    <style name="dialog_blue_button" parent="android:Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/blue_button_background</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:paddingLeft">21dp</item>
+        <item name="android:paddingRight">21dp</item>
+        <item name="android:paddingTop">5dp</item>
+        <item name="android:paddingBottom">5dp</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <style name="SelectableItem">
+        <item name="android:background">@android:drawable/list_selector_background</item>
+    </style>
+
+    <!-- 基本信息 -->
+    <style name="base_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:paddingRight">18dip</item>
+        <item name="android:paddingTop">12dip</item>
+        <item name="android:paddingBottom">12dip</item>
+    </style>
+
+    <style name="base_item_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1px</item>
+        <item name="android:background">@color/gray</item>
+    </style>
+
+    <!-- me -->
+    <style name="me_tiem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">10dip</item>
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:paddingRight">18dip</item>
+    </style>
+    <!-- add -->
+    <style name="add_tiem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">13dip</item>
+        <item name="android:paddingTop">13dip</item>
+        <item name="android:paddingLeft">18dip</item>
+        <item name="android:paddingRight">18dip</item>
+    </style>
+    <!-- common -->
+    <style name="common_title" parent="white_18">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+
+    <style name="edit_text" parent="gray_17">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:background">@null</item>
+        <item name="android:longClickable">false</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColorHint">#999999</item>
+    </style>
+
+    <style name="edit_text_l" parent="edit_text">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="BaseTextViewStyle" parent="@android:style/Widget.TextView" />
+
+    <style name="BaseButtonStyle" parent="@android:style/Widget.Button" />
+
+    <style name="BaseEditTextStyle" parent="@android:style/Widget.EditText" />
+
+    <style name="BaseCheckBoxStyle" parent="@android:style/Widget.CompoundButton.CheckBox" />
+
+    <style name="BaseRadioButtonStyle" parent="@android:style/Widget.CompoundButton.RadioButton" />
+
+    <style name="BaseAutoCompleteTextViewStyle" parent="@android:style/Widget.AutoCompleteTextView" />
+
+    <style name="BaseToggleButtonStyle" parent="@android:style/Widget.Button.Toggle" />
+
+    <style name="BaseAppTheme" parent="@android:style/Theme.Light.NoTitleBar" />
+
+    <style name="Theme.Start" parent="android:Theme">
+        <item name="android:windowBackground">@drawable/welcome_bg</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="NumberProgressBar_Default">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#3498DB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#3498DB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Passing_Green">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#70A800</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#70A800</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Beauty_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF3D7F</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF3D7F</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Warning_Red">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#E74C3C</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#E74C3C</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Relax_Blue">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#6DBCDB</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#6DBCDB</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Grace_Yellow">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FFC73B</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FFC73B</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Funny_Orange">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#FF530D</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#FF530D</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+    <style name="NumberProgressBar_Twinkle_Night">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="progress_max">100</item>
+        <item name="progress_current">0</item>
+        <item name="progress_unreached_color">#CCCCCC</item>
+        <item name="progress_reached_color">#ECF0F1</item>
+        <item name="progress_text_size">10sp</item>
+        <item name="progress_text_color">#ECF0F1</item>
+        <item name="progress_reached_bar_height">1.5dp</item>
+        <item name="progress_unreached_bar_height">0.75dp</item>
+    </style>
+
+</resources>

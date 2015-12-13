@@ -1,0 +1,305 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <com.housekeeper.activity.view.DavinciView
+            android:id="@+id/houseInfoView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <com.housekeeper.activity.view.DavinciView
+            android:id="@+id/houseDeedView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" />
+
+        <com.housekeeper.activity.view.DavinciView
+            android:id="@+id/agencyContractView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" />
+
+        <com.housekeeper.activity.view.DavinciView
+            android:id="@+id/rentalCostView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dip" />
+
+        <!-- 租房详细信息 -->
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/infoLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#FFF1C2"
+                android:orientation="vertical"
+                android:paddingBottom="15dip"
+                android:paddingTop="15dip"
+                android:visibility="gone">
+
+                <!-- 委托租金 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="委托租金："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/begingDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-01-01"
+                        android:textColor="@color/blueme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 至 "
+                        android:textColor="#999999"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/endDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-01-01"
+                        android:textColor="@color/blueme"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 每年让租期 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="每年让租期："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/letLeaseDayTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="30 天"
+                        android:textColor="@color/orange"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 年租金 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="#E1F5FF"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="10dip"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip"
+                    android:paddingTop="10dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="年租金："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/yearMoneyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 元"
+                        android:textColor="@color/redme"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 取暖费 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="取暖费："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/heatingFeesMoneyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 元"
+                        android:textColor="@color/redme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/heatingFeesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="（房东承担）"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 物业费 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="10dip"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="物业费："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/propertyFeesMoneyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="0 元"
+                        android:textColor="@color/redme"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/propertyFeesTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="（房东承担）"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <!-- 所有的租期 -->
+                <RelativeLayout
+                    android:id="@+id/allDateLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:paddingBottom="10dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dip"
+                        android:layout_marginTop="10dip"
+                        android:gravity="left"
+                        android:text="每年交租日期："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <LinearLayout
+                        android:id="@+id/dateLayout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:orientation="vertical"></LinearLayout>
+
+                </RelativeLayout>
+
+                <!-- 房东违约 -->
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="15dip"
+                    android:paddingRight="15dip">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="房东违约："
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/violateMonthTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="扣除0个月租金"
+                        android:textColor="@color/redme"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/deleteHouseTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/red_button_selector_2"
+        android:gravity="center"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip"
+        android:text="删除房源"
+        android:textColor="#ffffff"
+        android:textSize="16sp" />
+
+
+</LinearLayout>

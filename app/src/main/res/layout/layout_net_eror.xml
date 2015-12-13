@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="50dip"
+    android:background="@color/purple_aa91c4"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dip"
+    android:paddingRight="10dip" >
+
+    <ImageView
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:src="@drawable/ic_launcher" />
+
+    <LinearLayout
+        android:id="@+id/settingLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dip"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:focusable="false"
+            android:text="网络不可用，点击设置网络"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:text="点击去设置网络"
+            android:textColor="#ffffff"
+            android:textSize="12sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/closeLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="0dip" >
+
+        <ImageView
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:src="@drawable/detail_down" />
+    </LinearLayout>
+
+</LinearLayout>

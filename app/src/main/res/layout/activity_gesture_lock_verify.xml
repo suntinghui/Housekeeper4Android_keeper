@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_gesture_lock"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/topbarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="#1caff6"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/backBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_back" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/white_18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="验证手势密码" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tipTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:gravity="center"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip"
+        android:text="绘制解锁图案"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+    <com.housekeeper.activity.gesture.LockPatternView
+        android:id="@+id/lock_pattern"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/forgetTextView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:gravity="center"
+        android:text="忘记手势密码"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+</LinearLayout>

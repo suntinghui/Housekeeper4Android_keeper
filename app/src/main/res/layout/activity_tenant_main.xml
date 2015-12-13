@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <TabHost
+        android:id="@android:id/tabhost"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="0dip"
+                android:layout_weight="1"></FrameLayout>
+
+            <!-- 隐藏TabWidget -->
+
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"></TabWidget>
+
+            <!-- 视觉上,用单选按钮替代TabWidget -->
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <FrameLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/main_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_7"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingBottom="5dip"
+                    android:paddingTop="5dip">
+
+                    <!-- 首页 -->
+
+                    <RadioButton
+                        android:id="@+id/tab_main_home"
+                        style="@style/tab_button_bg"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/clear"
+                        android:checked="true"
+                        android:drawableTop="@drawable/keeper_tab_home" />
+
+                    <!-- 我 -->
+
+                    <RadioButton
+                        android:id="@+id/tab_main_me"
+                        style="@style/tab_button_bg"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/clear"
+                        android:checked="false"
+                        android:drawableTop="@drawable/keeper_tab_me" />
+
+                    <!-- 关联 -->
+
+                    <RadioButton
+                        android:id="@+id/tab_main_add"
+                        style="@style/tab_button_bg"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/clear"
+                        android:drawableTop="@drawable/keeper_tab_add" />
+
+                    <!-- 设置 -->
+
+                    <RadioButton
+                        android:id="@+id/tab_main_setting"
+                        style="@style/tab_button_bg"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/clear"
+                        android:drawableTop="@drawable/keeper_tab_setting" />
+
+                </RadioGroup>
+
+                <!-- 实现右上角的提醒 -->
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:background="#00000000"
+                    android:orientation="horizontal">
+
+                    <!-- 首页 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <!-- 我 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <!-- 关联 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                    <!-- 设置 -->
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="right"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:src="@drawable/red_circle"
+                            android:visibility="invisible" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+
+</LinearLayout>

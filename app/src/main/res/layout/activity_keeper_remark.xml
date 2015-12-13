@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:text="以下设置的信息仅自己可见。"
+                android:textColor="#666666"
+                android:textSize="13sp" />
+
+            <EditText
+                android:id="@+id/remarkEditText"
+                android:layout_width="fill_parent"
+                android:layout_height="120dip"
+                android:layout_margin="15dip"
+                android:background="@drawable/bg_white_corner_4"
+                android:gravity="top"
+                android:hint="填写备注，如约定明天下午13点看房等等"
+                android:maxLines="4"
+                android:padding="15dip"
+                android:textColor="#666666"
+                android:textColorHint="#cccccc"
+                android:textSize="15sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="是否已经看房"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <Button
+                    android:id="@+id/handleBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_toggle_on" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="10dip"
+                android:paddingLeft="15dip"
+                android:paddingRight="15dip"
+                android:paddingTop="10dip">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="租房意向"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <com.flashgugu.library.widgets.paginationseekbar.PaginationSeekBar
+                    android:id="@+id/starsSeekbar"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dip"
+                    android:layout_weight="1"
+                    app:psb_indicatorColor="@color/colorPirmary"
+                    app:psb_pageCountPerOneBoard="0"
+                    app:psb_progressColor="@color/colorPrimaryDark"
+                    app:psb_thumbTextColor="#F5F5F5" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+
+            <Button
+                android:id="@+id/commitBtn"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="40dip"
+                android:background="@drawable/blue_button_selector"
+                android:paddingBottom="10dip"
+                android:paddingTop="10dip"
+                android:text="设   置"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

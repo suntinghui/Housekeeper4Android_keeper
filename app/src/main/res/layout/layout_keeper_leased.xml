@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/com.wufriends.housekeeper"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 房屋信息 -->
+    <LinearLayout
+        android:id="@+id/houseInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/headImageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/head_tenant_default"
+            android:scaleType="fitXY" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addressTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/keeper_img_01"
+                android:drawablePadding="10dip"
+                android:singleLine="true"
+                android:text="小区名字 楼号/单元/门牌号"
+                android:textColor="#666666"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/cityTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="22dip"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:text="北京市 昌平区 回龙观"
+                android:textColor="#999999"
+                android:textSize="12sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="5dip"
+                    android:background="@color/gray" />
+
+                <!-- 委托租期 -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/keeper_img_02"
+                        android:drawablePadding="10dip"
+                        android:singleLine="true"
+                        android:text="委托租期"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/begingDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dip"
+                        android:text="2015-01-01"
+                        android:textColor="@color/blueme"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dip"
+                        android:layout_marginRight="5dip"
+                        android:text="至"
+                        android:textColor="#999999"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/endDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-12-31"
+                        android:textColor="@color/blueme"
+                        android:textSize="12sp" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <!-- 租户信息 -->
+    <LinearLayout
+        android:id="@+id/tenantInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dip">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/tenantLogoImageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/head_tenant_default"
+            app:border_color="@color/blueme"
+            app:border_width="1dp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dip"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <!-- 租户姓名 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/keeper_img_08"
+                    android:drawablePadding="10dip"
+                    android:text="租户"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tenantNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="房管家"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tenantTelphoneTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:text="13718805315"
+                    android:textColor="#999999"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+            <!-- 工作地点 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/keeper_img_09"
+                    android:drawablePadding="10dip"
+                    android:text="工作地点"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tenantAddressTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dip"
+                    android:singleLine="true"
+                    android:text="北京"
+                    android:textColor="#666666"
+                    android:textSize="13sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bag_right_arrow" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+    <!-- 房东信息 -->
+    <LinearLayout
+        android:id="@+id/landlordInfoLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="15dip"
+        android:visibility="gone">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/landlordLogoImageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:src="@drawable/head_tenant_default"
+            app:border_color="@color/blueme"
+            app:border_width="1dp" />
+
+        <TextView
+            android:id="@+id/landlordNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dip"
+            android:text="房东"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/returnLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <TextView
+            android:id="@+id/returnTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:lineSpacingExtra="5dip"
+            android:text="该房源已经申请退租，退租时间是2015-01-01，需退还金额0.00元。"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <Button
+            android:id="@+id/returnBtn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:background="@drawable/blue_button_selector"
+            android:paddingBottom="10dip"
+            android:paddingTop="10dip"
+            android:text="退   租"
+            android:textColor="#ffffff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+</LinearLayout>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/infoLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip"
+        android:paddingTop="10dip">
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            style="@style/CustomCheckboxTheme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:checked="false" />
+
+        <TextView
+            android:id="@+id/monthTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_weight="1"
+            android:text="1/12"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/monthMoneyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="租金：0.00元"
+            android:textColor="@color/orange"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="15dip"
+        android:paddingRight="15dip">
+
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="2015-01-01"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/commissionTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="佣金：0.00元"
+            android:textColor="#666666"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+
+</LinearLayout>

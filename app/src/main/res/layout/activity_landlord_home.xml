@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_2"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/layout_topbar"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <!-- head -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/landlord_img_01">
+
+                <com.housekeeper.activity.view.CustomNetworkImageView
+                    android:id="@+id/logoImageView"
+                    android:layout_width="60dip"
+                    android:layout_height="60dip"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginTop="20dip"
+                    android:src="@drawable/head_tenant_default" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingRight="20dip">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dip"
+                            android:text="账户余额(元)："
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/balanceTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0.00"
+                            android:textColor="#ffffff"
+                            android:textSize="18sp" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/withdrawTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="5dip"
+                        android:drawableRight="@drawable/landlord_right_arrow"
+                        android:paddingBottom="15dip"
+                        android:paddingLeft="15dip"
+                        android:paddingTop="10dip"
+                        android:text="点击提现"
+                        android:textColor="#ffffff"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <!-- 租金收入合计  房屋剩余贷款 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <!-- 租金收入合计 -->
+
+                <LinearLayout
+                    android:id="@+id/totalRentLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/landlord_img_03"
+                        android:drawablePadding="5dip"
+                        android:text="租金收入合计(元)"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/totalRentTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:text="0.00"
+                        android:textColor="@color/orange"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系房管家托管租房"
+                        android:textColor="@color/orangeme"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/earnings_right_arrow" />
+
+                <View
+                    android:layout_width="1px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/gray" />
+
+                <!--  房屋剩余贷款 -->
+
+                <LinearLayout
+                    android:id="@+id/loanMoneyLayout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_white_gray"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableLeft="@drawable/landlord_img_02"
+                        android:drawablePadding="5dip"
+                        android:text="房屋剩余贷款(元)"
+                        android:textColor="#666666"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/loanMoneyTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dip"
+                        android:layout_marginTop="10dip"
+                        android:text="0.00"
+                        android:textColor="@color/greenme"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="联系房管家托管租房"
+                        android:textColor="@color/green"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/earnings_right_arrow" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:background="@color/gray" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginTop="20dip"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

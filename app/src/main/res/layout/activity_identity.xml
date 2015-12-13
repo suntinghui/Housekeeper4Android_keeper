@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/clear" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <!-- 地区选择器 -->
+
+        <com.housekeeper.activity.view.IdentityPicker
+            android:id="@+id/identityPicker"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:gravity="center"></com.housekeeper.activity.view.IdentityPicker>
+
+        <Button
+            android:id="@+id/btn_confirm"
+            style="@style/white_18"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/blue_button_selector"
+            android:text="确   定" />
+    </LinearLayout>
+
+</LinearLayout>
