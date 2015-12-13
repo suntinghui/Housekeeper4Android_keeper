@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_gray"
+        android:orientation="vertical"
+        android:padding="15dip">
+
+        <com.housekeeper.activity.view.CustomNetworkImageView
+            android:id="@+id/logoImageView"
+            android:layout_width="50dip"
+            android:layout_height="50dip"
+            android:background="@drawable/fenqi_head_default" />
+
+        <TextView
+            android:id="@+id/noTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="5dip"
+            android:layout_toRightOf="@id/logoImageView"
+            android:text="债权编码："
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/numTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/noTextView"
+            android:layout_marginLeft="3dip"
+            android:layout_toRightOf="@id/noTextView"
+            android:text="000000"
+            android:textColor="@color/blueme"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/realNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/noTextView"
+            android:layout_below="@id/numTextView"
+            android:layout_marginTop="10dip"
+            android:singleLine="true"
+            android:text="000000"
+            android:textColor="#666666"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/orgTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/realNameTextView"
+            android:layout_marginLeft="10dip"
+            android:layout_toRightOf="@id/realNameTextView"
+            android:text="000000"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/gray" />
+
+</LinearLayout>
