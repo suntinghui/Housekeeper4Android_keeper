@@ -7,6 +7,7 @@ import android.app.ActivityManager;
 import android.app.ActivityManager.RunningTaskInfo;
 import android.content.Context;
 import android.content.SharedPreferences;
+import android.content.pm.ApplicationInfo;
 import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.view.View;
@@ -25,7 +26,7 @@ public class ActivityUtil {
 
     /**
      * 判断应用是否正在运行
-     * <p>
+     * <p/>
      * ture 正在运行 反之，则说明还没有启动应用
      *
      * @param context
@@ -119,5 +120,19 @@ public class ActivityUtil {
             e.printStackTrace();
             return "";
         }
+    }
+
+    // 判断是否安装了应用
+    public static boolean isPackageExists(Context context, String targetPackage) {
+        List<ApplicationInfo> packages;
+        PackageManager pm;
+        pm = context.getPackageManager();
+        packages = pm.getInstalledApplications(0);
+        for (ApplicationInfo packageInfo : packages) {
+            if (packageInfo.packageName.equals(targetPackage)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -165,23 +165,7 @@ public class LandlordSettingActivity extends BaseActivity implements View.OnClic
     private void responseUserMy() {
         // 绑定银行卡状态 a未绑定 c绑定失败 d确认中 e已绑定
         String status = "";
-        switch (infoDto.getBankCardStatus()) {
-            case 'a':
-                status = "未绑定";
-                break;
 
-            case 'c':
-                status = "绑定失败";
-                break;
-
-            case 'd':
-                status = "确认中";
-                break;
-
-            case 'e':
-                status = "已绑定";
-                break;
-        }
         bankCardView.getTipTextView().setText(status);
     }
 

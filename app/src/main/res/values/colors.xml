@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="barcolor">#F8BB4C</color>
     <color name="splash_bg">#3a90e9</color>
     <color name="white">#ffffff</color>
     <color name="white_1">#fdfcfc</color>
@@ -16,6 +17,7 @@
     <color name="lightyellow">#66FEEBA8</color>
     <color name="yellow_1">#fbc24d</color>
     <color name="yellow_2">#fbba42</color>
+    <color name="yellow_3">#F8BB4C</color>
     <color name="yellow_F4DCBE">#F4DCBE</color>
     <color name="yellow_fcb150">#fcb150</color>
     <color name="purple_1">#aa91c4</color>
@@ -33,7 +35,7 @@
     <color name="blue_E1F5FF">#E1F5FF</color>
     <color name="orange">#FF6600</color>
     <color name="orange_1">#ff5000</color>
-    <color name="orange_2">#FF9900</color>
+    <color name="orange_2">#FBA014</color>
     <color name="orange_3">#66FBA014</color>
     <color name="orange_f50000">#f50000</color>
     <color name="orangeme">#FDBF60</color>
@@ -49,7 +51,7 @@
     <color name="gray_8">#5c5c5c</color>
     <color name="gray_9">#F9F9F9</color>
     <color name="gray_10">#bbbbbb</color>
-    <color name="gray_11">#CCCCCC</color>
+    <color name="gray_11">#D1d1d1</color>
     <color name="gray_12">#66D1d1d1</color>
     <color name="gray_666666">#666666</color>
     <color name="lightgray">#EEEEEE</color>

@@ -23,10 +23,6 @@ public class MyAppAgentDto extends MyAppDto {
 	 * 待租中
 	 */
 	private int waitLeaseCount;
-	/**
-	 * 绑定银行卡状态 a未绑定 c绑定失败 d确认中 e已绑定
-	 */
-	private char bankCardStatus;
 
 	public int getHouseCount() {
 		return houseCount;
@@ -66,14 +62,6 @@ public class MyAppAgentDto extends MyAppDto {
 
 	public void setWaitLeaseCount(int waitLeaseCount) {
 		this.waitLeaseCount = waitLeaseCount;
-	}
-
-	public char getBankCardStatus() {
-		return bankCardStatus;
-	}
-
-	public void setBankCardStatus(char bankCardStatus) {
-		this.bankCardStatus = bankCardStatus;
 	}
 
 }

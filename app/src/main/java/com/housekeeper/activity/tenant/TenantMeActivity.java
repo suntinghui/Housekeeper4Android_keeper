@@ -21,7 +21,6 @@ import com.ecloud.pulltozoomview.PullToZoomScrollViewEx;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.WithdrawalsActivity;
 import com.housekeeper.activity.view.CustomNetworkImageView;
-import com.housekeeper.activity.view.TenantMeItemLayout;
 import com.housekeeper.client.ActivityManager;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
@@ -166,13 +165,13 @@ public class TenantMeActivity extends BaseActivity implements View.OnClickListen
 
         int i = 0;
         for (UserHouseListAppDto dto : userDto.getHouses()) {
-            TenantMeItemLayout itemLayout = new TenantMeItemLayout(this);
-            itemLayout.setData(dto);
-            itemLayout.setSurplusMoney(userDto.getSurplusMoney());
-
-            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
-            params.setMargins(0, i == 0 ? 0 : AdapterUtil.dip2px(this, 20), 0, 0);
-            contentLayout.addView(itemLayout, params);
+//            TenantMeItemLayout itemLayout = new TenantMeItemLayout(this);
+//            itemLayout.setData(dto);
+//            itemLayout.setSurplusMoney(userDto.getSurplusMoney());
+//
+//            LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+//            params.setMargins(0, i == 0 ? 0 : AdapterUtil.dip2px(this, 20), 0, 0);
+//            contentLayout.addView(itemLayout, params);
 
             i++;
         }

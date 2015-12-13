@@ -1,6 +1,7 @@
 package com.ares.house.dto.app;
 
 import com.housekeeper.model.EquipmentAppDtoEx;
+import com.housekeeper.model.RentContainAppDtoEx;
 
 import java.io.Serializable;
 import java.util.List;
@@ -66,7 +67,7 @@ public class HouseReleaseInfoAppDto implements Serializable {
 	/**
 	 * 租金包含
 	 */
-	private List<RentContainAppDto> rentContains;
+	private List<RentContainAppDtoEx> rentContains;
 	/**
 	 * 取暖费
 	 */
@@ -99,6 +100,14 @@ public class HouseReleaseInfoAppDto implements Serializable {
 	 * 已预约看房数量
 	 */
 	private int reserveCount;
+	/**
+	 * 经度
+	 */
+	private String longitude;
+	/**
+	 * 纬度
+	 */
+	private String latitude;
 
 	public int getHouseId() {
 		return houseId;
@@ -276,11 +285,27 @@ public class HouseReleaseInfoAppDto implements Serializable {
 		this.reserveCount = reserveCount;
 	}
 
-	public List<RentContainAppDto> getRentContains() {
+	public List<RentContainAppDtoEx> getRentContains() {
 		return rentContains;
 	}
 
-	public void setRentContains(List<RentContainAppDto> rentContains) {
+	public void setRentContains(List<RentContainAppDtoEx> rentContains) {
 		this.rentContains = rentContains;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
 	}
 }

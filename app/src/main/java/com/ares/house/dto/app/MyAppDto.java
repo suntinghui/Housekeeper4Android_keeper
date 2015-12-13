@@ -23,6 +23,18 @@ public class MyAppDto implements Serializable {
 	 * 剩余可用/可提现金额
 	 */
 	private String surplusMoney;
+	/**
+	 * 活期金额
+	 */
+	private String hqMoney;
+	/**
+	 * 活期收益率
+	 */
+	private String hqRate;
+	/**
+	 * 活期昨日收益
+	 */
+	private String hqYesterday;
 
 	public String getLogoUrl() {
 		return logoUrl;
@@ -46,6 +58,30 @@ public class MyAppDto implements Serializable {
 
 	public void setSurplusMoney(String surplusMoney) {
 		this.surplusMoney = surplusMoney;
+	}
+
+	public String getHqMoney() {
+		return hqMoney;
+	}
+
+	public void setHqMoney(String hqMoney) {
+		this.hqMoney = hqMoney;
+	}
+
+	public String getHqRate() {
+		return hqRate;
+	}
+
+	public void setHqRate(String hqRate) {
+		this.hqRate = hqRate;
+	}
+
+	public String getHqYesterday() {
+		return hqYesterday;
+	}
+
+	public void setHqYesterday(String hqYesterday) {
+		this.hqYesterday = hqYesterday;
 	}
 
 }

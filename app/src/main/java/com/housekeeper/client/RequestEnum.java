@@ -101,8 +101,34 @@ public class RequestEnum {
             requestMap.put(HOUSE_RELEASE_INFO, new RequestModel(HOUSE_RELEASE_INFO, Constants.HOST_IP_REQ + "/rpc/house/release/info.app"));
             requestMap.put(LEASE_RELEASE_LIST, new RequestModel(LEASE_RELEASE_LIST, Constants.HOST_IP_REQ + "/rpc/lease/release/list.app"));
             requestMap.put(LEASE_WITHDRAW, new RequestModel(LEASE_WITHDRAW, Constants.HOST_IP_REQ + "/rpc/lease/withdraw.app"));
-            requestMap.put(HOUSE_SET_POSITION, new RequestModel(HOUSE_SET_POSITION, Constants.HOST_IP_REQ + "/rpc/house/set/position.app"));
+            requestMap.put(HOUSE_RECOMMEND, new RequestModel(HOUSE_RECOMMEND, Constants.HOST_IP_REQ + "/rpc/house/recommend.app"));
 
+            requestMap.put(MESSAGE_LIST_2, new RequestModel(MESSAGE_LIST_2, Constants.HOST_IP_REQ + "/rpc/message/list2.app"));
+            requestMap.put(MESSAGEREAD, new RequestModel(MESSAGEREAD, Constants.HOST_IP_REQ + "/rpc/message/read.app"));
+            requestMap.put(MESSAGE_SHARE, new RequestModel(MESSAGE_SHARE, Constants.HOST_IP_REQ + "/rpc/message/share.app"));
+
+            requestMap.put(TOP_IMG, new RequestModel(TOP_IMG, Constants.HOST_IP_REQ + "/rpc/top/img.app"));
+            requestMap.put(USER_SET_AUTOPAY, new RequestModel(USER_SET_AUTOPAY, Constants.HOST_IP_REQ + "/rpc/user/set/autopay.app"));
+            requestMap.put(DEBT_HQ_INFO, new RequestModel(DEBT_HQ_INFO, Constants.HOST_IP_REQ + "/rpc/debt/hq/info.app"));
+            requestMap.put(DEBT_HQ_RANSOM, new RequestModel(DEBT_HQ_RANSOM, Constants.HOST_IP_REQ + "/rpc/debt/hq/ransom.app"));
+            requestMap.put(DEBT_BUY_SENDVCODE, new RequestModel(DEBT_BUY_SENDVCODE, Constants.HOST_IP_REQ + "/rpc/debt/buy/sendvcode.app"));
+            requestMap.put(DEBT_BUY, new RequestModel(DEBT_BUY, Constants.HOST_IP_REQ + "/rpc/debt/buy.app"));
+            requestMap.put(DEBT_PAYTYPE, new RequestModel(DEBT_PAYTYPE, Constants.HOST_IP_REQ + "/rpc/debt/paytype.app"));
+            requestMap.put(USER_EARNINGS_LIST, new RequestModel(USER_EARNINGS_LIST, Constants.HOST_IP_REQ + "/rpc/user/earnings/list.app"));
+            requestMap.put(DEBT_SOURCE_LIST, new RequestModel(DEBT_SOURCE_LIST, Constants.HOST_IP_REQ + "/rpc/debt/source/list.app"));
+            requestMap.put(DEBT_ORDER_INFO, new RequestModel(DEBT_ORDER_INFO, Constants.HOST_IP_REQ + "/rpc/debt/order/info.app"));
+            requestMap.put(TRANSFER_HISTORY, new RequestModel(TRANSFER_HISTORY, Constants.HOST_IP_REQ + "/rpc/user/money/history.app"));
+            requestMap.put(LEASE_USER_RENT_INFO, new RequestModel(LEASE_USER_RENT_INFO, Constants.HOST_IP_REQ + "/rpc/lease/user/rent/info.app"));
+            requestMap.put(USER_HQ_INFO, new RequestModel(USER_HQ_INFO, Constants.HOST_IP_REQ + "/rpc/debt/hq/info.app"));
+            requestMap.put(DEBTPACKAGE_LIST, new RequestModel(DEBTPACKAGE_LIST, Constants.HOST_IP_REQ + "/rpc/debtpackage/list.app"));
+            requestMap.put(DEBTPACKAGE_SOURCE_LIST, new RequestModel(DEBTPACKAGE_SOURCE_LIST, Constants.HOST_IP_REQ + "/rpc/debt/source/list.app"));
+            requestMap.put(DEBTPACKAGE_ORDER_INFO, new RequestModel(DEBTPACKAGE_ORDER_INFO, Constants.HOST_IP_REQ + "/rpc/debt/order/info.app"));
+            requestMap.put(USER_HQ_MONEY, new RequestModel(USER_HQ_MONEY, Constants.HOST_IP_REQ + "/rpc/user/hq/money.app"));
+            requestMap.put(USER_DEBTPACKAGE_HQ_RANSOM, new RequestModel(USER_DEBTPACKAGE_HQ_RANSOM, Constants.HOST_IP_REQ + "/rpc/debt/hq/ransom.app"));
+            requestMap.put(DEBTPACKAGE_INFO, new RequestModel(DEBTPACKAGE_INFO, Constants.HOST_IP_REQ + "/rpc/debtpackage/info.app"));
+            requestMap.put(DEBTPACKAGE_COUNTDOWN, new RequestModel(DEBTPACKAGE_COUNTDOWN, Constants.HOST_IP_REQ + "/rpc/debtpackage/countdown.app"));
+            requestMap.put(DEBTPACKAGE_REMINDME, new RequestModel(DEBTPACKAGE_REMINDME, Constants.HOST_IP_REQ + "/rpc/debtpackage/remindme.app"));
+            requestMap.put(USER_UPDATE_LOGIN_PWD, new RequestModel(USER_UPDATE_LOGIN_PWD, Constants.HOST_IP_REQ + "/rpc/user/password/update.app"));
 
             // 注意保留 rpc
         }
@@ -197,6 +223,33 @@ public class RequestEnum {
     public static final String HOUSE_RELEASE_INFO = "HOUSE_RELEASE_INFO"; // 获取发布房源详细信息
     public static final String LEASE_RELEASE_LIST = "LEASE_RELEASE_LIST"; // 房源列表
     public static final String LEASE_WITHDRAW = "LEASE_WITHDRAW"; // 退租
-    public static final String HOUSE_SET_POSITION = "HOUSE_SET_POSITION"; // 设置房屋位置
+    public static final String HOUSE_RECOMMEND = "HOUSE_RECOMMEND"; // 推荐房源
+
+    public static final String MESSAGE_LIST_2 = "MESSAGE_LIST_2"; // 消息列表
+    public static final String MESSAGEREAD = "MESSAGEREAD"; // 消息已读
+    public static final String MESSAGE_SHARE = "MESSAGE_SHARE"; // 分享系统消息
+
+    public static final String TOP_IMG = "TOP_IMG"; // 顶部图片
+    public static final String USER_SET_AUTOPAY = "USER_SET_AUTOPAY"; // 设置代扣
+    public static final String DEBT_HQ_INFO = "DEBT_HQ_INFO"; // 活期详情
+    public static final String DEBT_HQ_RANSOM = "DEBT_HQ_RANSOM"; // 活期转出
+    public static final String DEBT_BUY_SENDVCODE = "DEBT_BUY_SENDVCODE"; // 购买发送验证码
+    public static final String DEBT_BUY = "DEBT_BUY"; // 购买支付
+    public static final String DEBT_PAYTYPE = "DEBT_PAYTYPE"; // 选择支付方式
+    public static final String USER_EARNINGS_LIST = "USER_EARNINGS_LIST"; // 收益记录
+    public static final String DEBT_SOURCE_LIST = "DEBT_SOURCE_LIST"; // 收益记录
+    public static final String DEBT_ORDER_INFO = "DEBT_ORDER_INFO"; // 债权订单详情
+    public static final String TRANSFER_HISTORY = "TRANSFER_HISTORY"; // 交易记录
+    public static final String LEASE_USER_RENT_INFO = "LEASE_USER_RENT_INFO"; // 用户房屋租金详情
+    public static final String USER_HQ_INFO = "USER_HQ_INFO"; // 我的活期理财详情
+    public static final String DEBTPACKAGE_LIST = "DEBTPACKAGE_LIST"; // 债权包列表
+    public static final String DEBTPACKAGE_SOURCE_LIST = "DEBTPACKAGE_SOURCE_LIST"; // 投资去向
+    public static final String DEBTPACKAGE_ORDER_INFO = "DEBTPACKAGE_ORDER_INFO"; // 获取债权资料详情
+    public static final String USER_HQ_MONEY = "USER_HQ_MONEY"; // 活期投资⾦金额
+    public static final String USER_DEBTPACKAGE_HQ_RANSOM = "USER_DEBTPACKAGE_HQ_RANSOM"; // 活期转出
+    public static final String DEBTPACKAGE_INFO = "DEBTPACKAGE_INFO"; // 债权包详情
+    public static final String DEBTPACKAGE_COUNTDOWN = "DEBTPACKAGE_COUNTDOWN"; // 倒计时
+    public static final String DEBTPACKAGE_REMINDME = "DEBTPACKAGE_REMINDME"; // 添加提醒
+    public static final String USER_UPDATE_LOGIN_PWD = "USER_UPDATE_LOGIN_PWD"; // 修改登录密码
 
 }

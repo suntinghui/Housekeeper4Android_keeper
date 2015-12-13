@@ -24,6 +24,10 @@ public enum AppResponseStatus {
 	 */
 	SETINFO,
 	/**
+	 * 设置管家注册码
+	 */
+	SET_AGENT_CODE,
+	/**
 	 * 出现此种状态客户端直接跳到设置头像
 	 */
 	LOGO;

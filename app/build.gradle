@@ -25,15 +25,6 @@ android {
         }
     }
 
-    signingConfigs {
-        release {
-            storeFile file("/Users/sth/Documents/keystore/fenqi.keystore")
-            storePassword "123456"
-            keyAlias "fenqi"
-            keyPassword "123456"
-        }
-    }
-
     android {
         packagingOptions {
             exclude 'META-INF/ASL2.0'

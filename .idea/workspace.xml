@@ -9,711 +9,7 @@
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" readonly="true" id="4381b127-7f76-4919-a638-3ab04d7344b3" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/drawable-xxhdpi/arrow_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/drawable-xxhdpi/arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/external/com/baidu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_current_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/blue_line_1.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/blue_line_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_toggle_off.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/btn_toggle_on.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/libs/butterknife-7.0.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/color" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/compat" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-hdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-mdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-xhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/drawable-xxhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-xxhdpi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest/java/com/jayfang/dropdownmenu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com/jayfang/dropdownmenu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java/io/github" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java/io/github" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/head_keeper_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/head_landlord_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/head_tenant_default.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/head_tenant_default_2.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/home_media.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/iam_landlord_download.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/iam_landlord_telphone.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/iam_landlord_top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_action_next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_action_next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_action_next.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-mdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_swipe_indicator_white_18dp.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/drawable-xxhdpi/ico_make.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/icon_gcoding.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java/io" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java/io" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest/java/com/jayfang" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com/jayfang" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wufriends/housekeeper/keeper" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_06.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_07.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_09.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_13.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_14.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_15.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_16.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_17.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_18.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_img_19.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_img_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_img_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_img_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_img_04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_right_arrow.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_08.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/layout" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/menu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/menu" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java/io/github/onivas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java/io/github/onivas" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/page_indicator_focused.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/page_indicator_unfocused.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/pay_success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java/io/github/onivas/promotedactions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java/io/github/onivas/promotedactions" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/external/com/readystatesoftware" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/scrollview_header.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/splash_1.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/splash_2.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_arrow_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_arrow_up.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_04.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_05.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_10.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_11.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/tenant_img_12.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/values-w820dp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/values" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/external/com/readystatesoftware/viewbadger" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bg.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bg_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bg_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bg_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bottom_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bottom_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bottom_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_head_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_head_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_head_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_middle_01.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_middle_02.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_middle_03.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_apply.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_bankprocess.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_card.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_failure.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_indicator_down.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_indicator_right.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_progess_done.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_progess_watting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_sidongxi.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_success.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_transfer.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_waitting.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wufriends/housekeeper/keeper/wxapi" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/1_butterknife_7_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/AgentHouseRentListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/AgentLeaseHouseListDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/AgentUserInfoAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/AlmostRippleDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/AndroidManifest.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/AndroidViewAnimations_1_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/compat/AnimatorCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/compat/AnimatorCompatV11.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/AppMessageDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/AppResponseStatus.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/androidTest/java/com/jayfang/dropdownmenu/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/androidTest/java/io/github/onivas/promotedactions/ApplicationTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/external/com/readystatesoftware/viewbadger/BadgeView.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/BaiduLBS_Android.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CircleProgress.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/model/CityModel.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ConfirmPayDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/ContactAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ContactCityLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/DownloadSplashImageService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com/jayfang/dropdownmenu/DropDownMenu.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/EquipmentAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseAddListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/HouseInfoActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseInfoAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/HousePushIntentService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseReleaseAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseReleaseInfoAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseReleaseListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/HouseTagAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/IdentityActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/IdentityPicker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/ImSubAccountsAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/ImageAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseRelationActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddLandlordRelationQRActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddTenantRelationQRActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperEmployeeCardActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperHouseInfoPublishActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperHousePublishActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperIDCardActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseAddressActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseContractActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseFeeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseIdCardActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseInfoActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseRelationActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/KeeperLeasedAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperRemarkActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperRentRecordDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperRentRecordListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/KeeperReserveLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperReserveListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperReturnActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/KeeperUnLeaseAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordContactKeeperActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/LandlordHomeLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordHouseListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordJoinAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordRentalFeeAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LeasedListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LinkArticle.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/model/Linyi.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/LookListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/Marker.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/MarkerDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/MediaImagePagerAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com/jayfang/dropdownmenu/MenuListAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MessageAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MessageCountAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MessageListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MoneyHistoryAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MyAppAgentDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/MyAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/NotFirstPayActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/java/com/jayfang/dropdownmenu/OnMenuSelectedListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/OpenCityAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/Paginable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/PaginationSeekBar.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/PaySuccessActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/PayUseBalanceDialog.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/PhonebookAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/PopupIndicator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ProductTourActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ProductTourFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/java/io/github/onivas/promotedactions/PromotedActionsLibrary.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/PublishRoommateAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/ReserveListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/compat/SeekBarCompat.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/compat/SeekBarCompatDontCrash.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/SelectCityLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/SetBranchActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocialSDK_QQZone_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocialSDK_QQZone_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocialSDK_QQZone_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocialSDK_WeiXin_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/SocialSDK_WeiXin_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/StartupImageAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/StateDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantAgentInfoActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantKeeperDetailActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantLookListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantMeActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/TenantMeItemLayout.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantPersonalVerifyActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantPublishListActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantShareRentActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantWholeRentActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/ThumbDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/TrackOvalDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/java/com/flashgugu/library/widgets/paginationseekbar/internal/drawable/TrackRectDrawable.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/TrafficAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/TransferClient.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/TransferInfo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/TreeNodeAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/UserAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/UserHouseListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/UserJoinAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/wufriends/housekeeper/keeper/wxapi/WXEntryActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/WaitLeaseListAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/WithdrawalAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/WithdrawalExAdapter.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/WithdrawalMoneyAppDto.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/WithdrawalRecordsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/WithdrawalsActivity.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_house_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_identity.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_relation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_landlord_relation_qr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_tenant_relation_qr.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_employee_card.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_find.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_home.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_house_info_publish.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_house_publish.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_idcard.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_address.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_contract.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_fee.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_idcard.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_relation.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_remark.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_rentrecord_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_rentrecord_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_reserve_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_return.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_contact_keeper.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_home.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_not_first_pay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pay_success.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_product_tour.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_set_branch.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_agent_info.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_home.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_keeper_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_look_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_me.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_personal_verify.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_publish_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_sharerent.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_wholerent.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_withdrawal.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_withdrawal_records.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/appcompat_v7_23_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/values/attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_blue_corner_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_gray_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_item_selected_drawable.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_orange_corner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_orange_light.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_orange_light_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_white_corner_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_white_corner_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_yellow_light_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/blue_ver_line.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/build.gradle" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/butterknife_7_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/values/colors.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_umeng_fb_v5_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/com_umeng_message_lib_v2_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_lang3_3_3_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/dexmaker_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/dexmaker_mockito_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/values/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/values-w820dp/dimens.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/disklrucache_2_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/dropDownMenu.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/easyandroidanimationslibrary_v0_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fest_android_1_0_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fest_assert_core_2_0M10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/fest_util_1_2_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/flowlayout_lib_1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/gson_2_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/httpmime_4_1_3.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/investement_topbar_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/investement_topbar_text_left_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/investement_topbar_text_right_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_rent_record.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_rent_record_detail.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_tenant_me.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_withdrawal_child.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_withdrawal_group.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_core_asl_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_jaxrs_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_mapper_asl_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/jackson_xc_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_confirm_pay.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_contact_city.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_keeper_leased.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_keeper_reserve.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_keeper_unlease.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_landlord_home.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_pay_use_balance.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_publish_roommate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_select_city.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_tenant_look.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/library_1_0_19.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/menu/library_promoted_actions.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/layout/main_promoted_action_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/layout/menu_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/layout/menu_list_item.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/menu/menu_main.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/menuanimationlibrary.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/mockito_core_1_9_5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/nineoldandroids_2_4_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/notification_view.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/objenesis_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable/onivas_fab_circle.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/org_json.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/paginationseekbarlib.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/picasso_2_5_2.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/layout/popupwindow_menu.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/progressbar_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/proguard-rules.pro" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/layout/promoted_action_button.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/color/psb_progress_color_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/color/psb_ripple_color_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/color/psb_track_color_list.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/values/pullscroll_attrs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/qrcodecore_1_0_1_.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/rebound_0_3_7.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/recyclerview_v7_23_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/drawable/rounded_button_shadow.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/selectable_item_background_general.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dropDownMenu/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/menuanimationlibrary/src/main/res/values/strings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/paginationseekbarlib/src/main/res/values/styles.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_annotations_23_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/support_v4_23_0_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tag_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tag_checked_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tag_layout.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tag_normal_bg.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/tag_text_color.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tenant_home_content.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tenant_home_profile.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tenant_me_content.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/tenant_me_head.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/text_bubble.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/text_white_blue_selector.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_analytics_v5_4_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_onlineconfig_v1_0_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_social_sdk.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/umeng_update_v2_6_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/welcome_fragment01.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/welcome_fragment02.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/welcome_fragment03.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/welcome_fragment5.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_progressbar.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/withdrawal_progressbar_equals.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/zbar_1_0_1_.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/gnod/parallaxlistview/ParallaxScollListView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views/ParallaxExpandableListView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views/ParallaxListView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views/ParallaxListViewHelper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views/ParallaxScrollView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views/ParallaxedView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/CirclePageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/IconPageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/IconPagerAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/IcsLinearLayout.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/LinePageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/PageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/TabPageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/TitlePageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator/UnderlinePageIndicator.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/Configuration.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/Crouton.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/DefaultAnimationsBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/LifecycleCallback.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/Manager.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/Style.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton/TypefaceSpan.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/AdapterWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/CheckableWrapperView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/DistinctMultiHashMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/DualHashMap.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/ExpandableStickyListHeadersAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/ExpandableStickyListHeadersListView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/SectionIndexerAdapterWrapper.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/StickyListHeadersAdapter.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/StickyListHeadersListView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/WrapperView.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders/WrapperViewList.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/MainActivity.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/AndroidEasingFunctions-1.0.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget/crouton" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/jxl.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/listviewanimations_lib-core-slh_3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/listviewanimations_lib-core_3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/libs/listviewanimations_lib-manipulation_3.1.0.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/gnod/parallaxlistview" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/se/emilsjolander/stickylistheaders" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/viewpagerindicator" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/com/nirhart/parallaxscroll/views" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/welcome_bg.9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/external/de/keyboardsurfer/android/widget" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordAddActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordRelationActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantAddActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantRelationActivity.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_add.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_relation.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_add.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_relation.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile_content_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/keeper_me_content.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/src/main/res/layout/profile_head_view.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/keeper_me_head.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/BaiduLBS_Android.jar" afterPath="$PROJECT_DIR$/app/libs/BaiduLBS_Android.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/default_image_good_detail.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/default_image_good_detail.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_launcher.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_01.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_02.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_03.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_04.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_05.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_me_05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_add_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_add_normal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_add_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_add_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_addhouse_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_addhouse_normal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_addhouse_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_addhouse_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_home_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_home_normal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_home_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_home_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_me_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_me_normal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_me_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_me_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_setting_normal.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_setting_normal.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_setting_select.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/keeper_tab_setting_select.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_01.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_01.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_02.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_02.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_03.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_03.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_04.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_04.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_05.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_05.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_06.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_06.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_07.png" afterPath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/landlord_setting_07.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_base_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_base_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_base_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_base_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_map_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_map_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_map_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_map_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_search_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_search_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_search_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_search_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_util_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/libBaiduMapSDK_util_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_util_v3_6_1.so" afterPath="$PROJECT_DIR$/app/libs/x86_64/libBaiduMapSDK_util_v3_6_1.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/arm64-v8a/liblocSDK6a.so" afterPath="$PROJECT_DIR$/app/libs/arm64-v8a/liblocSDK6a.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/libs/x86_64/liblocSDK6a.so" afterPath="$PROJECT_DIR$/app/libs/x86_64/liblocSDK6a.so" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.2.1/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="$PROJECT_DIR$/.idea/.name" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/ActivityManager.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/ActivityManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/ActivityUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/ActivityUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/AlertHUD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/AlertHUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/Algorithm.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/Algorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asymmetric_gridview/src/main/java/com/felipecsl/asymmetricgridview/library/widget/AsymmetricGridView.java" afterPath="$PROJECT_DIR$/asymmetric_gridview/src/main/java/com/felipecsl/asymmetricgridview/library/widget/AsymmetricGridView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asymmetric_gridview/src/main/java/com/felipecsl/asymmetricgridview/library/widget/AsymmetricGridViewAdapter.java" afterPath="$PROJECT_DIR$/asymmetric_gridview/src/main/java/com/felipecsl/asymmetricgridview/library/widget/AsymmetricGridViewAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/BankUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/BankUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BaseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BaseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindedBankActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindedBankActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindingBankActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindingBankActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindingSuccessActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/BindingSuccessActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/Bounds.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/Bounds.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/de/hdodenhof/circleimageview/CircleImageView.java" afterPath="$PROJECT_DIR$/app/external/de/hdodenhof/circleimageview/CircleImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CityActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CityActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CityPicker.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CityPicker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/Cluster.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/Cluster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/ClusterItem.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/ClusterItem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/ClusterManager.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/ClusterManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/view/ClusterRenderer.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/view/ClusterRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/Constants.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/Constants.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CropImage.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CropImage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CropImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CropImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CropImageView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CropImageView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/CustomViewBehind.java" afterPath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/CustomViewBehind.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/DateUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/DateUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/DavinciView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/DavinciView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/view/DefaultClusterRenderer.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/view/DefaultClusterRenderer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/DiaoyuView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/DiaoyuView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/EquipmentAdapter.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/EquipmentAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/model/EquipmentAppDtoEx.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/model/EquipmentAppDtoEx.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/FeedBackactivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/FeedBackactivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/FileUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/FileUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ForgetPwdActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ForgetPwdActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockModifyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockModifyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockSetupActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockSetupActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockVerifyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/GestureLockVerifyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/GoodCityUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/GoodCityUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/jungly/gridpasswordview/GridPasswordView.java" afterPath="$PROJECT_DIR$/app/external/com/jungly/gridpasswordview/GridPasswordView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/HighlightView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/HighlightView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/IconGenerator.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/IconGenerator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/IdentityUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/IdentityUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/trinea/android/view/autoscrollviewpager/ImagePagerAdapter.java" afterPath="$PROJECT_DIR$/app/external/cn/trinea/android/view/autoscrollviewpager/ImagePagerAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ImageZoomActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ImageZoomActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/net/JSONRequest.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/net/JSONRequest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseAgencyContractActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseAgencyContractActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseDeedActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseDeedActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseDetailActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseDetailActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseEquipmentActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseEquipmentActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseImageActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseImageActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseInfoActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseInfoActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseListActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseRentalCostActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseRentalCostActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseTrafficActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseTrafficActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperFindHouseActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperFindHouseActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperHomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperHomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperMainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperMainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperMeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperMeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperPersonalVerifyActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperPersonalVerifyActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperSystemSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperSystemSettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordHomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordHomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordMainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordMainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordPersonalSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordPersonalSettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordSettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/LockPatternView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/gesture/LockPatternView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/LoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/LoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/MarkerManager.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/MarkerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/MyTabActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/MyTabActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/NetErrorDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/NetErrorDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/NoZoomControllWebView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/NoZoomControllWebView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/NonHierarchicalDistanceBasedAlgorithm.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/NonHierarchicalDistanceBasedAlgorithm.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/daimajia/numberprogressbar/NumberProgressBar.java" afterPath="$PROJECT_DIR$/app/external/com/daimajia/numberprogressbar/NumberProgressBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/ru/suvitruf/overscrolllistview/OverscrollListView.java" afterPath="$PROJECT_DIR$/app/external/ru/suvitruf/overscrolllistview/OverscrollListView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/PacificView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/PacificView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/Point.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/Point.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/quadtree/PointQuadTree.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/quadtree/PointQuadTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/PreCachingAlgorithmDecorator.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/PreCachingAlgorithmDecorator.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ProgressHUD.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ProgressHUD.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/ProgressHelper.java" afterPath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/ProgressHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/ProgressWheel.java" afterPath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/ProgressWheel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/markmao/pullscrollview/ui/widget/PullScrollView.java" afterPath="$PROJECT_DIR$/app/external/com/markmao/pullscrollview/ui/widget/PullScrollView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/RegisterActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/RegisterActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/RegisterAndLoginActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/RegisterAndLoginActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/Rotate3dAnimation.java" afterPath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/Rotate3dAnimation.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/RotationLayout.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/RotationLayout.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ScrollerNumberPicker.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ScrollerNumberPicker.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/SetTransferPWDActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/SetTransferPWDActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/romainpiel/shimmer/ShimmerViewHelper.java" afterPath="$PROJECT_DIR$/app/external/com/romainpiel/shimmer/ShimmerViewHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ShowWebViewActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ShowWebViewActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/my/sortlistview/SideBar.java" afterPath="$PROJECT_DIR$/app/external/com/my/sortlistview/SideBar.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityHelper.java" afterPath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/app/SlidingActivityHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu.java" afterPath="$PROJECT_DIR$/app/external/com/jeremyfeinstein/slidingmenu/lib/SlidingMenu.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/my/sortlistview/SortAdapter.java" afterPath="$PROJECT_DIR$/app/external/com/my/sortlistview/SortAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/SphericalMercatorProjection.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/projection/SphericalMercatorProjection.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/SplashActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/SplashActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/SquareTextView.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/ui/SquareTextView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/StaticCluster.java" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/algo/StaticCluster.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/markmao/pullscrollview/ui/widget/StretchScrollView.java" afterPath="$PROJECT_DIR$/app/external/com/markmao/pullscrollview/ui/widget/StretchScrollView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/SublimePickerDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/SublimePickerDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/SuccessTickView.java" afterPath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/SuccessTickView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/SweetAlertDialog.java" afterPath="$PROJECT_DIR$/app/external/cn/pedant/SweetAlert/SweetAlertDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantHomeActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantHomeActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantMainActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantMainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantSettingActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantSettingActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/UMengPushUtil.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/UMengPushUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyEmergencyContactActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyEmergencyContactActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyHasSetTransferPWDActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyHasSetTransferPWDActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyLoginPWDActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyLoginPWDActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/VerifyTransferPWDDialog.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/VerifyTransferPWDDialog.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyWechatActivity.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/VerifyWechatActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/john/waveview/Wave.java" afterPath="$PROJECT_DIR$/app/external/com/john/waveview/Wave.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/john/waveview/WaveView.java" afterPath="$PROJECT_DIR$/app/external/com/john/waveview/WaveView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/XuRadioView.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/XuRadioView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_binding_bank.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_binding_bank.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_binding_success.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_binding_success.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_pwd.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forget_pwd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gesture_lock_setup.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gesture_lock_setup.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_gesture_lock_verify.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_gesture_lock_verify.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_agent_contract.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_agent_contract.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_deed.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_deed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_detail.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_detail.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_image.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_image.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_list.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_list.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_rental_cost.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_rental_cost.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_me.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_me.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_personal_verify.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_personal_verify.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_system_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_system_setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_personal_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_personal_setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_landlord_setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_login.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register_login.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_webview.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_webview.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_main.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_setting.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tenant_setting.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_emergency_contact.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_emergency_contact.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_has_set_transfer_pwd.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_has_set_transfer_pwd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_login_pwd.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_login_pwd.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_wechat.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_verify_wechat.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/asymmetric_gridview/asymmetric_gridview.iml" afterPath="$PROJECT_DIR$/asymmetric_gridview/asymmetric_gridview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_blue_corner.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_blue_corner.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/drawable/bg_blue_corner_2.xml" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_blue_corner_2.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cropview/cropview.iml" afterPath="$PROJECT_DIR$/cropview/cropview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_add_house.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_add_house.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_equipment.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_keeper_equipment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_diaoyu.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_diaoyu.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/layout/layout_topbar.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/layout_topbar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/nice_spinner/nice_spinner.iml" afterPath="$PROJECT_DIR$/nice_spinner/nice_spinner.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/external/com/baidu/mapapi/overlayutil/package.html" afterPath="$PROJECT_DIR$/app/external/com/baidu/mapapi/overlayutil/package.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" afterPath="$PROJECT_DIR$/pulltozoomview/pulltozoomview.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/recyclerview_animators/recyclerview_animators.iml" afterPath="$PROJECT_DIR$/recyclerview_animators/recyclerview_animators.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.gradle" afterPath="$PROJECT_DIR$/settings.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" afterPath="$PROJECT_DIR$/app/src/main/res/values-zh/strings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sublimepickerlibrary/src/main/res/values/styles.xml" afterPath="$PROJECT_DIR$/sublimepickerlibrary/src/main/res/values/styles.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" afterPath="$PROJECT_DIR$/sublimepickerlibrary/sublimepickerlibrary.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" readonly="true" id="4381b127-7f76-4919-a638-3ab04d7344b3" name="Default" comment="" />
     <ignored path="Housekeeper4Android_keeper.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -739,18 +35,7 @@
     <favorites_list name="Housekeeper4Android_keeper" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="BankUtil.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/BankUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39577836">
-              <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -6680,7 +5965,7 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="17337923809000" />
+        <entry key="$PROJECT_DIR$" value="17338259302000" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -6869,7 +6154,6 @@
                             <option value="/android-sdk-macosx/extras/android/m2repository/com/android/support/support-v4/23.0.1/support-v4-23.0.1.aar" />
                             <option value="/android-sdk-macosx/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar" />
                             <option value="$MODULE_DIR$/libs/AndroidViewAnimations-1.1.3.jar" />
-                            <option value="$MODULE_DIR$/libs/BaiduLBS_Android.jar" />
                             <option value="$MODULE_DIR$/libs/butterknife-7.0.1.jar" />
                             <option value="$MODULE_DIR$/libs/com.umeng.fb.v5.1.0.jar" />
                             <option value="$MODULE_DIR$/libs/com.umeng.message.lib_v2.0.0.jar" />
@@ -6882,6 +6166,9 @@
                             <option value="$MODULE_DIR$/libs/jackson-jaxrs-1.9.5.jar" />
                             <option value="$MODULE_DIR$/libs/jackson-mapper-asl-1.9.5.jar" />
                             <option value="$MODULE_DIR$/libs/jackson-xc-1.9.5.jar" />
+                            <option value="$MODULE_DIR$/libs/listviewanimations_lib-core-slh_3.1.0.jar" />
+                            <option value="$MODULE_DIR$/libs/listviewanimations_lib-core_3.1.0.jar" />
+                            <option value="$MODULE_DIR$/libs/listviewanimations_lib-manipulation_3.1.0.jar" />
                             <option value="$MODULE_DIR$/libs/nineoldandroids-2.4.0.jar" />
                             <option value="$MODULE_DIR$/libs/org.json.jar" />
                             <option value="$MODULE_DIR$/libs/rebound-0.3.7.jar" />
@@ -7881,10 +7168,7 @@
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_idcard.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_contract.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_lease_idcard.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java" />
-        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
-        <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseLocationActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_location.xml" />
         <option value="$PROJECT_DIR$/app/external/com/baidu/mapapi/clusterutil/clustering/view/DefaultClusterRenderer.java" />
@@ -7894,6 +7178,18 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseInfoActivity.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_info.xml" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/HousekeeperApplication.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/YesterdayEarningsActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/InvestmentActivity.java" />
+        <option value="$PROJECT_DIR$/app/external/com/dacer/androidcharts/LineView.java" />
+        <option value="$PROJECT_DIR$/app/build.gradle" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CurrentInvestmentSourceActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CreditReviceDialog.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CreditReviewItem.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantMeActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordSettingActivity.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordRentalFeeAppDto.java" />
+        <option value="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" />
       </list>
     </option>
   </component>
@@ -7935,121 +7231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidResFolderNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="housekeeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="com" />
-              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="housekeeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -8057,10 +7238,6 @@
               <option name="myItemId" value="Housekeeper4Android_keeper" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="External Libraries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -8069,49 +7246,102 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Housekeeper4Android_keeper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="libs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="AndroidView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Gradle Scripts" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidBuildScriptsGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Housekeeper4Android_keeper" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidModuleNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidSourceTypeNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.android.tools.idea.navigator.nodes.AndroidPsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="settings.editor.selected.configurable" value="gradle.experimental" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.File Status" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
     <property name="android.project.structure.last.selected" value="app" />
@@ -8123,12 +7353,14 @@
     <property name="ExportApk.ApkPath" value="$PROJECT_DIR$/app" />
     <property name="ExportApk.Flavors" value="" />
     <property name="ExportApk.BuildType" value="release" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/housekeeper/model" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/layout" />
-      <recent name="$PROJECT_DIR$/app/external/com" />
+      <recent name="$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -8323,68 +7555,6 @@
     <configuration>$USER_HOME$/.subversion</configuration>
     <supportedVersion>125</supportedVersion>
   </component>
-  <component name="SvnFileUrlMappingImpl">
-    <option name="myMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/.idea" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/.idea" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/app" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/app" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/asymmetric_gridview" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/asymmetric_gridview" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/cropview" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/cropview" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/dropDownMenu" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/dropDownMenu" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/menuanimationlibrary" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/menuanimationlibrary" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/nice_spinner" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/nice_spinner" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/paginationseekbarlib" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/paginationseekbarlib" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/pulltozoomview" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/pulltozoomview" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/recyclerview_animators" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/recyclerview_animators" />
-        </SvnCopyRootSimple>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$/sublimepickerlibrary" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$/sublimepickerlibrary" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-    <option name="myMoreRealMappingRoots">
-      <list>
-        <SvnCopyRootSimple>
-          <option name="myVcsRoot" value="$PROJECT_DIR$" />
-          <option name="myCopyRoot" value="$PROJECT_DIR$" />
-        </SvnCopyRootSimple>
-      </list>
-    </option>
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="4381b127-7f76-4919-a638-3ab04d7344b3" name="Default" comment="" />
@@ -8396,11 +7566,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1280" height="723" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22213247" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -8409,7 +7581,7 @@
       <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3294893" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -8421,8 +7593,6 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32956383" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3294893" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
@@ -8435,88 +7605,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/HousekeeperApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_info.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="51" selection-start-line="50" selection-start-column="51" selection-end-line="50" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="47" column="18" selection-start-line="47" selection-start-column="18" selection-end-line="47" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseInfoActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="112" column="41" selection-start-line="112" selection-start-column="41" selection-end-line="112" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperIDCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseContractActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="34" selection-start-line="69" selection-start-column="34" selection-end-line="69" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperLeaseIdCardActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="78" column="34" selection-start-line="78" selection-start-column="34" selection-end-line="78" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_keeper_add_house_agent_contract.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -8727,23 +7815,9 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6437995">
-          <caret line="198" column="71" selection-start-line="198" selection-start-column="71" selection-end-line="198" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/icon_gcoding.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.16304348">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/AndroidManifest.xml">
@@ -8754,25 +7828,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/build/generated/source/r/debug/com/wufriends/housekeeper/keeper/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.35795453">
-          <caret line="5691" column="30" selection-start-line="5691" selection-start-column="30" selection-end-line="5691" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sublimepickerlibrary/src/main/res/values/styles.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="335" column="0" selection-start-line="335" selection-start-column="0" selection-end-line="335" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32717678">
-          <caret line="74" column="46" selection-start-line="74" selection-start-column="46" selection-end-line="74" selection-end-column="46" />
           <folding />
         </state>
       </provider>
@@ -8792,7 +7851,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="28" column="60" selection-start-line="28" selection-start-column="60" selection-end-line="28" selection-end-column="60" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -8801,16 +7859,223 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="15" column="25" selection-start-line="15" selection-start-column="25" selection-end-line="15" selection-end-column="25" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/utils/BankUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39577836">
-          <caret line="10" column="42" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+        <state vertical-scroll-proportion="0.23746702">
+          <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/client/RequestEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9208443">
+          <caret line="252" column="89" selection-start-line="252" selection-start-column="89" selection-end-line="252" selection-end-column="89" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/YesterdayEarningsActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.079155676">
+          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+          <folding>
+            <element signature="e#1107#1127#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_vote_rush.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.551724">
+          <caret line="23" column="17" selection-start-line="23" selection-start-column="17" selection-end-line="23" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/external/com/dacer/androidcharts/LineView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.29287598">
+          <caret line="21" column="42" selection-start-line="21" selection-start-column="42" selection-end-line="21" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6476684">
+          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/layout_investment_current.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.0">
+          <caret line="437" column="40" selection-start-line="437" selection-start-column="40" selection-end-line="437" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/drawable/yellow_button_selector.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/CurrentInvestmentSourceActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/StagingUserActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_staging_user_ex.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.586207">
+          <caret line="203" column="0" selection-start-line="203" selection-start-column="0" selection-end-line="203" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CreditReviceDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="39" selection-start-line="15" selection-start-column="39" selection-end-line="15" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/CreditReviewItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="37" selection-start-line="19" selection-start-column="37" selection-end-line="19" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/InvestmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="92" column="19" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/InvestmentCurrentLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="109" column="31" selection-start-line="109" selection-start-column="31" selection-end-line="109" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/ModifyLoginPWDActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="29" selection-start-line="46" selection-start-column="29" selection-end-line="46" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/view/ItemDescOfTransferView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="79" column="65" selection-start-line="79" selection-start-column="65" selection-end-line="79" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/item_credit_review.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.172414">
+          <caret line="41" column="13" selection-start-line="41" selection-start-column="13" selection-end-line="41" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/tenant/TenantMeActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6094987">
+          <caret line="173" column="56" selection-start-line="167" selection-start-column="14" selection-end-line="173" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/landlord/LandlordSettingActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28759894">
+          <caret line="167" column="0" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/housekeeper/activity/keeper/KeeperAddHouseRentalCostActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="174" column="33" selection-start-line="174" selection-start-column="33" selection-end-line="174" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19788918">
+          <caret line="5" column="69" selection-start-line="5" selection-start-column="69" selection-end-line="5" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/ares/house/dto/app/LandlordRentalFeeAppDto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.113456465">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;field#beginTime#0;class#LandlordRentalFeeAppDto#0" expanded="false" />
+            <element signature="docComment;field#yearCount#0;class#LandlordRentalFeeAppDto#0" expanded="false" />
+            <element signature="e#2356#2357#0" expanded="true" />
+            <element signature="e#2382#2383#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

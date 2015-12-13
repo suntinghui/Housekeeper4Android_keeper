@@ -105,16 +105,23 @@ public class CircleProgress extends View {
         invalidate();
     }
 
-    public void setSubPaintColor(int color){
+    public void setSubPaintColor(int color) {
         this.mCircleAttribute.mSubPaintColor = color;
         this.mCircleAttribute.mSubPaint.setColor(color);
 
         invalidate();
     }
 
-    public void setSecondPaintColor(int color){
+    public void setSecondPaintColor(int color) {
         this.mCircleAttribute.mSecondPaintColor = color;
         this.mCircleAttribute.mSecondPaint.setColor(color);
+
+        invalidate();
+    }
+
+    public void setBottomPaintColor(int color) {
+        this.mCircleAttribute.mBottomPaintColor = color;
+        this.mCircleAttribute.mBottomPaint.setColor(color);
 
         invalidate();
     }
