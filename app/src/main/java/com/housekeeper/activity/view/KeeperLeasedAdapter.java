@@ -112,11 +112,11 @@ public class KeeperLeasedAdapter extends BaseAdapter {
 
         holder.tenantLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getUserLogo());
         holder.tenantNameTextView.setText(infoDto.getUserName());
-        holder.tenantTelphoneTextView.setText(infoDto.getUserBankCard());
+        //holder.tenantTelphoneTextView.setText(infoDto.getUserBankCard());
         holder.tenantAddressTextView.setText(infoDto.getWorkAddress());
 
-        holder.landlordLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getLandlordLogo());
-        holder.landlordNameTextView.setText(infoDto.getLandlordUserName());
+        //holder.landlordLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getLandlordLogo());
+        //holder.landlordNameTextView.setText(infoDto.getLandlordUserName());
 
         // b 正常 c退租中  d已完成
         if (infoDto.getStatus() == 'b') {

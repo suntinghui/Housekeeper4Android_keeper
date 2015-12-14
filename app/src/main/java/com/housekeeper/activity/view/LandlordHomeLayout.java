@@ -100,20 +100,20 @@ public class LandlordHomeLayout extends LinearLayout {
         this.begingDateTextView.setText(infoDto.getBeginTimeStr());
         this.endDateTextView.setText(infoDto.getEndTimeStr());
 
-        this.tenantLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getUserLogo());
-        this.tenantNameTextView.setText(infoDto.getUserName());
-        this.tenantTelphoneTextView.setText(infoDto.getUserBankCard());
-        this.tenantAddressTextView.setText(infoDto.getWorkAddress());
+        //this.tenantLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getUserLogo());
+        //this.tenantNameTextView.setText(infoDto.getUserName());
+        //this.tenantTelphoneTextView.setText(infoDto.getUserBankCard());
+        //this.tenantAddressTextView.setText(infoDto.getWorkAddress());
 
         agentLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getAgentLogo());
 
         companyLogoImageView.setDefaultImageResId(R.drawable.head_keeper_default);
         companyLogoImageView.setErrorImageResId(R.drawable.head_keeper_default);
         companyLogoImageView.setLocalImageBitmap(R.drawable.head_keeper_default);
-        companyLogoImageView.setImageUrl(Constants.HOST_IP + infoDto.getCompanyLogo(), ImageCacheManager.getInstance().getImageLoader());
+        //companyLogoImageView.setImageUrl(Constants.HOST_IP + infoDto.getCompanyLogo(), ImageCacheManager.getInstance().getImageLoader());
 
         agentUserNameTextView.setText(infoDto.getAgentName() + "（您的房管家）");
-        companyNameTextView.setText(infoDto.getCompanyName());
+        //companyNameTextView.setText(infoDto.getCompanyName());
 
         this.houseInfoLayout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -128,7 +128,7 @@ public class LandlordHomeLayout extends LinearLayout {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperLeaseIdCardActivity.class);
-                intent.putExtra("leaseId", infoDto.getLeaseId() + "");
+                //intent.putExtra("leaseId", infoDto.getLeaseId() + "");
                 intent.putExtra("houseId", infoDto.getHouseId() + "");
                 intent.putExtra("editable", false);
                 context.startActivity(intent);

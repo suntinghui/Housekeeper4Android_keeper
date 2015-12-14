@@ -234,10 +234,10 @@ public class KeeperMeActivity extends BaseActivity implements View.OnClickListen
         headImageView.setImageUrl(Constants.HOST_IP + infoDto.getLogoUrl() + "?random=" + ActivityUtil.getSharedPreferences().getString(Constants.HEAD_RANDOM, "0"), ImageCacheManager.getInstance().getImageLoader());
 
         houseCountTextView.setText(infoDto.getHouseCount() + "");
-        totalRentTextView.setText(infoDto.getTotalRent() + "");
-        leaseCountTextView.setText(infoDto.getLeaseCount() + "");
-        totalWaitRentTextView.setText(infoDto.getTotalWaitRent() + "");
-        waitLeaseCountTextView.setText(infoDto.getWaitLeaseCount() + "");
+        //totalRentTextView.setText(infoDto.getTotalRent() + "");
+        //leaseCountTextView.setText(infoDto.getLeaseCount() + "");
+        //totalWaitRentTextView.setText(infoDto.getTotalWaitRent() + "");
+        //waitLeaseCountTextView.setText(infoDto.getWaitLeaseCount() + "");
         surplusMoneyTextView.setText(infoDto.getSurplusMoney() + "");
     }
 

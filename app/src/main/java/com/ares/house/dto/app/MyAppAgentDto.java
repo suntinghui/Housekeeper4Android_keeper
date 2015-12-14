@@ -8,21 +8,9 @@ public class MyAppAgentDto extends MyAppDto {
 	 */
 	private int houseCount;
 	/**
-	 * 共收租金
+	 * 共收佣金
 	 */
-	private String totalRent;
-	/**
-	 * 租赁中数量
-	 */
-	private int leaseCount;
-	/**
-	 * 代收租金
-	 */
-	private String totalWaitRent;
-	/**
-	 * 待租中
-	 */
-	private int waitLeaseCount;
+	private String totalCommission;
 
 	public int getHouseCount() {
 		return houseCount;
@@ -32,36 +20,12 @@ public class MyAppAgentDto extends MyAppDto {
 		this.houseCount = houseCount;
 	}
 
-	public String getTotalRent() {
-		return totalRent;
+	public String getTotalCommission() {
+		return totalCommission;
 	}
 
-	public void setTotalRent(String totalRent) {
-		this.totalRent = totalRent;
-	}
-
-	public int getLeaseCount() {
-		return leaseCount;
-	}
-
-	public void setLeaseCount(int leaseCount) {
-		this.leaseCount = leaseCount;
-	}
-
-	public String getTotalWaitRent() {
-		return totalWaitRent;
-	}
-
-	public void setTotalWaitRent(String totalWaitRent) {
-		this.totalWaitRent = totalWaitRent;
-	}
-
-	public int getWaitLeaseCount() {
-		return waitLeaseCount;
-	}
-
-	public void setWaitLeaseCount(int waitLeaseCount) {
-		this.waitLeaseCount = waitLeaseCount;
+	public void setTotalCommission(String totalCommission) {
+		this.totalCommission = totalCommission;
 	}
 
 }

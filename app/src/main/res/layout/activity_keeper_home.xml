@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/gray_2"
@@ -10,152 +11,64 @@
         android:layout_width="fill_parent"
         android:layout_height="50dip" />
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical">
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
             android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:background="#ffffff"
+            android:layout_height="fill_parent"
             android:orientation="vertical">
 
-            <!-- 标题 -->
+            <!-- 列表 -->
 
             <LinearLayout
                 android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:background="@null"
-                android:orientation="horizontal"
-                android:paddingBottom="10dip"
-                android:paddingLeft="30dip"
-                android:paddingRight="30dip"
-                android:paddingTop="10dip">
+                android:layout_height="fill_parent"
+                android:background="@color/gray_2"
+                android:orientation="vertical">
 
-                <!-- 已注册  未注册 -->
+                <include
+                    android:id="@+id/emptyLayout"
+                    layout="@layout/layout_empty_view"
+                    android:visibility="gone" />
 
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/investement_topbar_bg"
-                    android:gravity="center_vertical"
-                    android:orientation="horizontal"
-                    android:padding="1dip">
+                <com.whos.swiperefreshandload.view.SwipeRefreshLayout
+                    android:id="@+id/swipeLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                    <TextView
-                        android:id="@+id/leasedTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/investement_topbar_text_left_bg"
-                        android:gravity="center"
-                        android:paddingBottom="5dip"
-                        android:paddingTop="5dip"
-                        android:text="已租"
-                        android:textColor="@drawable/text_white_blue_selector"
-                        android:textSize="16sp" />
+                    <ListView
+                        android:id="@+id/listView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:cacheColorHint="@android:color/transparent"
+                        android:divider="@color/gray_2"
+                        android:dividerHeight="15dip"
+                        android:duplicateParentState="true"
+                        android:footerDividersEnabled="false"
+                        android:headerDividersEnabled="false"
+                        android:overScrollMode="always"
+                        android:scrollbars="none"
+                        android:scrollingCache="false" />
 
-                    <View
-                        android:layout_width="1dip"
-                        android:layout_height="fill_parent"
-                        android:background="@color/blueme" />
-
-                    <TextView
-                        android:id="@+id/unLeaseTextView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:background="@drawable/investement_topbar_text_right_bg"
-                        android:gravity="center"
-                        android:paddingBottom="5dip"
-                        android:paddingTop="5dip"
-                        android:text="未租"
-                        android:textColor="@drawable/text_white_blue_selector"
-                        android:textSize="16sp" />
-                </LinearLayout>
+                </com.whos.swiperefreshandload.view.SwipeRefreshLayout>
             </LinearLayout>
 
-            <View
-                android:layout_width="fill_parent"
-                android:layout_height="1px"
-                android:background="@color/gray" />
         </LinearLayout>
 
-        <!-- 列表 -->
+        <com.melnykov.fab.FloatingActionButton
+            android:id="@+id/floatButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:src="@drawable/aaa"
+            fab:fab_colorNormal="#ee333333"
+            fab:fab_colorPressed="#ee999999"
+            fab:fab_colorRipple="#ee999999" />
 
-        <LinearLayout
-            android:id="@+id/leasedLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/gray_2"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/emptyLayout"
-                layout="@layout/layout_empty_view"
-                android:visibility="gone" />
-
-            <com.whos.swiperefreshandload.view.SwipeRefreshLayout
-                android:id="@+id/leasedSwipeLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ListView
-                    android:id="@+id/leasedListView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:cacheColorHint="@android:color/transparent"
-                    android:divider="@color/gray_2"
-                    android:dividerHeight="15dip"
-                    android:duplicateParentState="true"
-                    android:footerDividersEnabled="false"
-                    android:headerDividersEnabled="false"
-                    android:overScrollMode="always"
-                    android:scrollbars="none"
-                    android:scrollingCache="false" />
-
-            </com.whos.swiperefreshandload.view.SwipeRefreshLayout>
-        </LinearLayout>
-
-        <LinearLayout
-            android:id="@+id/unLeaseLayout"
-            android:layout_width="fill_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:background="@color/gray_2"
-            android:orientation="vertical">
-
-            <include
-                android:id="@+id/unEmptyLayout"
-                layout="@layout/layout_empty_view"
-                android:visibility="gone" />
-
-            <com.whos.swiperefreshandload.view.SwipeRefreshLayout
-                android:id="@+id/unLeaseSwipeLayout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ListView
-                    android:id="@+id/unLeaseListView"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:background="@null"
-                    android:cacheColorHint="@android:color/transparent"
-                    android:divider="@color/gray_2"
-                    android:dividerHeight="15dip"
-                    android:duplicateParentState="true"
-                    android:footerDividersEnabled="false"
-                    android:headerDividersEnabled="false"
-                    android:overScrollMode="always"
-                    android:scrollbars="none"
-                    android:scrollingCache="false" />
-
-            </com.whos.swiperefreshandload.view.SwipeRefreshLayout>
-        </LinearLayout>
-    </LinearLayout>
+    </FrameLayout>
 
 </LinearLayout>

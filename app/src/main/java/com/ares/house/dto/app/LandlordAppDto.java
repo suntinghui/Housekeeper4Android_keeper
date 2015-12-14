@@ -8,14 +8,6 @@ public class LandlordAppDto extends MyAppDto {
 	 * 共收租金
 	 */
 	private String totalRent;
-	/**
-	 * 租金租期
-	 */
-	private int totalMonth;
-	/**
-	 * 贷款剩余金额
-	 */
-	private String loanMoney;
 
 	/**
 	 * 房子
@@ -36,22 +28,6 @@ public class LandlordAppDto extends MyAppDto {
 
 	public void setHouses(List<LandlordHouseListAppDto> houses) {
 		this.houses = houses;
-	}
-
-	public int getTotalMonth() {
-		return totalMonth;
-	}
-
-	public void setTotalMonth(int totalMonth) {
-		this.totalMonth = totalMonth;
-	}
-
-	public String getLoanMoney() {
-		return loanMoney;
-	}
-
-	public void setLoanMoney(String loanMoney) {
-		this.loanMoney = loanMoney;
 	}
 
 }

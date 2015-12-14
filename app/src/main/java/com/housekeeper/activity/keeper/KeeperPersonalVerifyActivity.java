@@ -33,6 +33,7 @@ import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.BindedBankActivity;
 import com.housekeeper.activity.BindingBankActivity;
 import com.housekeeper.activity.CropImageActivity;
+import com.housekeeper.activity.ModifyLoginPWDActivity;
 import com.housekeeper.activity.SetTransferPWDActivity;
 import com.housekeeper.activity.VerifyEmergencyContactActivity;
 import com.housekeeper.activity.VerifyHasSetTransferPWDActivity;
@@ -66,6 +67,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
     private DavinciView headLogoView;
     private CustomNetworkImageView headImageView;
     private DavinciView transferPwdView;
+    private DavinciView modifyLoginPwdView;
 
     private DavinciView bankCardView;
 
@@ -133,6 +135,12 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
         transferPwdView.getTipTextView().setText("");
         transferPwdView.setOnClickListener(this);
 
+        modifyLoginPwdView = (DavinciView) this.findViewById(R.id.modifyLoginPwdView);
+        modifyLoginPwdView.getLogoImageView().setVisibility(View.GONE);
+        modifyLoginPwdView.getTitleTextView().setText("修改登录密码");
+        modifyLoginPwdView.getTipTextView().setText("");
+        modifyLoginPwdView.setOnClickListener(this);
+
         bankCardView = (DavinciView) this.findViewById(R.id.bankCardView);
         bankCardView.getLogoImageView().setVisibility(View.GONE);
         bankCardView.getTitleTextView().setText("银行卡");
@@ -176,6 +184,12 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
                     Intent intent = new Intent(this, VerifyHasSetTransferPWDActivity.class);
                     this.startActivityForResult(intent, 0);
                 }
+            }
+            break;
+
+            case R.id.modifyLoginPwdView:{ // 修改登录密码
+                Intent intent = new Intent(this, ModifyLoginPWDActivity.class);
+                this.startActivity(intent);
             }
             break;
 

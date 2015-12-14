@@ -108,6 +108,14 @@ public class HouseReleaseInfoAppDto implements Serializable {
 	 * 纬度
 	 */
 	private String latitude;
+	/**
+	 * 房屋状态
+	 */
+	private char houseStatus;
+	/**
+	 * 是否已发布
+	 */
+	private boolean release;
 
 	public int getHouseId() {
 		return houseId;
@@ -307,5 +315,21 @@ public class HouseReleaseInfoAppDto implements Serializable {
 
 	public void setLatitude(String latitude) {
 		this.latitude = latitude;
+	}
+
+	public char getHouseStatus() {
+		return houseStatus;
+	}
+
+	public void setHouseStatus(char houseStatus) {
+		this.houseStatus = houseStatus;
+	}
+
+	public boolean isRelease() {
+		return release;
+	}
+
+	public void setRelease(boolean release) {
+		this.release = release;
 	}
 }

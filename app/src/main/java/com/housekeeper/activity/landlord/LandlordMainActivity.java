@@ -59,7 +59,7 @@ public class LandlordMainActivity extends MyTabActivity {
         // 往TabWidget添加Tab
         tabhost = getTabHost();
         tabhost.addTab(tabhost.newTabSpec("tag1").setIndicator("0").setContent(new Intent(this, LandlordHomeActivity.class)));
-        tabhost.addTab(tabhost.newTabSpec("tag2").setIndicator("1").setContent(new Intent(this, LandlordRelationActivity.class)));
+        tabhost.addTab(tabhost.newTabSpec("tag2").setIndicator("1").setContent(new Intent(this, LandlordHomeActivity.class)));
         tabhost.addTab(tabhost.newTabSpec("tag3").setIndicator("2").setContent(new Intent(this, LandlordSettingActivity.class)));
     }
 

@@ -82,7 +82,7 @@ public class KeeperMainActivity extends MyTabActivity {
         tabhost.addTab(tabhost.newTabSpec("tag1").setIndicator("0").setContent(new Intent(this, KeeperHomeActivity.class)));
         tabhost.addTab(tabhost.newTabSpec("tag2").setIndicator("1").setContent(new Intent(this, KeeperFindHouseActivity.class)));
         tabhost.addTab(tabhost.newTabSpec("tag3").setIndicator("2").setContent(new Intent(this, KeeperAddHouseActivity.class)));
-        tabhost.addTab(tabhost.newTabSpec("tag4").setIndicator("3").setContent(new Intent(this, KeeperMeActivity.class)));
+        tabhost.addTab(tabhost.newTabSpec("tag4").setIndicator("3").setContent(new Intent(this, KeeperMeActivityEx.class)));
     }
 
     @Override

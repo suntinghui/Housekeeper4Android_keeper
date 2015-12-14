@@ -124,7 +124,7 @@ public class LandlordHomeActivity extends BaseActivity implements View.OnClickLi
         this.logoImageView.setImageUrl(Constants.HOST_IP + infoDto.getLogoUrl(), ImageCacheManager.getInstance().getImageLoader());
         this.balanceTextView.setText(infoDto.getSurplusMoney());
         this.totalRentTextView.setText(infoDto.getTotalRent());
-        this.loanMoneyTextView.setText(StringUtils.isBlank(infoDto.getLoanMoney()) ? "0.00" : infoDto.getLoanMoney());
+        //this.loanMoneyTextView.setText(StringUtils.isBlank(infoDto.getLoanMoney()) ? "0.00" : infoDto.getLoanMoney());
 
         this.contentLayout.removeAllViews();
         for (LandlordHouseListAppDto dto : infoDto.getHouses()) {

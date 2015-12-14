@@ -208,12 +208,65 @@
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
+            android:name="com.housekeeper.activity.StagingUserActivityEx"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.StagingUserActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.TransferHistoryActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.InvestmentActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.CurrentTransferInActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.CurrentTransferOutActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.CurrentInvestmentSourceActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+
+        <activity
             android:name="com.housekeeper.activity.IdentityActivity"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/MyDialogStyleBottom"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
+        <activity
+            android:name="com.housekeeper.activity.ModifyLoginPWDActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+        <activity
+            android:name="com.housekeeper.activity.YesterdayEarningsActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
             android:name="com.housekeeper.activity.gesture.GestureLockVerifyActivity"
@@ -289,7 +342,7 @@
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
-            android:name="com.housekeeper.activity.keeper.KeeperMeActivity"
+            android:name="com.housekeeper.activity.keeper.KeeperMeActivityEx"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
@@ -474,12 +527,6 @@
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
-            android:name="com.housekeeper.activity.landlord.LandlordRelationActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
-
-        <activity
             android:name="com.housekeeper.activity.landlord.LandlordSettingActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
@@ -508,12 +555,6 @@
 
         <activity
             android:name="com.housekeeper.activity.tenant.TenantMeActivity"
-            android:configChanges="orientation|keyboardHidden"
-            android:screenOrientation="portrait"
-            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
-
-        <activity
-            android:name="com.housekeeper.activity.tenant.TenantRelationActivity"
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
@@ -565,6 +606,14 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
+            android:name="com.housekeeper.activity.tenant.TenantCardSettingActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+
 
         <activity
             android:name="com.housekeeper.activity.landlord.LandlordContactKeeperActivity"

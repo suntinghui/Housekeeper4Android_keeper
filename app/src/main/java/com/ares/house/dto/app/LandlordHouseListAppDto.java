@@ -7,10 +7,6 @@ public class LandlordHouseListAppDto implements Serializable {
 	private static final long serialVersionUID = 4578757530395050493L;
 	private int houseId;
 	/**
-	 * 租赁标示
-	 */
-	private int leaseId;
-	/**
 	 * 首页图片
 	 */
 	private String indexImgUrl;
@@ -43,37 +39,21 @@ public class LandlordHouseListAppDto implements Serializable {
 	 */
 	private String endTimeStr;
 	/**
-	 * 租户头像
-	 */
-	private String userLogo;
-	/**
-	 * 租户名称
-	 */
-	private String userName;
-	/**
-	 * 租户身份证号
-	 */
-	private String userBankCard;
-	/**
-	 * 租户工作地点
-	 */
-	private String workAddress;
-	/**
 	 * 中介头像
 	 */
 	private String agentLogo;
-	/**
-	 * 中介公司logo
-	 */
-	private String companyLogo;
 	/**
 	 * 中介姓名
 	 */
 	private String agentName;
 	/**
-	 * 中介公司名称
+	 * 中介手机号
 	 */
-	private String companyName;
+	private String agentTelphone;
+	/**
+	 * 年租金
+	 */
+	private String yearMoney;
 
 	public int getHouseId() {
 		return houseId;
@@ -139,52 +119,12 @@ public class LandlordHouseListAppDto implements Serializable {
 		this.endTimeStr = endTimeStr;
 	}
 
-	public String getUserLogo() {
-		return userLogo;
-	}
-
-	public void setUserLogo(String userLogo) {
-		this.userLogo = userLogo;
-	}
-
-	public String getUserName() {
-		return userName;
-	}
-
-	public void setUserName(String userName) {
-		this.userName = userName;
-	}
-
-	public String getUserBankCard() {
-		return userBankCard;
-	}
-
-	public void setUserBankCard(String userBankCard) {
-		this.userBankCard = userBankCard;
-	}
-
-	public String getWorkAddress() {
-		return workAddress;
-	}
-
-	public void setWorkAddress(String workAddress) {
-		this.workAddress = workAddress;
-	}
-
 	public String getAgentLogo() {
 		return agentLogo;
 	}
 
 	public void setAgentLogo(String agentLogo) {
 		this.agentLogo = agentLogo;
-	}
-
-	public String getCompanyLogo() {
-		return companyLogo;
-	}
-
-	public void setCompanyLogo(String companyLogo) {
-		this.companyLogo = companyLogo;
 	}
 
 	public String getAgentName() {
@@ -195,14 +135,6 @@ public class LandlordHouseListAppDto implements Serializable {
 		this.agentName = agentName;
 	}
 
-	public String getCompanyName() {
-		return companyName;
-	}
-
-	public void setCompanyName(String companyName) {
-		this.companyName = companyName;
-	}
-
 	public String getHouseNum() {
 		return houseNum;
 	}
@@ -211,11 +143,19 @@ public class LandlordHouseListAppDto implements Serializable {
 		this.houseNum = houseNum;
 	}
 
-	public int getLeaseId() {
-		return leaseId;
+	public String getAgentTelphone() {
+		return agentTelphone;
 	}
 
-	public void setLeaseId(int leaseId) {
-		this.leaseId = leaseId;
+	public void setAgentTelphone(String agentTelphone) {
+		this.agentTelphone = agentTelphone;
+	}
+
+	public String getYearMoney() {
+		return yearMoney;
+	}
+
+	public void setYearMoney(String yearMoney) {
+		this.yearMoney = yearMoney;
 	}
 }

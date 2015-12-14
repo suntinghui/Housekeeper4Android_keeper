@@ -105,6 +105,19 @@ public class HouseInfoAppDto implements Serializable {
 	 */
 	private String subway;
 
+	/**
+	 * 租金包含
+	 */
+	private List<RentContainAppDto> rentContains;
+	/**
+	 * 经度
+	 */
+	private String longitude;
+	/**
+	 * 纬度
+	 */
+	private String latitude;
+
 	public int getId() {
 		return id;
 	}
@@ -295,5 +308,29 @@ public class HouseInfoAppDto implements Serializable {
 
 	public void setSubway(String subway) {
 		this.subway = subway;
+	}
+
+	public List<RentContainAppDto> getRentContains() {
+		return rentContains;
+	}
+
+	public void setRentContains(List<RentContainAppDto> rentContains) {
+		this.rentContains = rentContains;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
 	}
 }

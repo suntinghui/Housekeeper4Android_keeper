@@ -60,7 +60,7 @@ public class TenantMainActivity extends MyTabActivity {
         tabhost = getTabHost();
         tabhost.addTab(tabhost.newTabSpec("tag1").setIndicator("0").setContent(new Intent(this, TenantHomeActivity.class)));
         tabhost.addTab(tabhost.newTabSpec("tag2").setIndicator("1").setContent(new Intent(this, TenantMeActivity.class)));
-        tabhost.addTab(tabhost.newTabSpec("tag3").setIndicator("2").setContent(new Intent(this, TenantRelationActivity.class)));
+        tabhost.addTab(tabhost.newTabSpec("tag3").setIndicator("2").setContent(new Intent(this, TenantMeActivity.class)));
         tabhost.addTab(tabhost.newTabSpec("tag4").setIndicator("3").setContent(new Intent(this, TenantSettingActivity.class)));
     }
 
