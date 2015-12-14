@@ -18,8 +18,8 @@
             android:id="@+id/headImageView"
             android:layout_width="50dip"
             android:layout_height="50dip"
-            android:src="@drawable/head_tenant_default"
-            android:scaleType="fitXY" />
+            android:scaleType="fitXY"
+            android:src="@drawable/head_tenant_default" />
 
         <LinearLayout
             android:layout_width="fill_parent"
@@ -50,8 +50,17 @@
                 android:textColor="#999999"
                 android:textSize="12sp" />
 
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="1px"
+                android:layout_marginBottom="10dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="10dip"
+                android:layout_marginTop="10dip"
+                android:background="@color/gray" />
+
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
@@ -60,7 +69,6 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginRight="15dip"
-                    android:layout_marginTop="5dip"
                     android:orientation="horizontal">
 
                     <TextView
@@ -114,6 +122,7 @@
     </LinearLayout>
 
     <LinearLayout
+        android:id="@+id/middleLayout"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -124,7 +133,6 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:background="@drawable/bg_yellow_light"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -140,13 +148,13 @@
                 android:textSize="13sp" />
 
             <TextView
+                android:id="@+id/tipTextView1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dip"
                 android:text="用于租金和租赁合同"
                 android:textColor="#999999"
                 android:textSize="12sp" />
-
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -167,7 +175,6 @@
             android:layout_width="fill_parent"
             android:layout_height="fill_parent"
             android:layout_weight="1"
-            android:background="@drawable/bg_yellow_light"
             android:gravity="center"
             android:orientation="vertical">
 
@@ -199,6 +206,7 @@
             </LinearLayout>
 
             <TextView
+                android:id="@+id/tipTextView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignLeft="@id/layout1"
@@ -256,7 +264,7 @@
             android:drawablePadding="15dip"
             android:drawableRight="@drawable/bag_right_arrow"
             android:text="人"
-            android:textColor="#666666"
+            android:textColor="#999999"
             android:textSize="13sp" />
 
     </LinearLayout>

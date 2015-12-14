@@ -2,17 +2,13 @@ package com.housekeeper.activity.keeper;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
-import android.widget.AbsListView;
 import android.widget.BaseAdapter;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.ListView;
-import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,6 +21,7 @@ import com.ares.house.dto.app.WaitLeaseListAppDto;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.HousePushIntentService;
 import com.housekeeper.activity.view.EmptyLayout;
+import com.housekeeper.activity.view.HomeTopImageLayout;
 import com.housekeeper.activity.view.HomeTopLayout;
 import com.housekeeper.activity.view.KeeperLeasedAdapter;
 import com.housekeeper.activity.view.KeeperUnLeaseAdapter;
@@ -35,8 +32,6 @@ import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.client.net.ResponseErrorListener;
 import com.housekeeper.utils.ActivityUtil;
 import com.melnykov.fab.FloatingActionButton;
-import com.melnykov.fab.ObservableScrollView;
-import com.melnykov.fab.ScrollDirectionListener;
 import com.umeng.analytics.AnalyticsConfig;
 import com.umeng.analytics.MobclickAgent;
 import com.umeng.message.PushAgent;
@@ -61,14 +56,17 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
     private int type = HomeTopLayout.TYPE_UNLEASE;
 
     private HomeTopLayout topLayout = null;
+    private HomeTopImageLayout topImageLayout = null;
     private EmptyLayout emptyLayout = null;
 
     private ListView listView = null;
 
     private KeeperLeasedAdapter leasedAdapter = null;
+    private KeeperLeasedAdapter cancelLeaseAdapter = null;
     private KeeperUnLeaseAdapter unLeaseAdapter = null;
 
     private List<LeasedListAppDto> leasedList = new ArrayList<LeasedListAppDto>();
+    private List<LeasedListAppDto> cancelLeaseList = new ArrayList<LeasedListAppDto>();
     private List<WaitLeaseListAppDto> unLeaseList = new ArrayList<WaitLeaseListAppDto>();
 
     private SwipeRefreshLayout swipeLayout = null;
@@ -86,6 +84,33 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
         this.initView();
 
         this.aboutUmeng();
+
+        requestData();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        if (null != topImageLayout.getViewPager()) {
+            topImageLayout.getViewPager().startAutoScroll();
+        }
+
+        topImageLayout.requestTopImage();
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+
+        if (null != topImageLayout.getViewPager()) {
+            topImageLayout.getViewPager().stopAutoScroll();
+        }
+    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        requestData();
     }
 
     private void initView() {
@@ -96,6 +121,8 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
         this.initSwipeRefresh();
 
+        this.initTopImageView();
+
         this.initTopItemView();
 
         this.initFooterView();
@@ -103,6 +130,7 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
         listView = (ListView) this.findViewById(R.id.listView);
 
         leasedAdapter = new KeeperLeasedAdapter(this);
+        cancelLeaseAdapter = new KeeperLeasedAdapter(this);
         unLeaseAdapter = new KeeperUnLeaseAdapter(this);
 
         floatButton = (FloatingActionButton) this.findViewById(R.id.floatButton);
@@ -114,8 +142,10 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
                 listView.setSelection(0);
             }
         });
+    }
 
-        requestData();
+    private void initTopImageView() {
+        topImageLayout = new HomeTopImageLayout(this);
     }
 
     private void initTopItemView() {
@@ -135,21 +165,24 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
     private void setAdapter(BaseAdapter adapter) {
         try {
+            listView.removeHeaderView(topImageLayout);
             listView.removeHeaderView(topLayout);
             listView.removeFooterView(emptyLayout);
 
         } catch (Exception e) {
         }
 
-
+        listView.addHeaderView(topImageLayout, null, false);
         listView.addHeaderView(topLayout, null, false);
 
         if (adapter.isEmpty()) {
             listView.addFooterView(emptyLayout);
+        }
 
-            floatButton.hide(false);
-        } else {
+        if (adapter.getCount() > 3) {
             floatButton.show(true);
+        } else {
+            floatButton.hide(false);
         }
 
         listView.setAdapter(adapter);
@@ -195,14 +228,80 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
         } else if (type == HomeTopLayout.TYPE_LEASED) {
             requestLeasedList();
         } else if (type == HomeTopLayout.TYPE_CANCELLEASE) {
-
+            requestCancelLeaseList();
         }
     }
 
+    // 退租
+    private void requestCancelLeaseList() {
+        HashMap<String, String> tempMap = new HashMap<String, String>();
+        tempMap.put("pageNo", pageNo + "");
+        tempMap.put("pageSize", Constants.PAGESIZE + "");
+        tempMap.put("return", true + "");
+
+        JSONRequest request = new JSONRequest(this, RequestEnum.LEASE_LEASED, tempMap, false, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String jsonObject) {
+                ObjectMapper objectMapper = new ObjectMapper();
+                objectMapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                JavaType type = objectMapper.getTypeFactory().constructParametricType(Paginable.class, LeasedListAppDto.class);
+                JavaType javaType = objectMapper.getTypeFactory().constructParametricType(AppMessageDto.class, type);
+
+                AppMessageDto<Paginable<LeasedListAppDto>> dto = null;
+                try {
+                    dto = objectMapper.readValue(jsonObject, javaType);
+                    if (dto.getStatus() == AppResponseStatus.SUCCESS) {
+
+                        totalPage = dto.getData().getTotalPage();
+                        pageNo = dto.getData().getPageNo();
+
+                        if (pageNo == 1) {
+                            cancelLeaseList.clear();
+                        }
+
+                        cancelLeaseList.addAll(dto.getData().getList());
+                        cancelLeaseAdapter.setData(cancelLeaseList, true);
+
+                        setAdapter(cancelLeaseAdapter);
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+
+                } finally {
+                    swipeLayout.setLoading(false);
+                    swipeLayout.setRefreshing(false);
+
+                    if (pageNo == totalPage) {
+                        swipeLayout.setMode(SwipeRefreshLayout.Mode.PULL_FROM_START);
+                    } else {
+                        swipeLayout.setMode(SwipeRefreshLayout.Mode.BOTH);
+                    }
+                }
+
+            }
+        }, new ResponseErrorListener(this) {
+
+            @Override
+            public void todo() {
+                swipeLayout.setLoading(false);
+                swipeLayout.setRefreshing(false);
+            }
+        });
+
+        if (!this.addToRequestQueue(request, "正在请求数据...")) {
+            swipeLayout.setRefreshing(false);
+            swipeLayout.setLoading(false);
+        }
+    }
+
+    // 已租
     private void requestLeasedList() {
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("pageNo", pageNo + "");
         tempMap.put("pageSize", Constants.PAGESIZE + "");
+        tempMap.put("return", false + "");
 
         JSONRequest request = new JSONRequest(this, RequestEnum.LEASE_LEASED, tempMap, false, new Response.Listener<String>() {
 
@@ -226,7 +325,7 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
                         }
 
                         leasedList.addAll(dto.getData().getList());
-                        leasedAdapter.setData(leasedList);
+                        leasedAdapter.setData(leasedList, false);
 
                         setAdapter(leasedAdapter);
                     }
@@ -287,11 +386,6 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
                             unLeaseList.clear();
                         }
 
-                        unLeaseList.addAll(dto.getData().getList());
-                        unLeaseList.addAll(dto.getData().getList());
-                        unLeaseList.addAll(dto.getData().getList());
-                        unLeaseList.addAll(dto.getData().getList());
-                        unLeaseList.addAll(dto.getData().getList());
                         unLeaseList.addAll(dto.getData().getList());
                         unLeaseAdapter.setData(unLeaseList);
 

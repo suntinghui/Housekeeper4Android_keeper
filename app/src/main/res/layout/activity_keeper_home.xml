@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="bottom|right"
             android:layout_margin="16dp"
-            android:src="@drawable/aaa"
+            android:src="@drawable/scroll_top"
             fab:fab_colorNormal="#ee333333"
             fab:fab_colorPressed="#ee999999"
             fab:fab_colorRipple="#ee999999" />

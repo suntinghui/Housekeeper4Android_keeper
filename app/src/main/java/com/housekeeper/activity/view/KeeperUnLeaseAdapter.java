@@ -2,6 +2,7 @@ package com.housekeeper.activity.view;
 
 import android.content.Intent;
 import android.graphics.Color;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -79,8 +80,13 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
             holder.cityTextView = (TextView) convertView.findViewById(R.id.cityTextView);
             holder.letLeaseDayTextView = (TextView) convertView.findViewById(R.id.letLeaseDayTextView);
 
+            holder.middleLayout = (LinearLayout) convertView.findViewById(R.id.middleLayout);
+
             holder.reserveLayout = (LinearLayout) convertView.findViewById(R.id.reserveLayout);
             holder.reserveCountTextView = (TextView) convertView.findViewById(R.id.reserveCountTextView);
+
+            holder.tipTextView1 = (TextView) convertView.findViewById(R.id.tipTextView1);
+            holder.tipTextView2 = (TextView) convertView.findViewById(R.id.tipTextView2);
 
             convertView.setTag(holder);
 
@@ -100,11 +106,17 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         holder.letLeaseDayTextView.setText(infoDto.getLetLeaseDay() + "");
         holder.reserveCountTextView.setText(infoDto.getReserveCount() + "");
 
+        holder.tipTextView1.setText(Html.fromHtml("用于<font color=#24B0F1>租金</font>和<font color=#24B0F1>租赁合同</font>"));
+
+        holder.tipTextView2.setText(Html.fromHtml("发布房源<font color=#F5933C>让更多租户可见</font>"));
+
         if (infoDto.isRelease()) {
+            holder.middleLayout.setBackgroundColor(Color.parseColor("#FEEEC8"));
             holder.publicStatusTextView.setText(infoDto.getLeaseMonthMoney() + " 元/月");
             holder.publicStatusTextView.setTextColor(context.getResources().getColor(R.color.orange));
 
         } else {
+            holder.middleLayout.setBackgroundColor(Color.parseColor("#F0FFFB"));
             holder.publicStatusTextView.setText("未发布");
             holder.publicStatusTextView.setTextColor(Color.parseColor("#999999"));
         }
@@ -112,7 +124,7 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         holder.infoLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, HouseInfoActivity.class);
+                Intent intent = new Intent(context, KeeperHouseInfoPublishActivity.class);
                 intent.putExtra("houseId", infoDto.getHouseId() + "");
                 context.startActivity(intent);
             }
@@ -166,7 +178,12 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         private TextView cityTextView;
         private TextView letLeaseDayTextView;
 
+        private LinearLayout middleLayout;
+
         private LinearLayout reserveLayout;
         private TextView reserveCountTextView;
+
+        private TextView tipTextView1;
+        private TextView tipTextView2;
     }
 }

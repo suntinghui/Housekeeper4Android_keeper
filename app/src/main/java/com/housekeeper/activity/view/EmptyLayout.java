@@ -8,6 +8,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 
 import com.housekeeper.activity.BaseActivity;
+import com.housekeeper.utils.AdapterUtil;
 import com.wufriends.housekeeper.keeper.R;
 
 /**
@@ -39,10 +40,10 @@ public class EmptyLayout extends LinearLayout {
 
         noDataImageView = (ImageView) this.findViewById(R.id.noDataImageView);
 
-        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
-        int height = wm.getDefaultDisplay().getHeight();
+//        WindowManager wm = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+//        int height = wm.getDefaultDisplay().getHeight();
 
-        noDataImageView.setPadding(0, height / 5, 0, 0);
+        noDataImageView.setPadding(0, AdapterUtil.dip2px(context, 30), 0, 0);
 
     }
 

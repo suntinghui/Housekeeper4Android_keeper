@@ -1,6 +1,7 @@
 package com.housekeeper.activity.view;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -12,17 +13,23 @@ import android.widget.TextView;
 import com.ares.house.dto.app.LeasedListAppDto;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.HouseInfoActivity;
+import com.housekeeper.activity.keeper.KeeperHouseInfoPublishActivity;
 import com.housekeeper.activity.keeper.KeeperIDCardActivity;
+import com.housekeeper.activity.keeper.KeeperMainActivity;
 import com.housekeeper.activity.keeper.KeeperRentRecordDetailActivity;
 import com.housekeeper.activity.keeper.KeeperRentRecordListActivity;
 import com.housekeeper.activity.keeper.KeeperReturnActivity;
+import com.housekeeper.activity.keeper.KeeperSystemSettingActivity;
 import com.housekeeper.client.Constants;
+import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.ImageCacheManager;
+import com.housekeeper.utils.ActivityUtil;
 import com.wufriends.housekeeper.keeper.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
+import cn.pedant.SweetAlert.SweetAlertDialog;
 import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
@@ -34,18 +41,20 @@ public class KeeperLeasedAdapter extends BaseAdapter {
     private LayoutInflater layoutInflater = null;
     private List<LeasedListAppDto> list = new ArrayList<LeasedListAppDto>();
 
+    private boolean cancel = false; // 是否是退租
+
     public KeeperLeasedAdapter(BaseActivity context) {
         this.context = context;
 
         this.layoutInflater = LayoutInflater.from(context);
-
     }
 
-    public void setData(List<LeasedListAppDto> list) {
+    public void setData(List<LeasedListAppDto> list, boolean cancel) {
         if (list == null)
             return;
 
         this.list = list;
+        this.cancel = cancel;
 
         this.notifyDataSetChanged();
     }
@@ -84,13 +93,21 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             holder.tenantNameTextView = (TextView) convertView.findViewById(R.id.tenantNameTextView);
             holder.tenantTelphoneTextView = (TextView) convertView.findViewById(R.id.tenantTelphoneTextView);
             holder.tenantAddressTextView = (TextView) convertView.findViewById(R.id.tenantAddressTextView);
+            holder.surplusDayTextView = (TextView) convertView.findViewById(R.id.surplusDayTextView);
 
             holder.landlordInfoLayout = (LinearLayout) convertView.findViewById(R.id.landlordInfoLayout);
             holder.landlordLogoImageView = (CircleImageView) convertView.findViewById(R.id.landlordLogoImageView);
             holder.landlordNameTextView = (TextView) convertView.findViewById(R.id.landlordNameTextView);
 
-            holder.returnTextView = (TextView) convertView.findViewById(R.id.returnTextView);
+            holder.landlordBtn = (Button) convertView.findViewById(R.id.landlordBtn);
+            holder.tenantBtn = (Button) convertView.findViewById(R.id.tenantBtn);
+
             holder.returnBtn = (Button) convertView.findViewById(R.id.returnBtn);
+            if (this.cancel) {
+                holder.returnBtn.setBackgroundResource(R.drawable.keeper_img_33);
+            } else {
+                holder.returnBtn.setBackgroundResource(R.drawable.keeper_img_32);
+            }
 
             convertView.setTag(holder);
 
@@ -112,33 +129,13 @@ public class KeeperLeasedAdapter extends BaseAdapter {
 
         holder.tenantLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getUserLogo());
         holder.tenantNameTextView.setText(infoDto.getUserName());
-        //holder.tenantTelphoneTextView.setText(infoDto.getUserBankCard());
         holder.tenantAddressTextView.setText(infoDto.getWorkAddress());
-
-        //holder.landlordLogoImageView.setImageURL(Constants.HOST_IP + infoDto.getLandlordLogo());
-        //holder.landlordNameTextView.setText(infoDto.getLandlordUserName());
-
-        // b 正常 c退租中  d已完成
-        if (infoDto.getStatus() == 'b') {
-            holder.returnTextView.setVisibility(View.GONE);
-            holder.returnBtn.setVisibility(View.VISIBLE);
-            holder.returnBtn.setEnabled(true);
-        } else if (infoDto.getStatus() == 'c') {
-            holder.returnTextView.setVisibility(View.GONE);
-            holder.returnBtn.setVisibility(View.VISIBLE);
-            holder.returnBtn.setText("退租中");
-            holder.returnBtn.setEnabled(false);
-        } else if (infoDto.getStatus() == 'd') {
-            holder.returnTextView.setVisibility(View.VISIBLE);
-            holder.returnBtn.setVisibility(View.GONE);
-            holder.returnBtn.setEnabled(false);
-            holder.returnTextView.setText("该房源已经申请退租，退租时间是" + infoDto.getTakeBackTime() + "，需退还金额" + infoDto.getTakeBackMortgageMoney() + "元。");
-        }
+        holder.surplusDayTextView.setText(infoDto.getSurplusDay() + "");
 
         holder.houseInfoLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, HouseInfoActivity.class);
+                Intent intent = new Intent(context, KeeperHouseInfoPublishActivity.class);
                 intent.putExtra("houseId", infoDto.getHouseId() + "");
                 context.startActivity(intent);
             }
@@ -160,16 +157,49 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             }
         });
 
-        holder.returnBtn.setOnClickListener(new View.OnClickListener() {
+        holder.landlordBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(context, KeeperReturnActivity.class);
-                intent.putExtra("DTO", infoDto);
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + infoDto.getLandlordTelphone()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 context.startActivity(intent);
             }
         });
 
+        holder.tenantBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + infoDto.getUserTelphone()));
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                context.startActivity(intent);
+            }
+        });
+
+        holder.returnBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (cancel) {
+                    showCancelDialog(infoDto);
+                } else {
+                    Intent intent = new Intent(context, KeeperReturnActivity.class);
+                    intent.putExtra("DTO", infoDto);
+                    context.startActivity(intent);
+                }
+            }
+        });
+
         return convertView;
+    }
+
+    private void showCancelDialog(LeasedListAppDto dto) {
+        String content = "退租日期：" + dto.getTakeBackTime() + "\n应退金额：" + dto.getTakeBackMortgageMoney() + "元";
+
+        new SweetAlertDialog(context, SweetAlertDialog.NORMAL_TYPE).setTitleText("该房源已退租").setContentText(content).setConfirmText("确定").showCancelButton(true).setConfirmClickListener(new SweetAlertDialog.OnSweetClickListener() {
+            @Override
+            public void onClick(SweetAlertDialog sDialog) {
+                sDialog.cancel();
+            }
+        }).show();
     }
 
     public static final class ViewHolder {
@@ -185,12 +215,14 @@ public class KeeperLeasedAdapter extends BaseAdapter {
         private TextView tenantNameTextView;
         private TextView tenantTelphoneTextView;
         private TextView tenantAddressTextView;
+        private TextView surplusDayTextView;
 
         private LinearLayout landlordInfoLayout;
         private CircleImageView landlordLogoImageView;
         private TextView landlordNameTextView;
 
-        private TextView returnTextView;
+        private Button landlordBtn;
+        private Button tenantBtn;
         private Button returnBtn;
     }
 }

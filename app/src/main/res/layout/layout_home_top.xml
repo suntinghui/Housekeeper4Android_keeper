@@ -10,6 +10,11 @@
         android:background="#ffffff"
         android:orientation="vertical">
 
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="@color/gray" />
+
         <!-- 标题 -->
 
         <LinearLayout
@@ -19,8 +24,8 @@
             android:background="@null"
             android:orientation="horizontal"
             android:paddingBottom="15dip"
-            android:paddingLeft="30dip"
-            android:paddingRight="30dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
             android:paddingTop="15dip">
 
             <!-- 已注册  未注册 -->
@@ -35,14 +40,13 @@
 
                 <TextView
                     android:id="@+id/unLeaseTextView"
-
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="@drawable/investement_topbar_text_left_bg"
                     android:gravity="center"
-                    android:paddingBottom="5dip"
-                    android:paddingTop="5dip"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip"
                     android:text="未租"
                     android:textColor="@drawable/text_white_blue_selector"
                     android:textSize="16sp" />
@@ -59,8 +63,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/investement_topbar_text_middle_bg"
                     android:gravity="center"
-                    android:paddingBottom="5dip"
-                    android:paddingTop="5dip"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip"
                     android:text="已租"
                     android:textColor="@drawable/text_white_blue_selector"
                     android:textSize="16sp" />
@@ -77,8 +81,8 @@
                     android:layout_weight="1"
                     android:background="@drawable/investement_topbar_text_right_bg"
                     android:gravity="center"
-                    android:paddingBottom="5dip"
-                    android:paddingTop="5dip"
+                    android:paddingBottom="6dip"
+                    android:paddingTop="6dip"
                     android:text="退租"
                     android:textColor="@drawable/text_white_blue_selector"
                     android:textSize="16sp" />

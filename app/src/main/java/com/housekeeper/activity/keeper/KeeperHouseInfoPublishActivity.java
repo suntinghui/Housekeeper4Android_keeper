@@ -4,11 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -23,11 +25,15 @@ import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView;
 import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridViewAdapter;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.tenant.TenantLookListActivity;
+import com.housekeeper.activity.view.CustomNetworkImageView;
 import com.housekeeper.activity.view.EquipmentAdapter;
+import com.housekeeper.activity.view.HouseRentalCostAdapter;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
 import com.housekeeper.client.RoleTypeEnum;
+import com.housekeeper.client.net.ImageCacheManager;
 import com.housekeeper.client.net.JSONRequest;
+import com.housekeeper.model.RentContainAppDtoEx;
 import com.housekeeper.utils.ActivityUtil;
 import com.readystatesoftware.viewbadger.BadgeView;
 import com.wufriends.housekeeper.keeper.R;
@@ -79,6 +85,9 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
     private TextView heatingFeesTextView = null;
 
+    private TextView locationInfoTextView = null;
+    private CustomNetworkImageView mapImageView = null;
+
     private TextView busTextView = null;
     private TextView subwayTextView = null;
 
@@ -89,6 +98,14 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
     private TextView lookListTextView;
     private TextView applyLookTextView;
     private BadgeView lookCountBadgeView;
+
+    private AsymmetricGridView gridView1 = null;
+    private HouseRentalCostAdapter adapter1 = null;
+    private List<RentContainAppDtoEx> items1 = null;
+
+    private AsymmetricGridView gridView2 = null;
+    private HouseRentalCostAdapter adapter2 = null;
+    private List<RentContainAppDtoEx> items2 = null;
 
     private HouseReleaseInfoAppDto appDto;
 
@@ -122,6 +139,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
     private void initView() {
         this.findViewById(R.id.backBtn).setOnClickListener(this);
+
         ((TextView) this.findViewById(R.id.titleTextView)).setText("房屋信息");
 
         flowlayout = (TagFlowLayout) this.findViewById(R.id.flowlayout);
@@ -151,6 +169,40 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         AsymmetricGridViewAdapter asymmetricAdapter = new AsymmetricGridViewAdapter<>(this, gridView, adapter);
         gridView.setAdapter(asymmetricAdapter);
 
+        ///////////
+
+        gridView1 = (AsymmetricGridView) this.findViewById(R.id.gridView1);
+
+        gridView1.setRequestedColumnCount(3);
+        gridView1.setRowHeight(80);
+        gridView1.determineColumns();
+        gridView1.setAllowReordering(true);
+        gridView1.isAllowReordering(); // true
+
+        adapter1 = new HouseRentalCostAdapter(this);
+        AsymmetricGridViewAdapter asymmetricAdapter1 = new AsymmetricGridViewAdapter<>(this, gridView1, adapter1);
+        gridView1.setAdapter(asymmetricAdapter1);
+
+        ///////
+
+        gridView2 = (AsymmetricGridView) this.findViewById(R.id.gridView2);
+
+        gridView2.setRequestedColumnCount(3);
+        gridView2.setRowHeight(80);
+        gridView2.determineColumns();
+        gridView2.setAllowReordering(true);
+        gridView2.isAllowReordering(); // true
+
+        adapter2 = new HouseRentalCostAdapter(this);
+        AsymmetricGridViewAdapter asymmetricAdapter2 = new AsymmetricGridViewAdapter<>(this, gridView2, adapter2);
+        gridView2.setAdapter(asymmetricAdapter2);
+
+        //////
+
+        locationInfoTextView = (TextView) this.findViewById(R.id.locationInfoTextView);
+        mapImageView = (CustomNetworkImageView) this.findViewById(R.id.mapImageView);
+        mapImageView.setOnClickListener(this);
+
         heatingFeesTextView = (TextView) this.findViewById(R.id.heatingFeesTextView);
         busTextView = (TextView) this.findViewById(R.id.busTextView);
         subwayTextView = (TextView) this.findViewById(R.id.subwayTextView);
@@ -172,14 +224,8 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         applyLookTextView = (TextView) this.findViewById(R.id.applyLookTextView);
         applyLookTextView.setOnClickListener(this);
 
-        if (ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER).equalsIgnoreCase(RoleTypeEnum.TENANT)) {
-            cancelPublishTextView.setVisibility(View.GONE);
-            lookatLayout.setVisibility(View.VISIBLE);
-
-        } else {
-            cancelPublishTextView.setVisibility(View.VISIBLE);
-            lookatLayout.setVisibility(View.GONE);
-        }
+        cancelPublishTextView.setVisibility(View.GONE);
+        lookatLayout.setVisibility(View.VISIBLE);
 
         if (this.getIntent().getBooleanExtra("hideall", false)) {
             cancelPublishTextView.setVisibility(View.GONE);
@@ -239,7 +285,6 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
                     } else {
                         indicatorImageViews[i].setBackgroundResource(R.drawable.page_indicator_unfocused);
                     }
-
                 }
             }
 
@@ -327,8 +372,16 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
         this.communityTextView.setText(appDto.getCommunity() + "   " + appDto.getHouseType());
         this.areaTextView.setText(appDto.getAreaStr());
-        this.moneyTextView.setText(appDto.getMonthMoney());
-        this.monthTextView.setText("元/月");
+
+        if (appDto.isRelease()) {
+            this.moneyTextView.setText(appDto.getMonthMoney());
+            this.monthTextView.setText("元/月");
+            this.flowlayout.setVisibility(View.VISIBLE);
+        } else {
+            this.moneyTextView.setText("未发布");
+            this.monthTextView.setVisibility(View.GONE);
+            this.flowlayout.setVisibility(View.GONE);
+        }
 
         this.leaseTypeTextView.setText(Html.fromHtml("<font color=#999999>类型：</font><font color=#222222>" + appDto.getLeaseType() + "</font>"));
         this.decorateTextView.setText(Html.fromHtml("<font color=#999999>装修：</font><font color=#222222>" + appDto.getDecorate() + "</font>"));
@@ -338,6 +391,34 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         this.leaseTimeTextView.setText(appDto.getLeaseTimeStr());
 
         this.adapter.setData(appDto.getEquipments(), false);
+
+        List<RentContainAppDtoEx> inList = new ArrayList<RentContainAppDtoEx>();
+        List<RentContainAppDtoEx> outList = new ArrayList<RentContainAppDtoEx>();
+        for (RentContainAppDtoEx ex : appDto.getRentContains()) {
+            if (ex.isSelected()) {
+                inList.add(ex);
+            } else {
+                outList.add(ex);
+            }
+        }
+        items1 = inList;
+        adapter1.setData(items1, false);
+
+        items2 = outList;
+        adapter2.setData(items2, false);
+
+        locationInfoTextView.setText(appDto.getAreaStr());
+
+        try {
+            Double.parseDouble(appDto.getLongitude());
+
+            String mapUrl = "http://api.map.baidu.com/staticimage/v2?ak=kWcbhglQaeKs48zYu8QwLkzL&width=1024&height=512&zoom=14&mcode=02:ED:7F:D2:7A:0F:16:F2:E6:EB:A6:58:B4:B0:ED:12:59:86:0B:02;com.wufriends.housekeeper.keeper" + "&center=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markers=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markerStyles=l,A,0xFF0000";
+            mapImageView.setImageUrl(mapUrl, ImageCacheManager.getInstance().getImageLoader());
+
+        } catch (Exception e) {
+            mapImageView.setVisibility(View.GONE);
+            locationInfoTextView.setVisibility(View.GONE);
+        }
 
         this.heatingFeesTextView.setText(appDto.isHeatingFees() ? "租户交" : "房东交");
 
@@ -447,6 +528,10 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
                 break;
 
+            case R.id.mapImageView: {
+            }
+            break;
+
             case R.id.cancelPublishTextView: {
                 new SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE).setTitleText("\n您确定要取消发布吗？").setContentText("").setCancelText("再想想").setConfirmText("确定").showCancelButton(true).setCancelClickListener(new SweetAlertDialog.OnSweetClickListener() {
                     @Override
@@ -462,6 +547,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
                     }
                 }).show();
             }
+            break;
 
             case R.id.lookListTextView: {
                 Intent intent = new Intent(this, TenantLookListActivity.class);
@@ -473,7 +559,6 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
             case R.id.applyLookTextView: {
                 requestReserve();
             }
-
             break;
         }
     }

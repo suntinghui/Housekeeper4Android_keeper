@@ -17,11 +17,11 @@ public class Constants {
 //    public static final String HOST_IP_REQ = HOST_IP + ":8111";
 
     // 测试
-    public static final String HOST_IP = "http://182.92.217.168:8112";
-    public static final String HOST_IP_REQ = HOST_IP;
-
-//    public static final String HOST_IP = "http://192.168.1.106:8716";
+//    public static final String HOST_IP = "http://182.92.217.168:8112";
 //    public static final String HOST_IP_REQ = HOST_IP;
+
+    public static final String HOST_IP = "http://192.168.1.106:8716";
+    public static final String HOST_IP_REQ = HOST_IP;
 
     public static final String PROTOCOL_IP = HOST_IP + "/app/agreement.html";
 
