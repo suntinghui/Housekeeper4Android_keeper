@@ -33,14 +33,14 @@ import java.util.List;
 
 /**
  * Created by sth on 9/25/15.
- * <p/>
+ * <p>
  * 房屋信息
  */
 public class KeeperAddHouseDetailActivity extends BaseActivity implements View.OnClickListener {
 
     private final static List<String> DECORATE_LIST = Arrays.asList("毛坏房", "简单装修", "精品装修", "豪华装修");
     private final static List<String> ORIENTATION_LIST = Arrays.asList("东", "南", "西", "北", "东南", "西南", "东北", "西北");
-    private final static List<String> HOUSETYPE_LIST = Arrays.asList("普通住宅", "商住两用");
+    private final static List<String> LEASETYPE_LIST = Arrays.asList("整租", "合租", "单间", "床位");
 
     private TextView areaTextView = null; // 地区
     private EditText communityEditText = null; // 小区名称
@@ -51,7 +51,7 @@ public class KeeperAddHouseDetailActivity extends BaseActivity implements View.O
     private EditText floorEditText = null; // 楼层
     private NiceSpinner decorateTextView = null; // 装修
     private NiceSpinner orientationTextView = null; // 朝向
-    private NiceSpinner typeTextView = null; // 住宅类型
+    private NiceSpinner leaseTypeTextView = null; // 住宅类型
 
     private Button commitBtn = null;
 
@@ -97,9 +97,9 @@ public class KeeperAddHouseDetailActivity extends BaseActivity implements View.O
         List<String> orientationDataset = new LinkedList<>(ORIENTATION_LIST);
         orientationTextView.attachDataSource(orientationDataset);
 
-        typeTextView = (NiceSpinner) this.findViewById(R.id.typeTextView);
-        List<String> houseTypeDataset = new LinkedList<>(HOUSETYPE_LIST);
-        typeTextView.attachDataSource(houseTypeDataset);
+        leaseTypeTextView = (NiceSpinner) this.findViewById(R.id.leaseTypeTextView);
+        List<String> houseTypeDataset = new LinkedList<>(LEASETYPE_LIST);
+        leaseTypeTextView.attachDataSource(houseTypeDataset);
 
         commitBtn = (Button) this.findViewById(R.id.commitBtn);
         commitBtn.setOnClickListener(this);
@@ -190,9 +190,9 @@ public class KeeperAddHouseDetailActivity extends BaseActivity implements View.O
         }
 
         try {
-            typeTextView.setSelectedIndex(HOUSETYPE_LIST.indexOf(dto.getType()));
+            leaseTypeTextView.setSelectedIndex(LEASETYPE_LIST.indexOf(dto.getType()));
         } catch (Exception e) {
-            typeTextView.setSelectedIndex(0);
+            leaseTypeTextView.setSelectedIndex(0);
         }
 
     }
@@ -209,7 +209,7 @@ public class KeeperAddHouseDetailActivity extends BaseActivity implements View.O
         map.put("floor", floorEditText.getText().toString().trim());
         map.put("decorate", DECORATE_LIST.get(decorateTextView.getSelectedIndex()));
         map.put("orientation", ORIENTATION_LIST.get(orientationTextView.getSelectedIndex()));
-        map.put("type", HOUSETYPE_LIST.get(typeTextView.getSelectedIndex()));
+        map.put("leaseType", LEASETYPE_LIST.get(leaseTypeTextView.getSelectedIndex()));
 
         JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_SETINFO, map, new Response.Listener<String>() {
 

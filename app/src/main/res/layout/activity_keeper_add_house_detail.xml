@@ -427,7 +427,7 @@
                     android:textSize="14sp" />
 
                 <org.angmarch.views.NiceSpinner
-                    android:id="@+id/typeTextView"
+                    android:id="@+id/leaseTypeTextView"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"

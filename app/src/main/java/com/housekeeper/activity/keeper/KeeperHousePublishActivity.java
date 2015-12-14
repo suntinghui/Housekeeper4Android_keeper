@@ -51,13 +51,8 @@ import java.util.List;
  */
 public class KeeperHousePublishActivity extends BaseActivity implements View.OnClickListener, TextWatcher {
 
-    private final static List<String> ROOMMATE_LIST = Arrays.asList("整租", "合租", "单间", "床位");
-    private final static List<String> ROOMMATE_TYPE = Arrays.asList("OVERALL", "COMBINATION", "SEPARATE", "BUNK");
-
     private EditText beginTimeTextView;
     private TextView begingDateTipTextView;
-
-    private NiceSpinner roommateSpinner;
 
     private EditText monthMoneyEditText;
     private TextView moneyTipTextView;
@@ -90,10 +85,6 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
         this.beginTimeTextView.setText(DateUtil.getCurrentDate2());
 
         this.begingDateTipTextView = (TextView) this.findViewById(R.id.begingDateTipTextView);
-
-        this.roommateSpinner = (NiceSpinner) this.findViewById(R.id.roommateSpinner);
-        List<String> roommateDataset = new LinkedList<>(ROOMMATE_LIST);
-        this.roommateSpinner.attachDataSource(roommateDataset);
 
         this.monthMoneyEditText = (EditText) this.findViewById(R.id.monthMoneyEditText);
         this.monthMoneyEditText.addTextChangedListener(this);
@@ -183,7 +174,6 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
         tempMap.put("monthMoney", monthMoneyEditText.getText().toString().trim());
         tempMap.put("tagIds", tagIds.substring(0, tagIds.lastIndexOf(',')));
         tempMap.put("leaseTime", String.valueOf(DateUtil.string2MilliSec(beginTimeTextView.getText().toString())));
-        tempMap.put("leaseType", ROOMMATE_TYPE.get(roommateSpinner.getSelectedIndex()));
 
         JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_RELEASE, tempMap, new Response.Listener<String>() {
 
