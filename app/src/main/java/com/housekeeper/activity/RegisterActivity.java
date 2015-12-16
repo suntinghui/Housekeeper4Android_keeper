@@ -29,7 +29,6 @@ import com.ares.house.dto.app.ImSubAccountsAppDto;
 import com.housekeeper.activity.gesture.GestureLockSetupActivity;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.UMengPushUtil;
@@ -50,7 +49,6 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
     private EditText codeEditText = null;
     private EditText pwdEditText = null;
     private EditText pwdConfirmEditText = null;
-    private EditText registCodeEditText = null;
     private TextView protocolTextView = null;
     private Button nextBtn = null;
     private Button timeBtn = null;
@@ -92,13 +90,6 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
         codeEditText = (EditText) this.findViewById(R.id.codeEditText);
         pwdEditText = (EditText) this.findViewById(R.id.pwdEditText);
         pwdConfirmEditText = (EditText) this.findViewById(R.id.pwdConfirmEditText);
-        registCodeEditText = (EditText) this.findViewById(R.id.registCodeEditText);
-
-        if (ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER).equalsIgnoreCase(RoleTypeEnum.KEEPER)) {
-            this.findViewById(R.id.registCodeLayout).setVisibility(View.VISIBLE);
-        } else {
-            this.findViewById(R.id.registCodeLayout).setVisibility(View.GONE);
-        }
 
         timeBtn = (Button) this.findViewById(R.id.timeBtn);
         timeBtn.setOnClickListener(this);
@@ -181,10 +172,6 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
             ViewUtil.shakeView(pwdConfirmEditText);
             return false;
 
-        } else if (ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER).equalsIgnoreCase(RoleTypeEnum.KEEPER) && TextUtils.isEmpty(registCodeEditText.getText().toString().trim())) {
-            Toast.makeText(this, "请输入注册码。如果不知道注册码，请向管理员咨询", Toast.LENGTH_LONG).show();
-            ViewUtil.shakeView(registCodeEditText);
-            return false;
         }
 
         return true;
@@ -193,10 +180,9 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
     private void requestRegister() {
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("telphone", telphone);
-        tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+        tempMap.put("userType", Constants.ROLE);
         tempMap.put("password", pwdEditText.getText().toString());
         tempMap.put("vcode", codeEditText.getText().toString());
-        tempMap.put("registCode", registCodeEditText.getText().toString());
         tempMap.put("deviceToken", ActivityUtil.getSharedPreferences().getString(Constants.DEVICETOKEN, ""));
 
         JSONRequest request = new JSONRequest(this, RequestEnum.USER_REGIST_PASSWORD_SET, tempMap, new Response.Listener<String>() {
@@ -244,7 +230,7 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
     private void requestSendSMS() {
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("telphone", this.getIntent().getStringExtra("telphone"));
-        tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+        tempMap.put("userType", Constants.ROLE);
 
         JSONRequest request = new JSONRequest(this, RequestEnum.USER_REGIST_SMS_SEND, tempMap, new Response.Listener<String>() {
 

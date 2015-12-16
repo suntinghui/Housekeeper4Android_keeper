@@ -16,7 +16,7 @@ public class UMengPushUtil {
         private String alias;
 
         public AddAliasTask(Context context, String aliasString) {
-            this.alias = aliasString + "_" + Constants.kCURRENT_TYPE;
+            this.alias = aliasString + "_" + Constants.ROLE;
             this.context = context;
         }
 

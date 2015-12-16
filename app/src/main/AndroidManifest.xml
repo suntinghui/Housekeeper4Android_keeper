@@ -269,6 +269,12 @@
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
+            android:name="com.housekeeper.activity.ManageGestureLockActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustPan"></activity>
+
+        <activity
             android:name="com.housekeeper.activity.gesture.GestureLockVerifyActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"

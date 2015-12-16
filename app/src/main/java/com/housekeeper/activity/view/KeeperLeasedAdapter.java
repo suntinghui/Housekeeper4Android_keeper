@@ -12,18 +12,11 @@ import android.widget.TextView;
 
 import com.ares.house.dto.app.LeasedListAppDto;
 import com.housekeeper.activity.BaseActivity;
-import com.housekeeper.activity.HouseInfoActivity;
 import com.housekeeper.activity.keeper.KeeperHouseInfoPublishActivity;
-import com.housekeeper.activity.keeper.KeeperIDCardActivity;
-import com.housekeeper.activity.keeper.KeeperMainActivity;
 import com.housekeeper.activity.keeper.KeeperRentRecordDetailActivity;
-import com.housekeeper.activity.keeper.KeeperRentRecordListActivity;
 import com.housekeeper.activity.keeper.KeeperReturnActivity;
-import com.housekeeper.activity.keeper.KeeperSystemSettingActivity;
 import com.housekeeper.client.Constants;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.ImageCacheManager;
-import com.housekeeper.utils.ActivityUtil;
 import com.wufriends.housekeeper.keeper.R;
 
 import java.util.ArrayList;

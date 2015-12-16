@@ -1,16 +1,15 @@
 package com.housekeeper.activity.keeper;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.text.Html;
-import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -30,7 +29,6 @@ import com.housekeeper.activity.view.EquipmentAdapter;
 import com.housekeeper.activity.view.HouseRentalCostAdapter;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.ImageCacheManager;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.model.RentContainAppDtoEx;
@@ -55,7 +53,7 @@ import cn.trinea.android.view.autoscrollviewpager.ImagePagerAdapter;
 
 /**
  * Created by sth on 10/27/15.
- * <p>
+ * <p/>
  * 房屋信息  取消发布
  */
 public class KeeperHouseInfoPublishActivity extends BaseActivity implements View.OnClickListener {
@@ -139,6 +137,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
     private void initView() {
         this.findViewById(R.id.backBtn).setOnClickListener(this);
+        this.findViewById(R.id.shareBtn).setOnClickListener(this);
 
         ((TextView) this.findViewById(R.id.titleTextView)).setText("房屋信息");
 
@@ -160,7 +159,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         gridView = (AsymmetricGridView) this.findViewById(R.id.gridView);
 
         gridView.setRequestedColumnCount(3);
-        gridView.setRowHeight(45);
+        gridView.setRowHeight(40);
         gridView.determineColumns();
         gridView.setAllowReordering(true);
         gridView.isAllowReordering(); // true
@@ -316,7 +315,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("houseId", this.getIntent().getStringExtra("houseId"));
         tempMap.put("telphone", ActivityUtil.getSharedPreferences().getString(Constants.UserName, ""));
-        tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+        tempMap.put("userType", Constants.ROLE);
 
         JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_RELEASE_INFO, tempMap, new Response.Listener<String>() {
 
@@ -357,6 +356,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
                 public View getView(FlowLayout parent, int position, String s) {
                     TextView tv = (TextView) LayoutInflater.from(KeeperHouseInfoPublishActivity.this).inflate(R.layout.tag_layout, parent, false);
                     tv.setText(s);
+                    tv.setTextColor(Color.parseColor("#222222"));
                     return tv;
                 }
             });
@@ -372,14 +372,12 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
         this.communityTextView.setText(appDto.getCommunity() + "   " + appDto.getHouseType());
         this.areaTextView.setText(appDto.getAreaStr());
+        this.moneyTextView.setText(appDto.getMonthMoney());
+        this.monthTextView.setText("元/月");
 
-        if (appDto.isRelease()) {
-            this.moneyTextView.setText(appDto.getMonthMoney());
-            this.monthTextView.setText("元/月");
-            this.flowlayout.setVisibility(View.VISIBLE);
-        } else {
+        if (!appDto.isRelease()) {
             this.moneyTextView.setText("未发布");
-            this.monthTextView.setVisibility(View.GONE);
+            this.moneyTextView.setVisibility(View.GONE);
             this.flowlayout.setVisibility(View.GONE);
         }
 
@@ -407,14 +405,13 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         items2 = outList;
         adapter2.setData(items2, false);
 
-        locationInfoTextView.setText(appDto.getAreaStr());
+        locationInfoTextView.setText(appDto.getCommunity());
 
         try {
             Double.parseDouble(appDto.getLongitude());
 
             String mapUrl = "http://api.map.baidu.com/staticimage/v2?ak=kWcbhglQaeKs48zYu8QwLkzL&width=1024&height=512&zoom=14&mcode=02:ED:7F:D2:7A:0F:16:F2:E6:EB:A6:58:B4:B0:ED:12:59:86:0B:02;com.wufriends.housekeeper.keeper" + "&center=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markers=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markerStyles=l,A,0xFF0000";
             mapImageView.setImageUrl(mapUrl, ImageCacheManager.getInstance().getImageLoader());
-
         } catch (Exception e) {
             mapImageView.setVisibility(View.GONE);
             locationInfoTextView.setVisibility(View.GONE);
@@ -512,6 +509,10 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         }
     }
 
+    private void share() {
+
+    }
+
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         this.requestHouseInfo();
@@ -522,6 +523,10 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         switch (view.getId()) {
             case R.id.backBtn:
                 this.finish();
+                break;
+
+            case R.id.shareBtn:
+                share();
                 break;
 
             case R.id.houseCertLayout:

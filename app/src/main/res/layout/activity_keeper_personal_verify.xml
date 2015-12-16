@@ -86,6 +86,18 @@
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content" />
 
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1px"
+                    android:layout_marginLeft="15dip"
+                    android:layout_marginRight="15dip"
+                    android:background="@color/gray" />
+
+                <com.housekeeper.activity.view.DavinciView
+                    android:id="@+id/modifyGestureLockView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" />
+
 
             </LinearLayout>
 

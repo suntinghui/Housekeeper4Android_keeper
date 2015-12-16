@@ -2,6 +2,7 @@ package com.housekeeper.activity.view;
 
 import android.content.Intent;
 import android.net.Uri;
+import android.text.Html;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -101,7 +102,7 @@ public class LookListAdapter extends BaseAdapter {
         holder.headImageView.setImageUrl(Constants.HOST_IP + infoDto.getIndexImgUrl(), ImageCacheManager.getInstance().getImageLoader());
 
         holder.communityTextView.setText(infoDto.getCommunity() + "   " + infoDto.getHouseType());
-        holder.areaTextView.setText(infoDto.getAreaStr());
+        holder.areaTextView.setText(Html.fromHtml(infoDto.getAreaStr() + " · " + infoDto.getSize() + "<font color=#FDBF60> · " + infoDto.getLeaseType() + "</font>"));
         holder.monthMoneyTextView.setText(infoDto.getMonthMoney());
 
         holder.infoLayout.setOnClickListener(new View.OnClickListener() {

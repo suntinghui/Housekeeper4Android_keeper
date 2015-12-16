@@ -23,7 +23,6 @@ import com.housekeeper.activity.gesture.GestureLockUtil;
 import com.housekeeper.activity.keeper.KeeperMainActivity;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.UMengPushUtil;
@@ -211,7 +210,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnFo
 		HashMap<String, String> tempMap = new HashMap<String, String>();
 		tempMap.put("username", telphone);
 		tempMap.put("userpass", pwd);
-		tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+		tempMap.put("userType", Constants.ROLE);
 		tempMap.put("deviceToken", ActivityUtil.getSharedPreferences().getString(Constants.DEVICETOKEN, ""));
 
 		JSONRequest request = new JSONRequest(this, RequestEnum.USER_LOGIN, tempMap, new Response.Listener<String>() {

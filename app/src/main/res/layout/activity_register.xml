@@ -134,33 +134,6 @@
                 android:textColorHint="#cccccc"
                 android:textSize="17sp" />
 
-            <LinearLayout
-                android:id="@+id/registCodeLayout"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical">
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1px"
-                    android:background="#cccccc" />
-
-                <EditText
-                    android:id="@+id/registCodeEditText"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dip"
-                    android:layout_marginRight="10dip"
-                    android:background="@null"
-                    android:hint="请输入注册码"
-                    android:maxLength="32"
-                    android:paddingBottom="15dip"
-                    android:paddingTop="15dip"
-                    android:textColor="#666666"
-                    android:textColorHint="#cccccc"
-                    android:textSize="17sp" />
-
-            </LinearLayout>
         </LinearLayout>
 
         <!-- 登录 -->

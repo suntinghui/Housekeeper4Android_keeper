@@ -32,11 +32,5 @@
 
     </LinearLayout>
 
-    <View
-        android:id="@+id/lineView"
-        android:layout_width="1px"
-        android:layout_height="fill_parent"
-        android:background="#cccccc" />
-
 
 </LinearLayout>

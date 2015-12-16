@@ -144,7 +144,7 @@ public class InvestmentCurrentLayout extends LinearLayout implements View.OnClic
 
     private void setLineViewData(LineView lineView) {
         lineView.setPreTipList(new ArrayList<String>(Arrays.asList(new String[]{"鼓鼓活期:", "余额宝:"})));
-        lineView.setTailTipList(new ArrayList<String>(Arrays.asList(new String[]{"%", "%"})));
+        lineView.setTailTipList(new ArrayList<String>(Arrays.asList(new String[]{"%  ", "%"})));
 
         ArrayList<Integer> dataList = new ArrayList<Integer>();
         for (RateCompareAppDto dto : this.infoDto.getRateCompare1()) {

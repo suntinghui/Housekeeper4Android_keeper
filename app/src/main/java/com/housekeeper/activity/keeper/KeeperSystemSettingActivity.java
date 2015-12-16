@@ -12,7 +12,6 @@ import com.housekeeper.activity.ProductTourActivity;
 import com.housekeeper.activity.ShowWebViewActivity;
 import com.housekeeper.activity.view.DavinciView;
 import com.housekeeper.client.Constants;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.utils.ActivityUtil;
 import com.wufriends.housekeeper.keeper.R;
 
@@ -143,7 +142,6 @@ public class KeeperSystemSettingActivity extends BaseActivity implements View.On
                 sDialog.cancel();
 
                 ActivityUtil.getSharedPreferences().edit().putString(Constants.Base_Token, "").commit();
-                ActivityUtil.getSharedPreferences().edit().putString(Constants.kCURRENT_TYPE, RoleTypeEnum.NONE).commit();
 
                 Intent intent = new Intent(KeeperSystemSettingActivity.this, KeeperMainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

@@ -6,26 +6,20 @@ import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.ArrayList;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.AsyncTask;
 import android.os.Bundle;
-import android.text.TextUtils;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
 
 import com.housekeeper.activity.keeper.KeeperMainActivity;
 import com.housekeeper.activity.landlord.LandlordMainActivity;
 import com.housekeeper.activity.tenant.TenantMainActivity;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.utils.FileUtil;
-import com.umeng.message.proguard.T;
 import com.wufriends.housekeeper.keeper.R;
-import com.housekeeper.activity.gesture.GestureLockVerifyActivity;
-import com.housekeeper.activity.gesture.GestureLockUtil;
 import com.housekeeper.client.Constants;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.BankUtil;
@@ -124,22 +118,7 @@ public class SplashActivity extends BaseActivity {
     }
 
     private void gotoMianActivity() {
-        String type = ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.NONE);
-        Class<?> cls = null;
-        if (type.equals(RoleTypeEnum.NONE)) {
-            cls = KeeperMainActivity.class;
-
-        } else if (type.equals(RoleTypeEnum.KEEPER)) {
-            cls = KeeperMainActivity.class;
-
-        } else if (type.equals(RoleTypeEnum.LANDLORD)) {
-            cls = LandlordMainActivity.class;
-
-        } else if (type.equals(RoleTypeEnum.TENANT)) {
-            cls = TenantMainActivity.class;
-        }
-
-        Intent intent = new Intent(SplashActivity.this, cls);
+        Intent intent = new Intent(SplashActivity.this, KeeperMainActivity.class);
         SplashActivity.this.startActivity(intent);
         SplashActivity.this.finish();
     }

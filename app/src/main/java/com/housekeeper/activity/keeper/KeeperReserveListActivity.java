@@ -124,7 +124,7 @@ public class KeeperReserveListActivity extends BaseActivity implements View.OnCl
         this.headImageView.setImageUrl(Constants.HOST_IP + appDto.getIndexImgUrl(), ImageCacheManager.getInstance().getImageLoader());
 
         this.addressTextView.setText(appDto.getCommunity() + "  " + appDto.getHouseType());
-        this.cityTextView.setText(appDto.getAreaStr() + " • " + appDto.getLeaseType() + " • " + appDto.getSize());
+        this.cityTextView.setText(appDto.getAreaStr() + " · " + appDto.getLeaseType() + " · " + appDto.getSize());
         this.moneyTextView.setText(appDto.getLeaseMonthMoney());
 
         if (list.isEmpty()) {

@@ -18,11 +18,9 @@ import com.ares.house.dto.app.ImSubAccountsAppDto;
 import com.ares.house.dto.app.StartupImageAppDto;
 import com.housekeeper.activity.DownloadSplashImageService;
 import com.housekeeper.activity.MyTabActivity;
-import com.housekeeper.activity.landlord.LandlordMainActivity;
 import com.housekeeper.client.ActivityManager;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.umeng.analytics.MobclickAgent;
@@ -50,8 +48,6 @@ public class KeeperMainActivity extends MyTabActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_keeper_main);
-
-        ActivityUtil.getSharedPreferences().edit().putString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER).commit();
 
         clearTopActivity();
 
@@ -185,7 +181,7 @@ public class KeeperMainActivity extends MyTabActivity {
 
     private void requestCheckSplashImage() {
         HashMap<String, String> map = new HashMap<String, String>();
-        map.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.LANDLORD));
+        map.put("userType", Constants.ROLE);
 
         JSONRequest request = new JSONRequest(KeeperMainActivity.this, RequestEnum.STARTUP_IMAGE, map, new Response.Listener<String>() {
 

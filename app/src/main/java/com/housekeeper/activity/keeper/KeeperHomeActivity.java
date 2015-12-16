@@ -28,6 +28,7 @@ import com.housekeeper.activity.view.KeeperUnLeaseAdapter;
 import com.housekeeper.client.ActivityManager;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
+import com.housekeeper.client.UMengShareClient;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.client.net.ResponseErrorListener;
 import com.housekeeper.utils.ActivityUtil;
@@ -476,6 +477,8 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
         // UMeng检查更新
         checkUpdate();
+
+        UMengShareClient.setAPPID(this);
     }
 
     // 检查更新

@@ -18,7 +18,6 @@ import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.ImSubAccountsAppDto;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.ViewUtil;
@@ -162,7 +161,7 @@ public class ForgetPwdActivity extends BaseActivity implements OnClickListener {
 		tempMap.put("telphone", telphoneEditText.getText().toString().trim());
 		tempMap.put("vcode", codeEditText.getText().toString());
 		tempMap.put("password", newPwdEditText.getText().toString());
-		tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+		tempMap.put("userType", Constants.ROLE);
 
 		JSONRequest request = new JSONRequest(this, RequestEnum.USER_NOLOGIN_PASSWORD_UPDATE, tempMap, new Response.Listener<String>() {
 

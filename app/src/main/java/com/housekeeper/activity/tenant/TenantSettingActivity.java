@@ -23,7 +23,6 @@ import com.housekeeper.activity.view.DavinciView;
 import com.housekeeper.client.ActivityManager;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.umeng.analytics.MobclickAgent;
@@ -272,7 +271,6 @@ public class TenantSettingActivity extends BaseActivity implements View.OnClickL
                 sDialog.cancel();
 
                 ActivityUtil.getSharedPreferences().edit().putString(Constants.Base_Token, "").commit();
-                ActivityUtil.getSharedPreferences().edit().putString(Constants.kCURRENT_TYPE, RoleTypeEnum.NONE).commit();
 
                 Intent intent = new Intent(TenantSettingActivity.this, KeeperMainActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);

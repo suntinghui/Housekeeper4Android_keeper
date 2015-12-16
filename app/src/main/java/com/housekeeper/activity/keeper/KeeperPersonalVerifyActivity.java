@@ -33,6 +33,7 @@ import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.BindedBankActivity;
 import com.housekeeper.activity.BindingBankActivity;
 import com.housekeeper.activity.CropImageActivity;
+import com.housekeeper.activity.ManageGestureLockActivity;
 import com.housekeeper.activity.ModifyLoginPWDActivity;
 import com.housekeeper.activity.SetTransferPWDActivity;
 import com.housekeeper.activity.VerifyEmergencyContactActivity;
@@ -47,6 +48,7 @@ import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.wufriends.housekeeper.keeper.R;
 
+import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.map.DeserializationConfig;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.JavaType;
@@ -68,6 +70,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
     private CustomNetworkImageView headImageView;
     private DavinciView transferPwdView;
     private DavinciView modifyLoginPwdView;
+    private DavinciView modifyGestureLockView;
 
     private DavinciView bankCardView;
 
@@ -141,6 +144,12 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
         modifyLoginPwdView.getTipTextView().setText("");
         modifyLoginPwdView.setOnClickListener(this);
 
+        modifyGestureLockView = (DavinciView) this.findViewById(R.id.modifyGestureLockView);
+        modifyGestureLockView.getLogoImageView().setVisibility(View.GONE);
+        modifyGestureLockView.getTitleTextView().setText("管理手势密码");
+        modifyGestureLockView.getTipTextView().setText("");
+        modifyGestureLockView.setOnClickListener(this);
+
         bankCardView = (DavinciView) this.findViewById(R.id.bankCardView);
         bankCardView.getLogoImageView().setVisibility(View.GONE);
         bankCardView.getTitleTextView().setText("银行卡");
@@ -187,8 +196,14 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
             }
             break;
 
-            case R.id.modifyLoginPwdView:{ // 修改登录密码
+            case R.id.modifyLoginPwdView: { // 修改登录密码
                 Intent intent = new Intent(this, ModifyLoginPWDActivity.class);
+                this.startActivity(intent);
+            }
+            break;
+
+            case R.id.modifyGestureLockView: { // 管理手势密码
+                Intent intent = new Intent(this, ManageGestureLockActivity.class);
                 this.startActivity(intent);
             }
             break;
@@ -344,7 +359,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
     }
 
     private void requestAllState() {
-        JSONRequest request = new JSONRequest(this, RequestEnum.SECURITY_CENTER_INFO, null, new Response.Listener<String>() {
+        JSONRequest request = new JSONRequest(this, RequestEnum.SECURITY_CENTER_BANK_INFO, null, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String jsonObject) {
@@ -375,7 +390,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
 
     private void responseAllState() {
         try {
-            transferPwdView.getTipTextView().setText(statusMap.get("TRANSACTION_PASSWORD").charAt(0) == 'a' ? "未设置" : "已设置");
+            transferPwdView.getTipTextView().setText(StringUtils.isBlank(statusMap.get("TRANSACTION_PASSWORD")) ? "未设置" : "已设置");
 
             // 绑定银行卡状态 a未绑定 c绑定失败 d确认中 e已绑定
             String status = "";

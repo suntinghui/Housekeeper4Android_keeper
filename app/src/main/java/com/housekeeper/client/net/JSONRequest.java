@@ -14,7 +14,6 @@ import android.content.Intent;
 import android.content.SharedPreferences.Editor;
 import android.os.Looper;
 import android.util.Log;
-import android.widget.Toast;
 
 import com.android.volley.AuthFailureError;
 import com.android.volley.Cache;
@@ -35,7 +34,6 @@ import com.housekeeper.activity.keeper.KeeperPersonalVerifyActivity;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.NoSetInfoException;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.TokenExpiredException;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.StringUtil;
@@ -144,7 +142,7 @@ public class JSONRequest extends StringRequest {
         } catch (NoSetInfoException e) {
             e.printStackTrace();
 
-            if (ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER).equalsIgnoreCase(RoleTypeEnum.KEEPER)) {
+            if (Constants.ROLE.equalsIgnoreCase("AGENT")) {
                 Looper.prepare();
 
                 Intent intent = new Intent(HousekeeperApplication.getInstance().getCurrentActivity(), KeeperPersonalVerifyActivity.class);

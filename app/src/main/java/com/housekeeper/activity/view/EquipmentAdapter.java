@@ -1,6 +1,8 @@
 package com.housekeeper.activity.view;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -81,15 +83,21 @@ public class EquipmentAdapter extends BaseAdapter {
         final EquipmentAppDtoEx dto = list.get(position);
         holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg(), "drawable", HousekeeperApplication.getInstance().getPackageName()));
         holder.titleTextView.setText(dto.getName());
+
+        if (dto.isSelected()) {
+            holder.logoImageView.setAlpha(1.0f);
+            holder.titleTextView.setTextColor(Color.parseColor("#333333"));
+        } else {
+            holder.logoImageView.setAlpha(0.3f);
+            holder.titleTextView.setTextColor(Color.parseColor("#999999"));
+            holder.titleTextView.getPaint().setFlags(Paint.STRIKE_THRU_TEXT_FLAG);
+        }
+
         holder.checkBox.setChecked(dto.isSelected());
         holder.checkBox.setVisibility(editable ? View.VISIBLE : View.GONE);
 
         // 每列的最后一项不显示竖分隔线
-        if (position % 3 == 2) {
-            holder.lineView.setVisibility(View.GONE);
-        } else {
-            holder.lineView.setVisibility(View.VISIBLE);
-        }
+        holder.lineView.setVisibility(View.GONE);
 
         return convertView;
     }

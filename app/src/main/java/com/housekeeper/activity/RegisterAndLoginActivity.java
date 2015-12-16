@@ -19,7 +19,6 @@ import com.ares.house.dto.app.AppMessageDto;
 import com.ares.house.dto.app.AppResponseStatus;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
-import com.housekeeper.client.RoleTypeEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.ViewUtil;
@@ -121,7 +120,7 @@ public class RegisterAndLoginActivity extends BaseActivity implements OnClickLis
 
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("telphone", telphone);
-        tempMap.put("userType", ActivityUtil.getSharedPreferences().getString(Constants.kCURRENT_TYPE, RoleTypeEnum.KEEPER));
+        tempMap.put("userType", Constants.ROLE);
 
         JSONRequest request = new JSONRequest(this, RequestEnum.USER_REGIST_CHECK_TELPHONE, tempMap, new Response.Listener<String>() {
 

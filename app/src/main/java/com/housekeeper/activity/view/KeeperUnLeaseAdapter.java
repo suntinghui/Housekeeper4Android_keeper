@@ -111,12 +111,12 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         holder.tipTextView2.setText(Html.fromHtml("发布房源<font color=#F5933C>让更多租户可见</font>"));
 
         if (infoDto.isRelease()) {
-            holder.middleLayout.setBackgroundColor(Color.parseColor("#FEEEC8"));
+            holder.middleLayout.setBackgroundColor(Color.parseColor("#F0FFFB"));
             holder.publicStatusTextView.setText(infoDto.getLeaseMonthMoney() + " 元/月");
             holder.publicStatusTextView.setTextColor(context.getResources().getColor(R.color.orange));
 
         } else {
-            holder.middleLayout.setBackgroundColor(Color.parseColor("#F0FFFB"));
+            holder.middleLayout.setBackgroundColor(Color.parseColor("#FEEEC8"));
             holder.publicStatusTextView.setText("未发布");
             holder.publicStatusTextView.setTextColor(Color.parseColor("#999999"));
         }

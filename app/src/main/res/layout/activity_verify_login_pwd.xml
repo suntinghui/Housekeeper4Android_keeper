@@ -28,16 +28,6 @@
             android:layout_centerInParent="true"
             android:text="我有房" />
 
-        <TextView
-            android:id="@+id/stepTextView"
-            style="@style/white_18"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"
-            android:paddingLeft="20dip"
-            android:paddingRight="20dip"
-            android:text="1/2" />
     </RelativeLayout>
 
     <me.everything.android.widget.OverScrollView

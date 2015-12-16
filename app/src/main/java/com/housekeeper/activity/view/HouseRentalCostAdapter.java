@@ -5,14 +5,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
-import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.housekeeper.HousekeeperApplication;
 import com.housekeeper.activity.BaseActivity;
-import com.housekeeper.model.EquipmentAppDtoEx;
 import com.housekeeper.model.RentContainAppDtoEx;
 import com.wufriends.housekeeper.keeper.R;
 
@@ -70,7 +68,6 @@ public class HouseRentalCostAdapter extends BaseAdapter {
             holder.contentLayout = (LinearLayout) convertView.findViewById(R.id.contentLayout);
             holder.logoImageView = (ImageView) convertView.findViewById(R.id.logoImageView);
             holder.titleTextView = (TextView) convertView.findViewById(R.id.titleTextView);
-            holder.lineView = convertView.findViewById(R.id.lineView);
 
             convertView.setTag(holder);
 
@@ -80,19 +77,18 @@ public class HouseRentalCostAdapter extends BaseAdapter {
 
         final RentContainAppDtoEx dto = list.get(position);
         holder.titleTextView.setText(dto.getName());
-        if (dto.isSelected()) {
-            holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg().toLowerCase() + "_selected", "drawable", HousekeeperApplication.getInstance().getPackageName()));
-            holder.titleTextView.setTextColor(Color.parseColor("#F5AE3C"));
-        } else {
-            holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg().toLowerCase() + "_normal", "drawable", HousekeeperApplication.getInstance().getPackageName()));
-            holder.titleTextView.setTextColor(Color.parseColor("#999999"));
-        }
 
-        // 每列的最后一项不显示竖分隔线
-        if (position % 3 == 2) {
-            holder.lineView.setVisibility(View.GONE);
+        if (this.editable) {
+            if (dto.isSelected()) {
+                holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg().toLowerCase() + "_selected", "drawable", HousekeeperApplication.getInstance().getPackageName()));
+                holder.titleTextView.setTextColor(Color.parseColor("#222222"));
+            } else {
+                holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg().toLowerCase() + "_normal", "drawable", HousekeeperApplication.getInstance().getPackageName()));
+                holder.titleTextView.setTextColor(Color.parseColor("#999999"));
+            }
         } else {
-            holder.lineView.setVisibility(View.VISIBLE);
+            holder.logoImageView.setBackgroundResource(HousekeeperApplication.getInstance().getResources().getIdentifier(dto.getImg().toLowerCase() + "_selected", "drawable", HousekeeperApplication.getInstance().getPackageName()));
+            holder.titleTextView.setTextColor(Color.parseColor("#222222"));
         }
 
         return convertView;
@@ -102,7 +98,6 @@ public class HouseRentalCostAdapter extends BaseAdapter {
         private LinearLayout contentLayout;
         private ImageView logoImageView;
         private TextView titleTextView;
-        private View lineView;
     }
 
     // 选中一个 或  取消选中一个
