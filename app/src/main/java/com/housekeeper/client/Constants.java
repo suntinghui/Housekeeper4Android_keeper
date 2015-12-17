@@ -24,7 +24,7 @@ public class Constants {
 
     public static final String ROLE = "AGENT";
 
-    public static final String PHONE_SERVICE = "01053812098";
+    public static String PHONE_SERVICE = "01053812098";
 
     public static final String Base_Token = "Base-Token";
     public static final String SESSIONID = "Cookie";

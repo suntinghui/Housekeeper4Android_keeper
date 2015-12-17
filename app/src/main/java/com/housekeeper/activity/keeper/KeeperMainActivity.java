@@ -5,7 +5,9 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TabHost;
@@ -17,13 +19,20 @@ import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.ImSubAccountsAppDto;
 import com.ares.house.dto.app.StartupImageAppDto;
 import com.housekeeper.activity.DownloadSplashImageService;
+import com.housekeeper.activity.HousePushIntentService;
 import com.housekeeper.activity.MyTabActivity;
 import com.housekeeper.client.ActivityManager;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
+import com.housekeeper.client.UMengShareClient;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.utils.ActivityUtil;
+import com.umeng.analytics.AnalyticsConfig;
 import com.umeng.analytics.MobclickAgent;
+import com.umeng.message.PushAgent;
+import com.umeng.message.UmengRegistrar;
+import com.umeng.onlineconfig.OnlineConfigAgent;
+import com.umeng.update.UmengUpdateAgent;
 import com.wufriends.housekeeper.keeper.R;
 
 import org.codehaus.jackson.map.DeserializationConfig;
@@ -63,6 +72,8 @@ public class KeeperMainActivity extends MyTabActivity {
         this.registerTabhostReceiver();
 
         this.requestCheckSplashImage();
+
+        this.aboutUmeng();
     }
 
     private void initTabHost() {
@@ -222,6 +233,52 @@ public class KeeperMainActivity extends MyTabActivity {
             int index = intent.getIntExtra("INDEX", 0);
             setCheckTab(index);
         }
+    }
+
+    private void aboutUmeng() {
+        // UMeng
+        MobclickAgent.updateOnlineConfig(this);
+        AnalyticsConfig.enableEncrypt(true);
+        MobclickAgent.setAutoLocation(true);
+
+        // 推送
+        PushAgent mPushAgent = PushAgent.getInstance(this);
+        mPushAgent.enable();
+        mPushAgent.setDebugMode(false);
+        mPushAgent.setPushIntentServiceClass(HousePushIntentService.class);
+
+        String deviceToken = UmengRegistrar.getRegistrationId(this);
+        Log.e("UMENG", "UMENG DEVICE TOKEN : " + deviceToken);
+        SharedPreferences.Editor editor = ActivityUtil.getSharedPreferences().edit();
+        editor.putString(Constants.DEVICETOKEN, deviceToken);
+        editor.commit();
+
+        // 解决在通知栏里面显示的始终是最新的那一条的问题，谨慎使用，以免用户看到消息过多卸载应用。
+        // 合并
+        mPushAgent.setMergeNotificaiton(true);
+
+        mPushAgent.onAppStart();
+
+        // UMeng检查更新
+        checkUpdate();
+
+        UMengShareClient.setAPPID(this);
+
+        // 在线参数更新
+        OnlineConfigAgent.getInstance().updateOnlineConfig(this);
+        String value = OnlineConfigAgent.getInstance().getConfigParams(this, "ServiceTelphone");
+        Constants.PHONE_SERVICE = value;
+    }
+
+    // 检查更新
+    private void checkUpdate() {
+        // 因为友盟的更新设置是静态的参数，如果在应用中不止一次调用了检测更新的方法，而每次的设置都不一样，请在每次检测更新的函数之前先恢复默认设置再设置参数，避免在其他地方设置的参数影响到这次更新
+        UmengUpdateAgent.setDefault();
+        // updateOnlyWifi 布尔值true(默认)只在wifi环境下检测更新，false在所有网络环境中均检测更新。
+        UmengUpdateAgent.setUpdateOnlyWifi(false);
+        // deltaUpdate 布尔值true(默认)使用增量更新，false使用全量更新。看了FAQ，貌似增量更新会可能有问题，为了保险起见，不使用增量更新
+        UmengUpdateAgent.setDeltaUpdate(false);
+        UmengUpdateAgent.update(this);
     }
 
     @Override

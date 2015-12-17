@@ -84,8 +84,6 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
         this.initView();
 
-        this.aboutUmeng();
-
         requestData();
     }
 
@@ -449,47 +447,6 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
             }
             break;
         }
-    }
-
-    private void aboutUmeng() {
-        // UMeng
-        MobclickAgent.updateOnlineConfig(this);
-        AnalyticsConfig.enableEncrypt(true);
-        MobclickAgent.setAutoLocation(true);
-
-        // 推送
-        PushAgent mPushAgent = PushAgent.getInstance(this);
-        mPushAgent.enable();
-        mPushAgent.setDebugMode(false);
-        mPushAgent.setPushIntentServiceClass(HousePushIntentService.class);
-
-        String deviceToken = UmengRegistrar.getRegistrationId(this);
-        Log.e("UMENG", "UMENG DEVICE TOKEN : " + deviceToken);
-        SharedPreferences.Editor editor = ActivityUtil.getSharedPreferences().edit();
-        editor.putString(Constants.DEVICETOKEN, deviceToken);
-        editor.commit();
-
-        // 解决在通知栏里面显示的始终是最新的那一条的问题，谨慎使用，以免用户看到消息过多卸载应用。
-        // 合并
-        mPushAgent.setMergeNotificaiton(true);
-
-        mPushAgent.onAppStart();
-
-        // UMeng检查更新
-        checkUpdate();
-
-        UMengShareClient.setAPPID(this);
-    }
-
-    // 检查更新
-    private void checkUpdate() {
-        // 因为友盟的更新设置是静态的参数，如果在应用中不止一次调用了检测更新的方法，而每次的设置都不一样，请在每次检测更新的函数之前先恢复默认设置再设置参数，避免在其他地方设置的参数影响到这次更新
-        UmengUpdateAgent.setDefault();
-        // updateOnlyWifi 布尔值true(默认)只在wifi环境下检测更新，false在所有网络环境中均检测更新。
-        UmengUpdateAgent.setUpdateOnlyWifi(false);
-        // deltaUpdate 布尔值true(默认)使用增量更新，false使用全量更新。看了FAQ，貌似增量更新会可能有问题，为了保险起见，不使用增量更新
-        UmengUpdateAgent.setDeltaUpdate(false);
-        UmengUpdateAgent.update(this);
     }
 
     @Override

@@ -223,8 +223,9 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         applyLookTextView = (TextView) this.findViewById(R.id.applyLookTextView);
         applyLookTextView.setOnClickListener(this);
 
-        cancelPublishTextView.setVisibility(View.GONE);
-        lookatLayout.setVisibility(View.VISIBLE);
+        ///////////////////////////////////////////////////////////
+        cancelPublishTextView.setVisibility(View.VISIBLE);
+        lookatLayout.setVisibility(View.GONE);
 
         if (this.getIntent().getBooleanExtra("hideall", false)) {
             cancelPublishTextView.setVisibility(View.GONE);
@@ -377,7 +378,9 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
         if (!appDto.isRelease()) {
             this.moneyTextView.setText("未发布");
-            this.moneyTextView.setVisibility(View.GONE);
+            this.moneyTextView.setTextSize(25);
+
+            this.monthTextView.setVisibility(View.GONE);
             this.flowlayout.setVisibility(View.GONE);
         }
 
