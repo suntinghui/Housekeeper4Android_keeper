@@ -172,7 +172,7 @@ public class KeeperMeActivityEx extends BaseActivity implements View.OnClickList
             }
         });
 
-        this.addToRequestQueue(request, "正在请求数据请稍候...");
+        this.addToRequestQueue(request, "正在请求数据...");
     }
 
     private void responseUserMy() {

@@ -74,7 +74,7 @@ public class JSONRequest extends StringRequest {
     }
 
     public JSONRequest(Context context, String id, HashMap<String, String> map, boolean shouldCache, Response.Listener<String> listener, ResponseErrorListener errorListener) {
-        this(context, id, map, shouldCache, true, listener, errorListener);
+        this(context, id, map, shouldCache, false, listener, errorListener);
     }
 
     public JSONRequest(Context context, String id, HashMap<String, String> map, boolean shouldCache, boolean needRetryPolicy, Response.Listener<String> listener, ResponseErrorListener errorListener) {

@@ -19,6 +19,7 @@ public class DavinciView extends LinearLayout {
     private Context context;
     private ImageView logoImageView;
     private TextView titleTextView;
+    private TextView importantTextView;
     private TextView tipTextView;
     private ImageView rightArrowImageView;
 
@@ -42,12 +43,17 @@ public class DavinciView extends LinearLayout {
 
         logoImageView = (ImageView) this.findViewById(R.id.logoImageView);
         titleTextView = (TextView) this.findViewById(R.id.titleTextView);
+        importantTextView = (TextView) this.findViewById(R.id.importantTextView);
         tipTextView = (TextView) this.findViewById(R.id.tipTextView);
         rightArrowImageView = (ImageView) this.findViewById(R.id.rightArrowImageView);
     }
 
     public ImageView getLogoImageView() {
         return logoImageView;
+    }
+
+    public TextView getImportantTextView() {
+        return importantTextView;
     }
 
     public TextView getTitleTextView() {

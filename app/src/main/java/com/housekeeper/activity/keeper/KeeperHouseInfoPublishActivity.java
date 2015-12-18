@@ -224,7 +224,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         applyLookTextView.setOnClickListener(this);
 
         ///////////////////////////////////////////////////////////
-        cancelPublishTextView.setVisibility(View.VISIBLE);
+        cancelPublishTextView.setVisibility(View.GONE);
         lookatLayout.setVisibility(View.GONE);
 
         if (this.getIntent().getBooleanExtra("hideall", false)) {
@@ -382,6 +382,11 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
 
             this.monthTextView.setVisibility(View.GONE);
             this.flowlayout.setVisibility(View.GONE);
+
+            this.cancelPublishTextView.setVisibility(View.GONE);
+
+        } else {
+            this.cancelPublishTextView.setVisibility(View.VISIBLE);
         }
 
         this.leaseTypeTextView.setText(Html.fromHtml("<font color=#999999>类型：</font><font color=#222222>" + appDto.getLeaseType() + "</font>"));

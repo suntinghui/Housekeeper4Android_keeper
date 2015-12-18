@@ -27,6 +27,7 @@ import com.ares.house.dto.app.AppMessageDto;
 import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.ImSubAccountsAppDto;
 import com.housekeeper.activity.gesture.GestureLockSetupActivity;
+import com.housekeeper.activity.keeper.KeeperMainActivity;
 import com.housekeeper.client.Constants;
 import com.housekeeper.client.RequestEnum;
 import com.housekeeper.client.net.JSONRequest;
@@ -202,12 +203,7 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
 
                         ActivityUtil.getSharedPreferences().edit().putString(Constants.USERID, dto.getData().getUserId()).commit();
 
-//						Intent intent = new Intent(RegisterActivity.this, VerifyEmergencyContactActivity.class);
-//						intent.putExtra("FROM", VerifyEmergencyContactActivity.FROM_LOGIN);
-//						RegisterActivity.this.startActivity(intent);
-
-                        Intent intent = new Intent(RegisterActivity.this, GestureLockSetupActivity.class);
-                        intent.putExtra("TYPE", GestureLockSetupActivity.TYPE_REGISTER);
+                        Intent intent = new Intent(RegisterActivity.this, KeeperMainActivity.class);
                         RegisterActivity.this.startActivity(intent);
 
                         RegisterActivity.this.setResult(RESULT_OK);
@@ -311,7 +307,7 @@ public class RegisterActivity extends BaseActivity implements OnClickListener {
         SpannableString spStr = new SpannableString(htmlLinkText);
 
         TouchableSpan clickSpan = new TouchableSpan();
-        spStr.setSpan(clickSpan, 9, 15, Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
+        spStr.setSpan(clickSpan, 9, 16, Spanned.SPAN_INCLUSIVE_EXCLUSIVE);
 
         protocolTextView.setText(spStr);
         protocolTextView.setMovementMethod(new LinkTouchMovementMethod());

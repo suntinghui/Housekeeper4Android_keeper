@@ -61,7 +61,7 @@ import java.util.Map;
 
 /**
  * Created by sth on 9/13/15.
- * <p/>
+ * <p>
  * 租户  我  个人认证
  */
 public class KeeperPersonalVerifyActivity extends BaseActivity implements View.OnClickListener {
@@ -122,6 +122,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
         headLogoView = (DavinciView) this.findViewById(R.id.headLogoView);
         headLogoView.getLogoImageView().setVisibility(View.GONE);
         headLogoView.getTitleTextView().setText("设置头像");
+        headLogoView.getImportantTextView().setVisibility(View.VISIBLE);
         headLogoView.getTipTextView().setText("");
         headLogoView.setOnClickListener(this);
 
@@ -135,6 +136,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
         transferPwdView = (DavinciView) this.findViewById(R.id.transferPwdView);
         transferPwdView.getLogoImageView().setVisibility(View.GONE);
         transferPwdView.getTitleTextView().setText("交易密码");
+        transferPwdView.getImportantTextView().setVisibility(View.VISIBLE);
         transferPwdView.getTipTextView().setText("");
         transferPwdView.setOnClickListener(this);
 
@@ -153,18 +155,21 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
         bankCardView = (DavinciView) this.findViewById(R.id.bankCardView);
         bankCardView.getLogoImageView().setVisibility(View.GONE);
         bankCardView.getTitleTextView().setText("银行卡");
+        bankCardView.getImportantTextView().setVisibility(View.VISIBLE);
         bankCardView.getTipTextView().setText("");
         bankCardView.setOnClickListener(this);
 
         cardIdView = (DavinciView) this.findViewById(R.id.cardIdView);
         cardIdView.getLogoImageView().setVisibility(View.GONE);
         cardIdView.getTitleTextView().setText("身份证照片");
+        cardIdView.getImportantTextView().setVisibility(View.VISIBLE);
         cardIdView.getTipTextView().setText("");
         cardIdView.setOnClickListener(this);
 
         jobPhotoView = (DavinciView) this.findViewById(R.id.jobPhotoView);
         jobPhotoView.getLogoImageView().setVisibility(View.GONE);
         jobPhotoView.getTitleTextView().setText("工作证照片");
+        jobPhotoView.getImportantTextView().setVisibility(View.VISIBLE);
         jobPhotoView.getTipTextView().setText("");
         jobPhotoView.setOnClickListener(this);
     }
@@ -183,8 +188,11 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
             break;
 
             case R.id.transferPwdView: {
+                if (statusMap == null)
+                    return;
+
                 // 如果已经设置了交易密码，则进入提示界面;如果没有设置则直接进入设置界面
-                if (statusMap.get("TRANSACTION_PASSWORD").charAt(0) == 'a') {
+                if (StringUtils.isBlank(statusMap.get("TRANSACTION_PASSWORD"))) {
                     Intent intent = new Intent(this, SetTransferPWDActivity.class);
                     intent.putExtra("TYPE", SetTransferPWDActivity.TYPE_SET);
                     intent.putExtra("loginPassword", ""); // 初次设置不需要登录密码；修改需要登录密码。
@@ -394,7 +402,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
 
             // 绑定银行卡状态 a未绑定 c绑定失败 d确认中 e已绑定
             String status = "";
-            switch (statusMap.get("BANK_CARD").charAt(0)) {
+            switch (statusMap.get("BANK_CARD_STATUS").charAt(0)) {
                 case 'a':
                     status = "未绑定";
                     break;

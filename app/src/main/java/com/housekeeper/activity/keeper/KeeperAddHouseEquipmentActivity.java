@@ -15,6 +15,7 @@ import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView;
 import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridViewAdapter;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.view.EquipmentAdapter;
+import com.housekeeper.activity.view.EquipmentEditAdapter;
 import com.housekeeper.client.RequestEnum;
 import com.housekeeper.client.net.JSONRequest;
 import com.housekeeper.model.EquipmentAppDtoEx;
@@ -40,7 +41,7 @@ public class KeeperAddHouseEquipmentActivity extends BaseActivity implements Vie
     private Button commitBtn = null;
 
     private HouseAddListAppDto infoDto = null;
-    private EquipmentAdapter adapter = null;
+    private EquipmentEditAdapter adapter = null;
 
     private List<EquipmentAppDtoEx> items = null;
 
@@ -75,7 +76,7 @@ public class KeeperAddHouseEquipmentActivity extends BaseActivity implements Vie
         gridView.setAllowReordering(true);
         gridView.isAllowReordering(); // true
 
-        adapter = new EquipmentAdapter(this);
+        adapter = new EquipmentEditAdapter(this);
         AsymmetricGridViewAdapter asymmetricAdapter = new AsymmetricGridViewAdapter<>(this, gridView, adapter);
         gridView.setAdapter(asymmetricAdapter);
         gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
