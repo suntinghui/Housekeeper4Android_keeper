@@ -30,6 +30,7 @@ public class BaseActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
+
         HousekeeperApplication.getInstance().setCurrentActivity(this);
 
         MobclickAgent.onResume(this);

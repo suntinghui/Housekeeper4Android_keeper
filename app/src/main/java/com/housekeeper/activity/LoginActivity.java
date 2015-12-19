@@ -126,27 +126,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnFo
 	}
 
 	private void changeUser() {
-		/*
-		boolean flag = false;
-		for (Activity act : ActivityManager.getInstance().getAllActivity()) {
-			if (act instanceof RegisterAndLoginActivity) {
-				flag = true;
-				break;
-			}
-		}
-
-		if (flag) {
-			this.setResult(RESULT_CANCELED);
-			this.finish();
-
-		} else {
-			Intent intent = new Intent(this, RegisterAndLoginActivity.class);
-			this.startActivity(intent);
-			this.finish();
-		}
-
-		*/
-
 		Intent intent = new Intent(this, RegisterAndLoginActivity.class);
 		this.startActivity(intent);
 		this.finish();
@@ -157,20 +136,6 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnFo
 			this.finish();
 			
 		} else if (from == FROM_TOKEN_EXPIRED) {
-			/*
-			Log.e("===", "------------------------------------&&&&&&&&");
-			
-			Intent mainIntent = new Intent(this, SelectIdentityActivity.class);
-			mainIntent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
-			this.startActivity(mainIntent);
-			
-			// 切到首页
-			Intent intent1 = new Intent(MainActivity.ACTION_CHECK_RELATION);
-			intent1.putExtra("INDEX", 0);
-			sendBroadcast(intent1);
-
-			this.finish();
-			*/
 
 			Intent intent = new Intent(this, KeeperMainActivity.class);
 			intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
@@ -237,6 +202,7 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnFo
 
 							Intent intent = new Intent(LoginActivity.this, GestureLockSetupActivity.class);
 							LoginActivity.this.startActivity(intent);
+
 							LoginActivity.this.setResult(RESULT_OK);
 							LoginActivity.this.finish();
 
@@ -245,15 +211,13 @@ public class LoginActivity extends BaseActivity implements OnClickListener, OnFo
 							LoginActivity.this.finish();
 
 						} else if (from == FROM_NONE) {
-//							Intent intent = new Intent(LoginActivity.this, SelectIdentityActivity.class);
-//							LoginActivity.this.startActivity(intent);
-
 							LoginActivity.this.setResult(RESULT_OK);
 							LoginActivity.this.finish();
 						}
 
 					} else {
 						Toast.makeText(LoginActivity.this, dto.getMsg(), Toast.LENGTH_SHORT).show();
+
 					}
 				} catch (Exception e) {
 					e.printStackTrace();

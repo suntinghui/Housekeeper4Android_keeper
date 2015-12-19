@@ -54,6 +54,9 @@ import java.util.List;
  */
 public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.ItemChangeListener {
 
+    public static final int NEED_REFRESH = 0x100;
+    public static final int NOT_REFRESH = 0x101;
+
     private int type = HomeTopLayout.TYPE_UNLEASE;
 
     private HomeTopLayout topLayout = null;
@@ -84,7 +87,9 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
         this.initView();
 
-        requestData();
+        this.requestData();
+
+        this.topImageLayout.requestTopImage();
     }
 
     @Override
@@ -95,7 +100,13 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
             topImageLayout.getViewPager().startAutoScroll();
         }
 
-        topImageLayout.requestTopImage();
+        if (leasedList.isEmpty() && unLeaseList.isEmpty() && cancelLeaseList.isEmpty()) {
+            requestData();
+        }
+
+        if (this.topImageLayout.getCount() == 0) {
+            this.topImageLayout.requestTopImage();
+        }
     }
 
     @Override
@@ -109,7 +120,9 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        requestData();
+        if (requestCode == NEED_REFRESH) {
+            requestData();
+        }
     }
 
     private void initView() {
@@ -224,8 +237,10 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
     private void requestData() {
         if (type == HomeTopLayout.TYPE_UNLEASE) {
             requestUnLeaseList();
+
         } else if (type == HomeTopLayout.TYPE_LEASED) {
             requestLeasedList();
+
         } else if (type == HomeTopLayout.TYPE_CANCELLEASE) {
             requestCancelLeaseList();
         }

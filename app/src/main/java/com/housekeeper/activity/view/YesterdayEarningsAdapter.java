@@ -9,7 +9,6 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.ares.house.dto.app.EarningsListAppDto;
-import com.ares.house.dto.app.MessageListAppDto;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.utils.AdapterUtil;
 import com.wufriends.housekeeper.keeper.R;
@@ -68,11 +67,8 @@ public class YesterdayEarningsAdapter extends BaseAdapter {
             holder.moneyTextView = (TextView) convertView.findViewById(R.id.moneyTextView);
             holder.tipTextView = (TextView) convertView.findViewById(R.id.tipTextView);
             holder.dqLayout = (LinearLayout) convertView.findViewById(R.id.dqLayout);
-            holder.dqMoneyTextView = (TextView) convertView.findViewById(R.id.dqMoneyTextView);
             holder.hqLayout = (LinearLayout) convertView.findViewById(R.id.hqLayout);
-            holder.hqMoneyTextView = (TextView) convertView.findViewById(R.id.hqMoneyTextView);
             holder.wybLayout = (LinearLayout) convertView.findViewById(R.id.wybLayout);
-            holder.wybMoneyTextView = (TextView) convertView.findViewById(R.id.wybMoneyTextView);
 
             convertView.setTag(holder);
 
@@ -103,7 +99,6 @@ public class YesterdayEarningsAdapter extends BaseAdapter {
             Float.parseFloat(dto.getDq());
 
             holder.dqLayout.setVisibility(View.VISIBLE);
-            holder.dqMoneyTextView.setText(dto.getDq());
         } catch (Exception e) {
             holder.dqLayout.setVisibility(View.GONE);
         }
@@ -112,7 +107,6 @@ public class YesterdayEarningsAdapter extends BaseAdapter {
             Float.parseFloat(dto.getHq());
 
             holder.hqLayout.setVisibility(View.VISIBLE);
-            holder.hqMoneyTextView.setText(dto.getHq());
         } catch (Exception e) {
             holder.hqLayout.setVisibility(View.GONE);
         }
@@ -121,7 +115,6 @@ public class YesterdayEarningsAdapter extends BaseAdapter {
             Float.parseFloat(dto.getWyb());
 
             holder.wybLayout.setVisibility(View.VISIBLE);
-            holder.wybMoneyTextView.setText(dto.getWyb());
         } catch (Exception e) {
             holder.wybLayout.setVisibility(View.GONE);
         }
@@ -136,10 +129,7 @@ public class YesterdayEarningsAdapter extends BaseAdapter {
         private TextView moneyTextView;
         private TextView tipTextView;
         private LinearLayout dqLayout;
-        private TextView dqMoneyTextView;
         private LinearLayout hqLayout;
-        private TextView hqMoneyTextView;
         private LinearLayout wybLayout;
-        private TextView wybMoneyTextView;
     }
 }

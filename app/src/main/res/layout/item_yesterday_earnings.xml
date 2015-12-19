@@ -59,17 +59,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="定期"
-            android:textColor="#999999"
-            android:textSize="13sp" />
+            android:textColor="@color/blueme"
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/dqMoneyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
-            android:text="0.00"
-            android:textColor="@color/greenme"
-            android:textSize="18sp" />
+            android:text="已到账户余额"
+            android:textColor="#999999"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -88,17 +87,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="活期"
-            android:textColor="#999999"
-            android:textSize="13sp" />
+            android:textColor="@color/blueme"
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/hqMoneyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
-            android:text="0.00"
-            android:textColor="@color/blueme"
-            android:textSize="18sp" />
+            android:text="已到账户余额"
+            android:textColor="#999999"
+            android:textSize="12sp" />
 
     </LinearLayout>
 
@@ -116,17 +114,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="物业宝"
-            android:textColor="#999999"
-            android:textSize="13sp" />
+            android:textColor="@color/blueme"
+            android:textSize="15sp" />
 
         <TextView
-            android:id="@+id/wybMoneyTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dip"
-            android:text="0.00"
-            android:textColor="@color/greenme"
-            android:textSize="18sp" />
+            android:text="已到账户余额"
+            android:textColor="#999999"
+            android:textSize="12sp" />
 
     </LinearLayout>
 

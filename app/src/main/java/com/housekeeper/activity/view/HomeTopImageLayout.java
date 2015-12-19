@@ -145,6 +145,14 @@ public class HomeTopImageLayout extends LinearLayout {
         }
     }
 
+    public int getCount() {
+        try {
+            return this.imageURLList.size();
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+
     public void requestTopImage() {
         HashMap<String, String> tempMap = new HashMap<String, String>();
         tempMap.put("type", "AGENT_INDEX");

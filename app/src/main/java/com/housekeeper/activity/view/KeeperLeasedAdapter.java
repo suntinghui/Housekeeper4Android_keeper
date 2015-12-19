@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.ares.house.dto.app.LeasedListAppDto;
 import com.housekeeper.activity.BaseActivity;
+import com.housekeeper.activity.keeper.KeeperHomeActivity;
 import com.housekeeper.activity.keeper.KeeperHouseInfoPublishActivity;
 import com.housekeeper.activity.keeper.KeeperRentRecordDetailActivity;
 import com.housekeeper.activity.keeper.KeeperReturnActivity;
@@ -130,7 +131,7 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperHouseInfoPublishActivity.class);
                 intent.putExtra("houseId", infoDto.getHouseId() + "");
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
@@ -139,7 +140,7 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperRentRecordDetailActivity.class);
                 intent.putExtra("leaseId", infoDto.getLeaseId() + "");
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
@@ -155,7 +156,7 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + infoDto.getLandlordTelphone()));
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
@@ -164,7 +165,7 @@ public class KeeperLeasedAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + infoDto.getUserTelphone()));
                 intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
@@ -176,7 +177,7 @@ public class KeeperLeasedAdapter extends BaseAdapter {
                 } else {
                     Intent intent = new Intent(context, KeeperReturnActivity.class);
                     intent.putExtra("DTO", infoDto);
-                    context.startActivity(intent);
+                    context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
                 }
             }
         });

@@ -17,7 +17,7 @@ public class Constants {
     public static final String HOST_IP = "http://182.92.217.168:8111";
     public static final String HOST_IP_REQ = HOST_IP;
 
-//    public static final String HOST_IP = "http://192.168.1.106:8716";
+//    public static final String HOST_IP = "http://192.168.0.172:8716";
 //    public static final String HOST_IP_REQ = HOST_IP;
 
     public static final String PROTOCOL_IP = HOST_IP + "/app/agreement.html";
@@ -42,11 +42,11 @@ public class Constants {
 
     public static final String UMengPUSHId = "UMengPUSHId";
 
-    public static final String WX_APP_ID = "wx2e4661c7c5c4b28a";
-    public static final String WX_AppSecret = "f12ac04cb345abd1bc9d23a699094a0b";
+    public static final String WX_APP_ID = "wx97f489277cf8a9f2";
+    public static final String WX_AppSecret = "d4624c36b6795d1d99dcf0547af5443d";
 
-    public static final String QQ_APP_ID = "1104763238";
-    public static final String QQ_APP_KEY = "1gkTiZkUig0Fia01";
+    public static final String QQ_APP_ID = "1105017166";
+    public static final String QQ_APP_KEY = "ZADntWbDuNKwi4yE";
 
     public static boolean NEED_REFRESH_LOGIN = false;
 

@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.ares.house.dto.app.WaitLeaseListAppDto;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.HouseInfoActivity;
+import com.housekeeper.activity.keeper.KeeperHomeActivity;
 import com.housekeeper.activity.keeper.KeeperHouseInfoPublishActivity;
 import com.housekeeper.activity.keeper.KeeperHousePublishActivity;
 import com.housekeeper.activity.keeper.KeeperLeaseRelationActivity;
@@ -126,7 +127,7 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperHouseInfoPublishActivity.class);
                 intent.putExtra("houseId", infoDto.getHouseId() + "");
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
@@ -135,7 +136,7 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperLeaseRelationActivity.class);
                 intent.putExtra("DTO", infoDto);
-                context.startActivityForResult(intent, 0);
+                context.startActivityForResult(intent, KeeperHomeActivity.NEED_REFRESH);
             }
         });
 
@@ -145,12 +146,12 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
                 if (infoDto.isRelease()) {
                     Intent intent = new Intent(context, KeeperHouseInfoPublishActivity.class);
                     intent.putExtra("houseId", infoDto.getHouseId() + "");
-                    context.startActivity(intent);
+                    context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
 
                 } else {
                     Intent intent = new Intent(context, KeeperHousePublishActivity.class);
                     intent.putExtra("houseId", infoDto.getHouseId() + "");
-                    context.startActivityForResult(intent, 0);
+                    context.startActivityForResult(intent, KeeperHomeActivity.NEED_REFRESH);
                 }
             }
         });
@@ -160,7 +161,7 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
             public void onClick(View view) {
                 Intent intent = new Intent(context, KeeperReserveListActivity.class);
                 intent.putExtra("DTO", infoDto);
-                context.startActivity(intent);
+                context.startActivityForResult(intent, KeeperHomeActivity.NOT_REFRESH);
             }
         });
 
