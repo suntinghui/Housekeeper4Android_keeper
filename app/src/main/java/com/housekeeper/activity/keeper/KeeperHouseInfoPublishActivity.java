@@ -418,7 +418,7 @@ public class KeeperHouseInfoPublishActivity extends BaseActivity implements View
         try {
             Double.parseDouble(appDto.getLongitude());
 
-            String mapUrl = "http://api.map.baidu.com/staticimage/v2?ak=kWcbhglQaeKs48zYu8QwLkzL&width=1024&height=512&zoom=14&mcode=02:ED:7F:D2:7A:0F:16:F2:E6:EB:A6:58:B4:B0:ED:12:59:86:0B:02;com.wufriends.housekeeper.keeper" + "&center=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markers=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markerStyles=l,A,0xFF0000";
+            String mapUrl = "http://api.map.baidu.com/staticimage/v2?ak=kWcbhglQaeKs48zYu8QwLkzL&width=1024&height=512&zoom=14&mcode=9F:F0:45:EF:79:34:C5:59:64:5A:8B:8C:0B:9D:97:D7:60:F0:DD:43;com.wufriends.housekeeper.keeper" + "&center=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markers=" + appDto.getLongitude() + "," + appDto.getLatitude() + "&markerStyles=l,A,0xFF0000";
             mapImageView.setImageUrl(mapUrl, ImageCacheManager.getInstance().getImageLoader());
         } catch (Exception e) {
             mapImageView.setVisibility(View.GONE);

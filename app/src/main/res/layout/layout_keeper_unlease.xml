@@ -16,8 +16,8 @@
 
         <com.housekeeper.activity.view.CustomNetworkImageView
             android:id="@+id/headImageView"
-            android:layout_width="50dip"
-            android:layout_height="50dip"
+            android:layout_width="85dip"
+            android:layout_height="60dip"
             android:scaleType="fitXY"
             android:src="@drawable/head_tenant_default" />
 

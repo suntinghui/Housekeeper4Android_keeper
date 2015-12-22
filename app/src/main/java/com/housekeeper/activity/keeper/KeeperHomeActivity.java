@@ -86,10 +86,6 @@ public class KeeperHomeActivity extends BaseActivity implements HomeTopLayout.It
         this.setContentView(R.layout.activity_keeper_home);
 
         this.initView();
-
-        this.requestData();
-
-        this.topImageLayout.requestTopImage();
     }
 
     @Override

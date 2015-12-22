@@ -71,7 +71,7 @@ public class LoginAfterDialog extends Dialog implements View.OnClickListener {
             case R.id.tenantTextView: {
                 Intent intent = new Intent();
                 intent.setAction("android.intent.action.VIEW");
-                intent.setData(Uri.parse("http://a.app.qq.com/o/simple.jsp?pkgname=com.wufriends.gugu"));
+                intent.setData(Uri.parse("http://a.app.qq.com/o/simple.jsp?pkgname=com.wufriends.housekeeper"));
                 context.startActivity(intent);
             }
             break;
@@ -79,7 +79,7 @@ public class LoginAfterDialog extends Dialog implements View.OnClickListener {
             case R.id.landlordTextView: {
                 Intent intent = new Intent();
                 intent.setAction("android.intent.action.VIEW");
-                intent.setData(Uri.parse("http://a.app.qq.com/o/simple.jsp?pkgname=com.wufriends.gugu"));
+                intent.setData(Uri.parse("http://a.app.qq.com/o/simple.jsp?pkgname=com.wufriends.housekeeper.landlord"));
                 context.startActivity(intent);
             }
             break;

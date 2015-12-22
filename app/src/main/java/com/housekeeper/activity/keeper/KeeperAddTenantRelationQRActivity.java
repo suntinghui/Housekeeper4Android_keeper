@@ -141,7 +141,7 @@ public class KeeperAddTenantRelationQRActivity extends BaseActivity implements V
     public class TabhostReceiver extends BroadcastReceiver {
         @Override
         public void onReceive(Context context, Intent intent) {
-            Toast.makeText(KeeperAddTenantRelationQRActivity.this, "租户关联成功", Toast.LENGTH_SHORT).show();
+            Toast.makeText(KeeperAddTenantRelationQRActivity.this, "租户关联成功，请提交", Toast.LENGTH_SHORT).show();
 
             finish();
         }
