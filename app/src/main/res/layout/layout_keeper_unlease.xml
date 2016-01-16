@@ -53,22 +53,22 @@
             <View
                 android:layout_width="fill_parent"
                 android:layout_height="1px"
-                android:layout_marginBottom="10dip"
+                android:layout_marginBottom="8dip"
                 android:layout_marginLeft="20dip"
                 android:layout_marginRight="10dip"
-                android:layout_marginTop="10dip"
+                android:layout_marginTop="8dip"
                 android:background="@color/gray" />
 
             <LinearLayout
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:paddingRight="10dip">
 
                 <!-- 委托租期 -->
                 <LinearLayout
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="15dip"
                     android:orientation="horizontal">
 
                     <TextView
@@ -106,6 +106,50 @@
                         android:text="天"
                         android:textColor="#999999"
                         android:textSize="12sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dip"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dip"
+                        android:layout_weight="1"
+                        android:drawableLeft="@drawable/keeper_img_05"
+                        android:drawablePadding="10dip"
+                        android:singleLine="true"
+                        android:text="租赁日期"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/begingDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-01-01"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 至 "
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/endDateTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2015-01-01"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+
 
                 </LinearLayout>
 

@@ -284,43 +284,6 @@
                     android:textSize="14sp" />
             </LinearLayout>
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:drawableLeft="@drawable/blue_line_1"
-                android:drawablePadding="8dip"
-                android:paddingBottom="10dip"
-                android:paddingLeft="15dip"
-                android:paddingTop="15dip"
-                android:text="租金包含"
-                android:textColor="#666666"
-                android:textSize="13sp" />
-
-            <LinearLayout
-                android:layout_width="fill_parent"
-                android:layout_height="fill_parent"
-                android:layout_weight="1"
-                android:orientation="vertical">
-
-                <com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView
-                    android:id="@+id/gridView"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:divider="#cccccc"
-                    android:dividerHeight="1px"
-                    android:fadingEdge="none"
-                    android:focusable="false"
-                    android:gravity="center"
-                    android:listSelector="#00000000" />
-
-                <View
-                    android:layout_width="fill_parent"
-                    android:layout_height="1px"
-                    android:background="#cccccc" />
-
-            </LinearLayout>
-
         </LinearLayout>
 
     </ScrollView>

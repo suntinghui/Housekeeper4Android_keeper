@@ -80,6 +80,8 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
             holder.addressTextView = (TextView) convertView.findViewById(R.id.addressTextView);
             holder.cityTextView = (TextView) convertView.findViewById(R.id.cityTextView);
             holder.letLeaseDayTextView = (TextView) convertView.findViewById(R.id.letLeaseDayTextView);
+            holder.begingDateTextView = (TextView) convertView.findViewById(R.id.begingDateTextView);
+            holder.endDateTextView = (TextView) convertView.findViewById(R.id.endDateTextView);
 
             holder.middleLayout = (LinearLayout) convertView.findViewById(R.id.middleLayout);
 
@@ -106,6 +108,8 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         holder.cityTextView.setText(infoDto.getCityStr() + " " + infoDto.getAreaStr() + " " + infoDto.getAddress());
         holder.letLeaseDayTextView.setText(infoDto.getLetLeaseDay() + "");
         holder.reserveCountTextView.setText(infoDto.getReserveCount() + "");
+        holder.begingDateTextView.setText(infoDto.getBeginTimeStr());
+        holder.endDateTextView.setText(infoDto.getEndTimeStr());
 
         holder.tipTextView1.setText(Html.fromHtml("用于<font color=#24B0F1>租金</font>和<font color=#24B0F1>租赁合同</font>"));
 
@@ -178,6 +182,9 @@ public class KeeperUnLeaseAdapter extends BaseAdapter {
         private TextView addressTextView;
         private TextView cityTextView;
         private TextView letLeaseDayTextView;
+        private TextView begingDateTextView;
+        private TextView endDateTextView;
+
 
         private LinearLayout middleLayout;
 

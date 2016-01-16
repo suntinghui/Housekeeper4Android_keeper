@@ -67,7 +67,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/blue_line_1"
                     android:drawablePadding="8dip"
-                    android:text="身份证正面"
+                    android:text="正面身份证照片（身份证）"
                     android:textColor="#666666"
                     android:textSize="15sp" />
 
@@ -94,7 +94,7 @@
                     android:layout_height="wrap_content"
                     android:drawableLeft="@drawable/blue_line_1"
                     android:drawablePadding="8dip"
-                    android:text="身份证反面"
+                    android:text="反面身份证照片（身份证）"
                     android:textColor="#666666"
                     android:textSize="15sp" />
 

@@ -4,11 +4,23 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.android.volley.Response;
+import com.ares.house.dto.app.AppMessageDto;
+import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.HouseAddListAppDto;
+import com.ares.house.dto.app.HouseInfoStatusAppDto;
+import com.ares.house.dto.app.UserInfoStatusAppDto;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.view.DavinciView;
+import com.housekeeper.client.RequestEnum;
+import com.housekeeper.client.net.JSONRequest;
 import com.wufriends.housekeeper.keeper.R;
+
+import org.codehaus.jackson.map.DeserializationConfig;
+import org.codehaus.jackson.map.ObjectMapper;
+import org.codehaus.jackson.type.JavaType;
 
 /**
  * Created by sth on 9/25/15.
@@ -31,6 +43,13 @@ public class KeeperAddHouseInfoActivity extends BaseActivity implements View.OnC
         infoDto = (HouseAddListAppDto) this.getIntent().getSerializableExtra("DTO");
 
         this.initView();
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+
+        requestHouseInfoStatus();
     }
 
     private void initView() {
@@ -65,6 +84,41 @@ public class KeeperAddHouseInfoActivity extends BaseActivity implements View.OnC
         trafficInfoView.getTitleTextView().setText("交通信息");
         trafficInfoView.getTipTextView().setText("");
         trafficInfoView.setOnClickListener(this);
+    }
+
+    // 获取房屋信息状态
+    private void requestHouseInfoStatus() {
+        JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_INFO_STATUS, null, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String jsonObject) {
+                try {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    objectMapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                    JavaType type = objectMapper.getTypeFactory().constructParametricType(AppMessageDto.class, HouseInfoStatusAppDto.class);
+                    AppMessageDto<HouseInfoStatusAppDto> dto = objectMapper.readValue(jsonObject, type);
+
+                    if (dto.getStatus() == AppResponseStatus.SUCCESS) {
+
+                        HouseInfoStatusAppDto statusDto = dto.getData();
+
+                        houseInfoView.getTipTextView().setText(statusDto.isInfo() ? "已完成" : "未完成");
+                        houseImageView.getTipTextView().setText(statusDto.isImage() ? "已完成" : "未完成");
+                        equipmentView.getTipTextView().setText(statusDto.isEquipment() ? "已完成" : "未完成");
+                        trafficInfoView.getTipTextView().setText(statusDto.isTraffic() ? "已完成" : "未完成");
+
+                    } else {
+                        Toast.makeText(KeeperAddHouseInfoActivity.this, dto.getMsg(), Toast.LENGTH_SHORT).show();
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+        this.addToRequestQueue(request, null);
     }
 
     @Override

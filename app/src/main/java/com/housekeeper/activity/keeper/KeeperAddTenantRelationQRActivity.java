@@ -84,10 +84,7 @@ public class KeeperAddTenantRelationQRActivity extends BaseActivity implements V
         this.numberTextView.setText(appDto.getUserJoinCode());
 
         // Set Value
-        this.headImageView.setDefaultImageResId(R.drawable.head_tenant_default);
-        this.headImageView.setErrorImageResId(R.drawable.head_tenant_default);
-        this.headImageView.setLocalImageBitmap(R.drawable.head_tenant_default);
-        this.headImageView.setImageUrl(Constants.HOST_IP + appDto.getIndexImgUrl(), ImageCacheManager.getInstance().getImageLoader());
+        this.headImageView.setImageUrl(Constants.HOST_IP + appDto.getLogo(), ImageCacheManager.getInstance().getImageLoader());
 
         this.addressTextView.setText(appDto.getCommunity() + " " + appDto.getHouseNum());
         this.cityTextView.setText(appDto.getCityStr() + " " + appDto.getAreaStr() + " " + appDto.getAddress());

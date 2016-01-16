@@ -44,6 +44,8 @@ import java.util.List;
 
 /**
  * Created by sth on 9/29/15.
+ * <p>
+ * 房屋租赁费用
  */
 public class KeeperAddHouseRentalCostActivity extends BaseActivity implements View.OnClickListener, TextWatcher {
 
@@ -52,16 +54,12 @@ public class KeeperAddHouseRentalCostActivity extends BaseActivity implements Vi
     private EditText yearMoneyEditText = null;
     private EditText letLeaseDayEditText = null;
     private TextView violateMonthTextView = null;
-    private AsymmetricGridView gridView = null;
 
     private RelativeLayout allDateLayout = null; // 所有的交租日期
     private LinearLayout dateLayout = null; // 所有的交租日期
 
     private HouseAddListAppDto infoDto = null;
     private LandlordRentalFeeAppDto feeDto = null;
-
-    private HouseRentalCostAdapter adapter = null;
-    private List<RentContainAppDtoEx> items = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -99,28 +97,6 @@ public class KeeperAddHouseRentalCostActivity extends BaseActivity implements Vi
 
         this.allDateLayout = (RelativeLayout) this.findViewById(R.id.allDateLayout);
         this.dateLayout = (LinearLayout) this.findViewById(R.id.dateLayout);
-
-        gridView = (AsymmetricGridView) this.findViewById(R.id.gridView);
-
-        gridView.setRequestedColumnCount(3);
-        gridView.setRowHeight(80);
-        gridView.determineColumns();
-        gridView.setAllowReordering(true);
-        gridView.isAllowReordering(); // true
-
-        adapter = new HouseRentalCostAdapter(this);
-        AsymmetricGridViewAdapter asymmetricAdapter = new AsymmetricGridViewAdapter<>(this, gridView, adapter);
-        gridView.setAdapter(asymmetricAdapter);
-        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                try {
-                    adapter.setCheckItem(items.get(position).getId());
-                } catch (Exception e) {
-                    e.printStackTrace();
-                }
-            }
-        });
     }
 
     private void requestFeeInfo() {
@@ -161,9 +137,20 @@ public class KeeperAddHouseRentalCostActivity extends BaseActivity implements Vi
             beginTimeTextView.setText(DateUtil.getDate2(feeDto.getBeginTime()));
         }
 
-        yearCountEditText.setText(feeDto.getYearCount() + "");
+        if (feeDto.getYearCount() == 0) {
+            yearCountEditText.setText("");
+        } else {
+            yearCountEditText.setText(feeDto.getYearCount() + "");
+        }
+
+        if (feeDto.getLetLeaseDay() == 0) {
+            letLeaseDayEditText.setText("");
+        } else {
+            letLeaseDayEditText.setText(feeDto.getLetLeaseDay() + "");
+        }
+
+
         yearMoneyEditText.setText(feeDto.getYearMoney());
-        letLeaseDayEditText.setText(feeDto.getLetLeaseDay() + "");
         violateMonthTextView.setText("每年扣" + feeDto.getViolateMonth() + "月租金");
 
         try {
@@ -171,9 +158,6 @@ public class KeeperAddHouseRentalCostActivity extends BaseActivity implements Vi
         } catch (Exception e) {
             e.printStackTrace();
         }
-
-        items = feeDto.getRentContains();
-        adapter.setData(items, true);
     }
 
     private void requestSetFeeInfo() {
@@ -183,7 +167,7 @@ public class KeeperAddHouseRentalCostActivity extends BaseActivity implements Vi
         map.put("yearCount", yearCountEditText.getText().toString().trim());
         map.put("letLeaseDay", letLeaseDayEditText.getText().toString().trim());
         map.put("yearMoney", yearMoneyEditText.getText().toString().trim());
-        map.put("ids", adapter.getCheckIds());
+        map.put("ids", "");
 
         JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_SETLANDLORDRENT, map, new Response.Listener<String>() {
 

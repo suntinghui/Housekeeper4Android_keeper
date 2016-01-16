@@ -1,5 +1,7 @@
 package com.ares.house.dto.app;
 
+import com.housekeeper.model.RentContainAppDtoEx;
+
 import java.io.Serializable;
 import java.util.List;
 
@@ -28,6 +30,11 @@ public class HouseReleaseAppDto implements Serializable {
 	 */
 	private long beginTime;
 	private String beginTimeStr;
+
+	/**
+	 * 房租包含
+	 */
+	private List<RentContainAppDtoEx> rentContains;
 
 	public String getMoney() {
 		return money;
@@ -75,6 +82,14 @@ public class HouseReleaseAppDto implements Serializable {
 
 	public void setBeginTimeStr(String beginTimeStr) {
 		this.beginTimeStr = beginTimeStr;
+	}
+
+	public List<RentContainAppDtoEx> getRentContains() {
+		return rentContains;
+	}
+
+	public void setRentContains(List<RentContainAppDtoEx> rentContains) {
+		this.rentContains = rentContains;
 	}
 
 }

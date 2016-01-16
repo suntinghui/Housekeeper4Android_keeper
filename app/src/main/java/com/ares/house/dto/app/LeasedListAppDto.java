@@ -67,6 +67,10 @@ public class LeasedListAppDto implements Serializable {
 	 */
 	private char status;
 	/**
+	 * 实缴押金
+	 */
+	private String mortgageMoney;
+	/**
 	 * 退还押金
 	 */
 	private String takeBackMortgageMoney;
@@ -78,6 +82,10 @@ public class LeasedListAppDto implements Serializable {
 	 * 剩多少天 -1说明不需要再交房租了
 	 */
 	private int surplusDay;
+	/**
+	 * 房租交至哪天 没交租之前为null
+	 */
+	private String lastPaidTimeStr;
 
 	public int getHouseId() {
 		return houseId;
@@ -229,6 +237,22 @@ public class LeasedListAppDto implements Serializable {
 
 	public void setSurplusDay(int surplusDay) {
 		this.surplusDay = surplusDay;
+	}
+
+	public String getLastPaidTimeStr() {
+		return lastPaidTimeStr;
+	}
+
+	public void setLastPaidTimeStr(String lastPaidTimeStr) {
+		this.lastPaidTimeStr = lastPaidTimeStr;
+	}
+
+	public String getMortgageMoney() {
+		return mortgageMoney;
+	}
+
+	public void setMortgageMoney(String mortgageMoney) {
+		this.mortgageMoney = mortgageMoney;
 	}
 
 }

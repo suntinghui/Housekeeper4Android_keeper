@@ -62,6 +62,14 @@ public class WaitLeaseListAppDto implements Serializable {
 	 * 三室两厅一卫
 	 */
 	private String houseType;
+	/**
+	 * 委托开始时间
+	 */
+	private String beginTimeStr;
+	/**
+	 * 委托结束时间
+	 */
+	private String endTimeStr;
 
 	public int getHouseId() {
 		return houseId;
@@ -181,6 +189,22 @@ public class WaitLeaseListAppDto implements Serializable {
 
 	public void setHouseType(String houseType) {
 		this.houseType = houseType;
+	}
+
+	public String getBeginTimeStr() {
+		return beginTimeStr;
+	}
+
+	public void setBeginTimeStr(String beginTimeStr) {
+		this.beginTimeStr = beginTimeStr;
+	}
+
+	public String getEndTimeStr() {
+		return endTimeStr;
+	}
+
+	public void setEndTimeStr(String endTimeStr) {
+		this.endTimeStr = endTimeStr;
 	}
 
 }

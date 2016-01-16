@@ -28,6 +28,7 @@ import com.android.volley.Response;
 import com.ares.house.dto.app.AppMessageDto;
 import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.MyAppAgentDto;
+import com.ares.house.dto.app.UserInfoStatusAppDto;
 import com.housekeeper.HousekeeperApplication;
 import com.housekeeper.activity.BaseActivity;
 import com.housekeeper.activity.BindedBankActivity;
@@ -111,6 +112,8 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
 
     public void onResume() {
         super.onResume();
+
+        requestUserInfoStatus();
 
         requestAllState();
     }
@@ -233,6 +236,42 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
             }
             break;
         }
+    }
+
+    // 获取个人信息状态
+    private void requestUserInfoStatus() {
+        JSONRequest request = new JSONRequest(this, RequestEnum.USER_INFO_STATUS, null, new Response.Listener<String>() {
+
+            @Override
+            public void onResponse(String jsonObject) {
+                try {
+                    ObjectMapper objectMapper = new ObjectMapper();
+                    objectMapper.configure(DeserializationConfig.Feature.FAIL_ON_UNKNOWN_PROPERTIES, false);
+                    JavaType type = objectMapper.getTypeFactory().constructParametricType(AppMessageDto.class, UserInfoStatusAppDto.class);
+                    AppMessageDto<UserInfoStatusAppDto> dto = objectMapper.readValue(jsonObject, type);
+
+                    if (dto.getStatus() == AppResponseStatus.SUCCESS) {
+
+                        UserInfoStatusAppDto statusDto = dto.getData();
+
+                        headLogoView.getImportantTextView().setVisibility(statusDto.isUserLogo() ? View.VISIBLE : View.GONE);
+                        transferPwdView.getImportantTextView().setVisibility(statusDto.isTransactionPassword() ? View.VISIBLE : View.GONE);
+                        bankCardView.getImportantTextView().setVisibility(statusDto.isBankCard() ? View.VISIBLE : View.GONE);
+                        cardIdView.getImportantTextView().setVisibility(statusDto.isIdcard() ? View.VISIBLE : View.GONE);
+                        jobPhotoView.getImportantTextView().setVisibility(statusDto.isWork() ? View.VISIBLE : View.GONE);
+
+                    } else {
+                        Toast.makeText(KeeperPersonalVerifyActivity.this, dto.getMsg(), Toast.LENGTH_SHORT).show();
+                    }
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+
+            }
+        });
+
+        this.addToRequestQueue(request, null);
     }
 
     private void requestBankInfo() {

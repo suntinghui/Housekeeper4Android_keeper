@@ -3,9 +3,11 @@ package com.housekeeper.activity.keeper;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
+import android.text.Html;
 import android.text.TextWatcher;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -18,10 +20,14 @@ import com.ares.house.dto.app.AppMessageDto;
 import com.ares.house.dto.app.AppResponseStatus;
 import com.ares.house.dto.app.HouseReleaseAppDto;
 import com.ares.house.dto.app.HouseTagAppDto;
+import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridView;
+import com.felipecsl.asymmetricgridview.library.widget.AsymmetricGridViewAdapter;
 import com.housekeeper.activity.BaseActivity;
+import com.housekeeper.activity.view.HouseRentalCostAdapter;
 import com.housekeeper.activity.view.SublimePickerDialog;
 import com.housekeeper.client.RequestEnum;
 import com.housekeeper.client.net.JSONRequest;
+import com.housekeeper.model.RentContainAppDtoEx;
 import com.housekeeper.utils.DateUtil;
 import com.wufriends.housekeeper.keeper.R;
 import com.zhy.view.flowlayout.FlowLayout;
@@ -35,6 +41,7 @@ import org.codehaus.jackson.type.JavaType;
 
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.List;
 
 /**
  * Created by sth on 10/27/15.
@@ -48,6 +55,10 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
     private TextView moneyTipTextView;
 
     private TextView earningTextView;
+
+    private AsymmetricGridView gridView = null;
+    private HouseRentalCostAdapter adapter = null;
+    private List<RentContainAppDtoEx> items = null;
 
     private TagFlowLayout flowlayout = null;
 
@@ -86,6 +97,28 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
         this.flowlayout = (TagFlowLayout) this.findViewById(R.id.flowlayout);
         this.flowlayout.setVisibility(View.GONE);
 
+        gridView = (AsymmetricGridView) this.findViewById(R.id.gridView);
+
+        gridView.setRequestedColumnCount(3);
+        gridView.setRowHeight(80);
+        gridView.determineColumns();
+        gridView.setAllowReordering(true);
+        gridView.isAllowReordering(); // true
+
+        adapter = new HouseRentalCostAdapter(this);
+        AsymmetricGridViewAdapter asymmetricAdapter = new AsymmetricGridViewAdapter<>(this, gridView, adapter);
+        gridView.setAdapter(asymmetricAdapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
+                try {
+                    adapter.setCheckItem(items.get(position).getId());
+                } catch (Exception e) {
+                    e.printStackTrace();
+                }
+            }
+        });
+
         this.publishBtn = (Button) this.findViewById(R.id.publishBtn);
         this.publishBtn.setOnClickListener(this);
     }
@@ -108,6 +141,7 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
                         infoDto = dto.getData();
 
                         responsePublishInfo();
+
                     } else {
                         Toast.makeText(KeeperHousePublishActivity.this, dto.getMsg(), Toast.LENGTH_SHORT).show();
                     }
@@ -127,9 +161,12 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
             this.beginTimeTextView.setText(infoDto.getBeginTimeStr());
         }
 
-        this.begingDateTipTextView.setText("提示：入住时间不能早于 " + infoDto.getBeginTimeStr());
+        this.begingDateTipTextView.setText(Html.fromHtml("提示：入住时间不能早于<font color=#FF001A>" + infoDto.getBeginTimeStr() + "</font>"));
 
         this.moneyTipTextView.setText("提示：大于等于" + infoDto.getMoney() + "元，多于部分作为佣金奖励。");
+
+        items = infoDto.getRentContains();
+        adapter.setData(items, true);
 
         flowlayout.setVisibility(View.VISIBLE);
         flowlayout.setAdapter(new TagAdapter<HouseTagAppDto>(infoDto.getTags()) {
@@ -164,6 +201,8 @@ public class KeeperHousePublishActivity extends BaseActivity implements View.OnC
         tempMap.put("monthMoney", monthMoneyEditText.getText().toString().trim());
         tempMap.put("tagIds", tagIds.substring(0, tagIds.lastIndexOf(',')));
         tempMap.put("leaseTime", String.valueOf(DateUtil.string2MilliSec(beginTimeTextView.getText().toString())));
+        tempMap.put("leaseType", "");
+        tempMap.put("rentContainIds", adapter.getCheckIds());
 
         JSONRequest request = new JSONRequest(this, RequestEnum.HOUSE_RELEASE, tempMap, new Response.Listener<String>() {
 

@@ -199,6 +199,7 @@
                         android:layout_height="wrap_content"
                         android:background="@null"
                         android:gravity="right"
+                        android:inputType="numberPassword"
                         android:maxLength="6"
                         android:paddingLeft="10dip"
                         android:paddingRight="10dip"

@@ -33,7 +33,7 @@ import java.util.List;
 
 /**
  * Created by sth on 10/8/15.
- * <p/>
+ * <p>
  * 租金详情
  */
 public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClickListener {
@@ -44,6 +44,7 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
     private EditText monthMoneyEditText;
     private TextView minMonthMoneyTextView;
     private EditText agencyFeeEditText;
+    private EditText mortgageMoneyEditText;
     private Button commitBtn;
 
     private UserJoinAppDto appDto;
@@ -66,7 +67,7 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
         this.beginTimeTextView = (EditText) this.findViewById(R.id.beginTimeTextView);
         this.beginTimeTextView.setOnClickListener(this);
         if (StringUtils.isBlank(appDto.getBeginTimeStr())) {
-            this.beginTimeTextView.setText(DateUtil.getCurrentDate2());
+            this.beginTimeTextView.setText("");
         } else {
             this.beginTimeTextView.setText(appDto.getBeginTimeStr());
         }
@@ -74,7 +75,7 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
         this.endTimeTextView = (EditText) this.findViewById(R.id.endTimeTextView);
         this.endTimeTextView.setOnClickListener(this);
         if (StringUtils.isBlank(appDto.getEndTimeStr())) {
-            this.endTimeTextView.setText(DateUtil.getCurrentDate2());
+            this.endTimeTextView.setText("");
         } else {
             this.endTimeTextView.setText(appDto.getEndTimeStr());
         }
@@ -92,6 +93,8 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
         this.agencyFeeEditText = (EditText) this.findViewById(R.id.agencyFeeEditText);
         this.agencyFeeEditText.setText("0.00");
 
+        this.mortgageMoneyEditText = (EditText) this.findViewById(R.id.mortgageMoneyEditText);
+
         this.commitBtn = (Button) this.findViewById(R.id.commitBtn);
         this.commitBtn.setOnClickListener(this);
     }
@@ -103,7 +106,7 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
         map.put("endTime", DateUtil.string2MilliSec(endTimeTextView.getText().toString().trim()) + "");
         map.put("monthMoney", monthMoneyEditText.getText().toString().trim());
         map.put("agencyFee", agencyFeeEditText.getText().toString().trim());
-        map.put("mortgageMoney", "");
+        map.put("mortgageMoney", mortgageMoneyEditText.getText().toString().trim());
 
         JSONRequest request = new JSONRequest(this, RequestEnum.LEASE_SETRENT, map, new Response.Listener<String>() {
 
@@ -133,15 +136,32 @@ public class KeeperLeaseFeeActivity extends BaseActivity implements View.OnClick
     }
 
     private boolean checkValue() {
-        if (TextUtils.isEmpty(monthMoneyEditText.getText().toString().trim())) {
-            Toast.makeText(this, "请设置月租金", Toast.LENGTH_SHORT).show();
-            return false;
-        } else if (TextUtils.isEmpty(agencyFeeEditText.getText().toString().trim())) {
-            Toast.makeText(this, "请设置中介费", Toast.LENGTH_SHORT).show();
+        try {
+            if (TextUtils.isEmpty(monthMoneyEditText.getText().toString().trim())) {
+                Toast.makeText(this, "请设置月租金", Toast.LENGTH_SHORT).show();
+                return false;
+
+            } else if (TextUtils.isEmpty(agencyFeeEditText.getText().toString().trim())) {
+                Toast.makeText(this, "请设置中介费", Toast.LENGTH_SHORT).show();
+                return false;
+
+            } else if (TextUtils.isEmpty(mortgageMoneyEditText.getText().toString().trim())) {
+                Toast.makeText(this, "请设置押金", Toast.LENGTH_SHORT).show();
+                return false;
+
+            } else if (Double.parseDouble(mortgageMoneyEditText.getText().toString().trim()) < Double.parseDouble(monthMoneyEditText.getText().toString().trim())) {
+                Toast.makeText(this, "押金需要大于月租金", Toast.LENGTH_SHORT).show();
+                return false;
+            }
+
+            return true;
+
+        } catch (Exception e) {
+            e.printStackTrace();
+
+            Toast.makeText(this, "输入信息错误，请检查输入项", Toast.LENGTH_SHORT).show();
             return false;
         }
-
-        return true;
     }
 
     @Override
