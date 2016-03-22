@@ -184,6 +184,7 @@ public class LandlordSettingActivity extends BaseActivity implements View.OnClic
                         String bank_id = map.get("BANK_ID");
                         if (null == bank_id || TextUtils.isEmpty(bank_id) || TextUtils.equals(bank_id, "null")) {
                             Intent intent = new Intent(LandlordSettingActivity.this, BindingBankActivity.class);
+                            intent.putExtra("MAP", map);
                             LandlordSettingActivity.this.startActivityForResult(intent, 0);
 
                         } else {

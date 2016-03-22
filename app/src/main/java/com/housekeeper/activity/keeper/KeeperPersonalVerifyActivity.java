@@ -290,6 +290,7 @@ public class KeeperPersonalVerifyActivity extends BaseActivity implements View.O
                         String bank_id = map.get("BANK_ID");
                         if (null == bank_id || TextUtils.isEmpty(bank_id) || TextUtils.equals(bank_id, "null")) {
                             Intent intent = new Intent(KeeperPersonalVerifyActivity.this, BindingBankActivity.class);
+                            intent.putExtra("MAP", map);
                             KeeperPersonalVerifyActivity.this.startActivityForResult(intent, 0);
 
                         } else {

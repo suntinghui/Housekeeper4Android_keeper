@@ -105,6 +105,7 @@ public class TransferClient {
                 if (bankId == null || TextUtils.isEmpty(bankId) || TextUtils.equals(bankId, "null")) {
                     // 没有绑定
                     Intent intent = new Intent(context, BindingBankActivity.class);
+                    intent.putExtra("MAP", map);
                     context.startActivity(intent);
 
                 } else {
@@ -133,13 +134,12 @@ public class TransferClient {
 
     private void requestPayUseBalance(final PayUseBalanceDialog dialog, String pwd) {
         HashMap<String, String> tempMap = new HashMap<String, String>();
-        tempMap.put("houseId", transferInfo.getId());
-        // 使用余额支付，说明余额大于或是等于投资金额
-        //tempMap.put("money", transferInfo.getTransferMoney());
-        //tempMap.put("surplus", "true");
+        tempMap.put("id", transferInfo.getId());
+        tempMap.put("money", transferInfo.getTransferMoney());
+        tempMap.put("surplus", String.valueOf(transferInfo.isUseBalance()));
         tempMap.put("password", pwd);
 
-        JSONRequest request = new JSONRequest(context, RequestEnum.LEASE_PAY_RENT_SURPLUS, tempMap, new Response.Listener<String>() {
+        JSONRequest request = new JSONRequest(context, RequestEnum.DEBT_BUY_SENDVCODE, tempMap, new Response.Listener<String>() {
 
             @Override
             public void onResponse(String jsonObject) {

@@ -38,8 +38,10 @@ import com.housekeeper.model.BankEntityEx;
 import com.housekeeper.utils.ActivityUtil;
 import com.housekeeper.utils.BankUtil;
 import com.housekeeper.utils.IDCardValidate;
+import com.housekeeper.utils.StringUtil;
 import com.wufriends.housekeeper.keeper.R;
 
+import org.apache.commons.lang3.StringUtils;
 import org.codehaus.jackson.map.DeserializationConfig;
 import org.codehaus.jackson.map.ObjectMapper;
 import org.codehaus.jackson.type.JavaType;
@@ -123,6 +125,24 @@ public class BindingBankActivity extends BaseActivity implements OnClickListener
             realnameEditText = (EditText) this.findViewById(R.id.realnameEditText);
             idCardEditText = (EditText) this.findViewById(R.id.idCardEditText);
 
+            HashMap<String, String> map = (HashMap<String, String>) getIntent().getSerializableExtra("MAP");
+
+            if (StringUtils.isNotBlank(map.get("BANK_REALNAME"))) {
+                realnameEditText.setText(map.get("BANK_REALNAME"));
+                realnameEditText.setEnabled(false);
+            } else {
+                realnameEditText.setText("");
+                realnameEditText.setEnabled(true);
+            }
+
+            if (StringUtils.isNotBlank(map.get("BANK_ID_CARD"))) {
+                idCardEditText.setText(map.get("BANK_ID_CARD"));
+                idCardEditText.setEnabled(false);
+            } else {
+                idCardEditText.setText("");
+                idCardEditText.setEnabled(true);
+            }
+
             bankTextView = (TextView) this.findViewById(R.id.bankTextView);
             bankTextView.setOnClickListener(this);
             bankTextView.setText(bankList.get(0).getName());
@@ -146,7 +166,7 @@ public class BindingBankActivity extends BaseActivity implements OnClickListener
             timeBtn = (Button) this.findViewById(R.id.timeBtn);
             timeBtn.setOnClickListener(this);
 
-        } catch(Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
 
             Toast.makeText(this, "努力加载数据中，请稍候", Toast.LENGTH_SHORT).show();
@@ -183,7 +203,7 @@ public class BindingBankActivity extends BaseActivity implements OnClickListener
                 intent.putExtra("url", Constants.HOST_IP + "/app/bank.html");
                 startActivity(intent);
             }
-                break;
+            break;
 
             case R.id.timeBtn: // 发送短信验证码
                 if (checkValueForRequestCode()) {

@@ -205,8 +205,9 @@ public class ForgetPwdActivity extends BaseActivity implements OnClickListener {
 	private void requestSendSMS() {
 		HashMap<String, String> tempMap = new HashMap<String, String>();
 		tempMap.put("telphone", telphoneEditText.getText().toString().trim());
+		tempMap.put("userType", Constants.ROLE);
 
-		JSONRequest request = new JSONRequest(this, RequestEnum.USER_NOLOGIN_PASSWORD_UPDATE, tempMap, new Response.Listener<String>() {
+		JSONRequest request = new JSONRequest(this, RequestEnum.NOLOGIN_SEND_VCODE, tempMap, new Response.Listener<String>() {
 
 			@Override
 			public void onResponse(String jsonObject) {

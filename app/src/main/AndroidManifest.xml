@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.wufriends.housekeeper.keeper"
-    android:versionCode="103"
-    android:versionName="1.0.3">
+    android:versionCode="111"
+    android:versionName="1.1.1">
 
     <uses-sdk
         android:minSdkVersion="14"
@@ -253,8 +253,8 @@
         <activity
             android:name="com.housekeeper.activity.IdentityActivity"
             android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/MyDialogStyleBottom"
             android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyleBottom"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
 
         <activity
@@ -618,7 +618,6 @@
             android:configChanges="orientation|keyboardHidden"
             android:screenOrientation="portrait"
             android:windowSoftInputMode="stateHidden|adjustPan"></activity>
-
 
 
         <activity

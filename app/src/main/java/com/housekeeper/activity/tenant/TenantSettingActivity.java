@@ -247,6 +247,7 @@ public class TenantSettingActivity extends BaseActivity implements View.OnClickL
         String bank_id = bankInfoMap.get("BANK_ID");
         if (null == bank_id || TextUtils.isEmpty(bank_id) || TextUtils.equals(bank_id, "null")) {
             Intent intent = new Intent(TenantSettingActivity.this, BindingBankActivity.class);
+            intent.putExtra("MAP", bankInfoMap);
             TenantSettingActivity.this.startActivityForResult(intent, 0);
 
         } else {

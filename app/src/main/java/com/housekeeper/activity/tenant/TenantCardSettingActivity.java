@@ -79,6 +79,7 @@ public class TenantCardSettingActivity extends BaseActivity implements View.OnCl
         String bank_id = bankInfoMap.get("BANK_ID");
         if (null == bank_id || TextUtils.isEmpty(bank_id) || TextUtils.equals(bank_id, "null")) {
             Intent intent = new Intent(TenantCardSettingActivity.this, BindingBankActivity.class);
+            intent.putExtra("MAP", bankInfoMap);
             TenantCardSettingActivity.this.startActivityForResult(intent, 0);
 
         } else {

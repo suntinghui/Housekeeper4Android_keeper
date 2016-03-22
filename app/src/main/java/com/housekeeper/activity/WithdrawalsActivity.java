@@ -149,6 +149,7 @@ public class WithdrawalsActivity extends BaseActivity implements OnClickListener
                     sDialog.cancel();
 
                     Intent intent = new Intent(WithdrawalsActivity.this, BindingBankActivity.class);
+                    intent.putExtra("MAP", bankInfoMap);
                     WithdrawalsActivity.this.startActivity(intent);
 
                     WithdrawalsActivity.this.finish();

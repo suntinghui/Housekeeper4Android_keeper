@@ -79,6 +79,7 @@ public class RequestEnum {
 
             requestMap.put(LINK_ARTICLE, new RequestModel(LINK_ARTICLE, Constants.HOST_IP_REQ + "/rpc/link/article.app"));
             requestMap.put(USER_PASSWORD_UPDATE, new RequestModel(USER_PASSWORD_UPDATE, Constants.HOST_IP_REQ + "/rpc/user/password/update.app"));
+            requestMap.put(NOLOGIN_SEND_VCODE, new RequestModel(NOLOGIN_SEND_VCODE, Constants.HOST_IP_REQ + "/rpc/nologin/send/vcode.app"));
             requestMap.put(USER_NOLOGIN_PASSWORD_UPDATE, new RequestModel(USER_NOLOGIN_PASSWORD_UPDATE, Constants.HOST_IP_REQ + "/rpc/user/nologin/password/update.app"));
             requestMap.put(LEASE_AGENT_HOUSE, new RequestModel(LEASE_AGENT_HOUSE, Constants.HOST_IP_REQ + "/rpc/lease/agent/house.app"));
             requestMap.put(LEASE_AGENT_HOUSE_RENT, new RequestModel(LEASE_AGENT_HOUSE_RENT, Constants.HOST_IP_REQ + "/rpc/lease/agent/house/rent.app"));
@@ -204,6 +205,7 @@ public class RequestEnum {
     public static final String USER_PASSWORD_UPDATE = "USER_PASSWORD_UPDATE"; // 修改密码
 
     public static final String LINK_ARTICLE = "LINK_ARTICLE"; // 媒体报道
+    public static final String NOLOGIN_SEND_VCODE = "NOLOGIN_SEND_VCODE"; // 指定手机号发送短信验证码
     public static final String USER_NOLOGIN_PASSWORD_UPDATE = "USER_NOLOGIN_PASSWORD_UPDATE"; // 未登录修改密码
     public static final String LEASE_AGENT_HOUSE = "LEASE_AGENT_HOUSE"; // 收租记录
     public static final String LEASE_AGENT_HOUSE_RENT = "LEASE_AGENT_HOUSE_RENT"; // 租金记录
